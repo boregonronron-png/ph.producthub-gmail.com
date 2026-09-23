@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT HUB | Authentic Korean Wholesale & B2B Distribution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            yellow: '#FFD600',
+                            yellowHover: '#E6C200',
+                            black: '#111111',
+                            darkGray: '#1C1C1E',
+                            lightGray: '#F4F4F6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .tab-btn.active {
+            background-color: #FFD600;
+            color: #111111;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="bg-white text-brand-black font-sans antialiased">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <span class="bg-brand-yellow text-brand-black px-3 py-1 font-extrabold text-2xl tracking-tighter rounded">PRODUCT</span>
+                <span class="font-extrabold text-2xl tracking-tight text-brand-black">HUB</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm">
+                <a href="#about" class="hover:text-brand-yellowHover transition">About Us</a>
+                <a href="#catalog" class="hover:text-brand-yellowHover transition">Product Catalog</a>
+                <a href="#rfq" class="hover:text-brand-yellowHover transition">Bulk Quote</a>
+                <a href="#contact" class="hover:text-brand-yellowHover transition">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#rfq" class="bg-brand-yellow text-brand-black font-bold px-5 py-2.5 rounded-lg hover:bg-brand-yellowHover transition shadow-sm">
+                    Inquire Wholesale
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="bg-brand-black text-white pt-20 pb-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-xs font-semibold text-brand-yellow">
+                    <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>
+                    Direct Korean Import & B2B Supply
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
+                    Your Premier <span class="text-brand-yellow">Korean Wholesale</span> Hub.
+                </h1>
+                <p class="text-gray-400 text-lg max-w-xl">
+                    Authentic Korean food, beverages, liquor, snacks, and commercial ingredients supplied directly to supermarkets, marts, restaurants, and resellers.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#catalog" class="bg-brand-yellow text-brand-black font-bold px-8 py-4 rounded-xl text-center hover:bg-brand-yellowHover transition shadow-lg">
+                        Browse Catalog
+                    </a>
+                    <a href="#contact" class="border border-gray-700 text-white font-bold px-8 py-4 rounded-xl text-center hover:bg-white/10 transition">
+                        Contact Sales
+                    </a>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-brand-darkGray p-6 rounded-2xl border border-gray-800 space-y-2">
+                    <i class="fa-solid fa-truck-fast text-brand-yellow text-3xl"></i>
+                    <h3 class="font-bold text-lg">Fast Delivery</h3>
+                    <p class="text-xs text-gray-400">Directly dispatched from our Angeles City Warehouse.</p>
+                </div>
+                <div class="bg-brand-darkGray p-6 rounded-2xl border border-gray-800 space-y-2">
+                    <i class="fa-solid fa-box-open text-brand-yellow text-3xl"></i>
+                    <h3 class="font-bold text-lg">130+ Products</h3>
+                    <p class="text-xs text-gray-400">Extensive Korean catalog for all business needs.</p>
+                </div>
+                <div class="bg-brand-darkGray p-6 rounded-2xl border border-gray-800 space-y-2">
+                    <i class="fa-solid fa-tags text-brand-yellow text-3xl"></i>
+                    <h3 class="font-bold text-lg">B2B Wholesale</h3>
+                    <p class="text-xs text-gray-400">Competitive bulk pricing tailored for resellers.</p>
+                </div>
+                <div class="bg-brand-darkGray p-6 rounded-2xl border border-gray-800 space-y-2">
+                    <i class="fa-solid fa-shield text-brand-yellow text-3xl"></i>
+                    <h3 class="font-bold text-lg">100% Authentic</h3>
+                    <p class="text-xs text-gray-400">Direct imported top-tier Korean brands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOG SECTION -->
+    <section id="catalog" class="py-20 bg-brand-lightGray px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto space-y-8">
+            
+            <div class="text-center space-y-3 max-w-2xl mx-auto">
+                <h2 class="text-3xl font-extrabold text-brand-black sm:text-4xl">Wholesale Product Catalog</h2>
+                <p class="text-gray-600 text-sm">Select a category below to filter our product list.</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-2" id="categoryTabs">
+                <button onclick="filterCategory('all', event)" class="tab-btn active px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">All Products</button>
+                <button onclick="filterCategory('snacks', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Snacks & Sweets</button>
+                <button onclick="filterCategory('ramen', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Noodles & Ramen</button>
+                <button onclick="filterCategory('meat', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Luncheon Meat</button>
+                <button onclick="filterCategory('seaweed', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Seaweed & Laver</button>
+                <button onclick="filterCategory('beverage', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Beverages & Coffee</button>
+                <button onclick="filterCategory('alcohol', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Soju & Alcohol</button>
+                <button onclick="filterCategory('grocery', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Grocery & Sauces</button>
+            </div>
+
+            <div class="max-w-md mx-auto relative">
+                <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search product name..." class="w-full px-4 py-3 pl-10 rounded-xl border border-gray-300 focus:outline-none focus:border-brand-black text-sm">
+                <i class="fa-solid fa-magnifying-glass absolute left-3 top-3.5 text-gray-400 text-sm"></i>
+            </div>
+
+            <div id="productGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+
+        </div>
+    </section>
+
+    <!-- BULK QUOTE / RFQ SECTION -->
+    <section id="rfq" class="py-20 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto bg-brand-black text-white p-8 sm:p-12 rounded-3xl shadow-2xl">
+            <div class="text-center space-y-3 mb-8">
+                <span class="text-brand-yellow font-extrabold text-xs tracking-wider uppercase">B2B Wholesale Inquiry</span>
+                <h2 class="text-3xl font-extrabold">Request a Bulk Quote</h2>
+                <p class="text-gray-400 text-sm">Fill out the form below and our Angeles City sales team will contact you with wholesale pricing.</p>
+            </div>
+
+            <form action="mailto:ph.producthub@gmail.com" method="post" enctype="text/plain" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 mb-1">Company / Store Name</label>
+                        <input type="text" required placeholder="Your Business Name" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 mb-1">Contact Person</label>
+                        <input type="text" required placeholder="Full Name" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 mb-1">Mobile Number / Viber</label>
+                        <input type="tel" required placeholder="09088212181" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-gray-300 mb-1">Email Address</label>
+                        <input type="email" required placeholder="ph.producthub@gmail.com" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-gray-300 mb-1">Target Products & Quantities</label>
+                    <textarea rows="4" required placeholder="List down the items and quantity needed (e.g., JINRO Soju 10 cases, Binggrae Banana 5 cases)..." class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-brand-yellow text-brand-black font-extrabold py-4 rounded-xl hover:bg-brand-yellowHover transition text-base">
+                    Submit Quote Request
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- CONTACT & FOOTER -->
+    <footer id="contact" class="bg-brand-darkGray text-gray-300 pt-16 pb-8 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center gap-2">
+                    <span class="bg-brand-yellow text-brand-black px-2 py-0.5 font-extrabold text-xl rounded">PRODUCT</span>
+                    <span class="font-extrabold text-xl text-white">HUB</span>
+                </div>
+                <p class="text-xs text-gray-400">Authorized importer and B2B wholesale distributor of authentic Korean food, beverages, snacks, and ingredients in the Philippines.</p>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-sm">Contact Information</h4>
+                <ul class="space-y-2 text-xs">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-yellow"></i> 09088212181</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-yellow"></i> ph.producthub@gmail.com</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-yellow"></i> Angeles City, Pampanga</li>
+                </ul>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-sm">Business Hours</h4>
+                <p class="text-xs text-gray-400">Monday – Saturday: 8:00 AM – 6:00 PM</p>
+                <p class="text-xs text-gray-400">Warehouse Pickups & Bulk Delivery Available</p>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+            &copy; PRODUCT HUB. All Rights Reserved. Angeles City, Pampanga.
+        </div>
+    </footer>
+
+    <script>
+        const products = [
+            { name: "Pepero Chocolate original 47g", category: "snacks" },
+            { name: "Pepero White Cookie 32g", category: "snacks" },
+            { name: "Pepero Almond 32g", category: "snacks" },
+            { name: "Pepero Choco Filled 50g", category: "snacks" },
+            { name: "Pepero Snowy almond 32g", category: "snacks" },
+            { name: "Pepero Strawberry 32g", category: "snacks" },
+            { name: "Pepero Crunchy 39g", category: "snacks" },
+            { name: "Pepero Choco Cookie 32g", category: "snacks" },
+            { name: "Almond Chocoball 46g (40 pcs)", category: "snacks" },
+            { name: "Almond Chocoball 46g (39 pcs)", category: "snacks" },
+            { name: "Binch 102g", category: "snacks" },
+            { name: "Choco Pie Original 336g", category: "snacks" },
+
+            { name: "Jin Ramen Mild Multi-pack", category: "ramen" },
+            { name: "Stir-Fry Cheese Ramen 120g", category: "ramen" },
+            { name: "Stir-Fry Cheese Ramen Spicy 130g", category: "ramen" },
+            { name: "Cheese Ramen Mild 111g", category: "ramen" },
+            { name: "Cheese Ramen Spicy 111g", category: "ramen" },
+            { name: "Pho Story Noodles 67g", category: "ramen" },
+
+            { name: "Hansung Pork Luncheon Meat", category: "meat" },
+            { name: "Hansung Chicken Luncheon Meat", category: "meat" },
+            { name: "Hansung Luncheon Meat Cheese", category: "meat" },
+            { name: "Lotte Luncheon Meat", category: "meat" },
+            { name: "Rose Farm Luncheon Meat", category: "meat" },
+            { name: "Namkwang Luncheon Meat", category: "meat" },
+            { name: "Densing Dak Pork Luncheon Meat", category: "meat" },
+
+            { name: "NamKwang Seaweed 3*24", category: "seaweed" },
+            { name: "NamKwang Seaweed Cheese 3*24", category: "seaweed" },
+            { name: "NamKwang Seaweed 9*8", category: "seaweed" },
+            { name: "NamKwang Seaweed 16*6", category: "seaweed" },
+            { name: "NamKwang Kimbob Kim 10s", category: "seaweed" },
+            { name: "NamKwang Kimbob Kim 100s", category: "seaweed" },
+            { name: "Nongbu Kimbob Kim 10s", category: "seaweed" },
+            { name: "Nongbu Kimbob Kim 100s", category: "seaweed" },
+            { name: "Sura Laver Seaweeds 3*24", category: "seaweed" },
+            { name: "Sura Laver Seaweeds 16*8", category: "seaweed" },
+            { name: "Kimjaban Seaweeds (Vegetable)", category: "seaweed" },
+            { name: "Kimjaban Seaweeds (Original)", category: "seaweed" },
+            { name: "Kimjaban Seaweeds (Seafood)", category: "seaweed" },
+            { name: "Kimbap Laver Seaweeds 10s", category: "seaweed" },
+            { name: "Kimbap Laver Seaweeds 100s", category: "seaweed" },
+            { name: "Boryeong Seaweeds 3*24", category: "seaweed" },
+            { name: "Boryeong Seaweeds 16*8", category: "seaweed" },
+            { name: "Boryeong Extra Olive Seaweeds 3*24", category: "seaweed" },
+            { name: "Boryeong Extra Olive Seaweeds 16*6", category: "seaweed" },
+            { name: "Sigolkim Seaweeds Original 3*24", category: "seaweed" },
+            { name: "Sigolkim Seaweeds Original 9*12", category: "seaweed" },
+            { name: "Sigolkim Seaweeds Original 16*12", category: "seaweed" },
+            { name: "Sigolkim Seaweeds with Sesame Oil 3*24", category: "seaweed" },
+            { name: "Sigolkim Seaweeds with Sesame Oil 9*12", category: "seaweed" },
+            { name: "Sigolkim Seaweeds with Sesame Oil 16*12", category: "seaweed" },
+
+            { name: "Binggrae Banana", category: "beverage" },
+            { name: "Binggrae Banana Light", category: "beverage" },
+            { name: "Binggrae Coffee", category: "beverage" },
+            { name: "Binggrae Melon", category: "beverage" },
+            { name: "Binggrae Strawberry", category: "beverage" },
+            { name: "Binggrae Strawberry Light", category: "beverage" },
+            { name: "Binggrae Taro", category: "beverage" },
+            { name: "Binggrae Vanilla", category: "beverage" },
+            { name: "Café Bene Peach / 190 ML", category: "beverage" },
+            { name: "Café Bene Blue Lemon / 190 ML", category: "beverage" },
+            { name: "Café Bene Green Grape / 190 ML", category: "beverage" },
+            { name: "Café Bene Watermelon / 190 ML", category: "beverage" },
+            { name: "Café Bene Honey Grapefruit / 190 ML", category: "beverage" },
+            { name: "Café Bene Pineapple / 190 ML", category: "beverage" },
+            { name: "Café Bene Omija / 190 ML", category: "beverage" },
+            { name: "Café Bene Vanilla Americano / 190 ML", category: "beverage" },
+            { name: "Café Bene Hazelnut / 190 ML", category: "beverage" },
+            { name: "Café Bene Caramel Macchiato / 190 ML", category: "beverage" },
+            { name: "Café Bene Americano / 190 ML", category: "beverage" },
+            { name: "Ice Talk A1 Peach / 230 ML", category: "beverage" },
+            { name: "Ice Talk A2 Blue Lemon / 230 ML", category: "beverage" },
+            { name: "Ice Talk A3 Blueberry / 230 ML", category: "beverage" },
+            { name: "Ice Talk A4 Pomegranate / 230 ML", category: "beverage" },
+            { name: "Ice Talk A5 Kiwi / 230 ML", category: "beverage" },
+            { name: "Ice Talk A7 Passion Mango / 230 ML", category: "beverage" },
+            { name: "Ice Talk A9 Watermelon / 230 ML", category: "beverage" },
+            { name: "Ice Talk A10 Greengrape / 230 ML", category: "beverage" },
+            { name: "Welchs Grape / 355 ML", category: "beverage" },
+            { name: "Welchs Grape Zero / 355 ML", category: "beverage" },
+            { name: "Welchs White Grape / 355 ML", category: "beverage" },
+            { name: "Welchs Apple Mango / 355 ML", category: "beverage" },
+            { name: "Welchs Orange Zero / 355 ML", category: "beverage" },
+            { name: "Welchs Shinemuscat Zero/ 355 ML", category: "beverage" },
+            { name: "Lets be Mild / 175 ML", category: "beverage" },
+            { name: "Lets be Mocha / 175 ML", category: "beverage" },
+            { name: "Maxim Mocha Gold 20T", category: "beverage" },
+            { name: "Maxim Original 100T", category: "beverage" },
+            { name: "Maxim Mocha Gold 100T", category: "beverage" },
+            { name: "Maxim White Gold 20T", category: "beverage" },
+            { name: "Maxim White Gold 100T", category: "beverage" },
+            { name: "Maxim Supreme Gold Coffe Mix 20T", category: "beverage" },
+            { name: "Maxim Decaf Coffee 100T", category: "beverage" },
+            { name: "Maxim Arabica 100T", category: "beverage" },
+
+            { name: "JINRO Soju 360ml*20", category: "alcohol" },
+            { name: "JINRO Chamisul Fresh 360ml*20", category: "alcohol" },
+            { name: "JINRO Chamisul Original 360ml*20", category: "alcohol" },
+            { name: "JINRO Grapefruit 360ml*20", category: "alcohol" },
+            { name: "JINRO Green Grape 360ml*20", category: "alcohol" },
+            { name: "JINRO Strawberry 360ml*20", category: "alcohol" },
+            { name: "JINRO Peach 360ml*20", category: "alcohol" },
+            { name: "JINRO Lemon 360ml*20", category: "alcohol" },
+            { name: "ILPOOM JINRO Soju 25% 375ml*6", category: "alcohol" },
+            { name: "JR Jinro Soju 24 700ml*12", category: "alcohol" },
+            { name: "JINRO Plum 360ml*20", category: "alcohol" },
+
+            { name: "Chakhan Vermicelli 14kg", category: "grocery" },
+            { name: "Nongbu Glass Noodle 500g", category: "grocery" },
+            { name: "Nongbu Glass Noodle 14kg", category: "grocery" },
+            { name: "JINPUM Glass Noodles 10kg", category: "grocery" },
+            { name: "Nongbu Tteokbokki 1kg", category: "grocery" },
+            { name: "Nongbu Tteokbokki 500g", category: "grocery" },
+            { name: "Sliced Rice Cake 300g (Shelf - Stable)", category: "grocery" },
+            { name: "Baby Shark Topokki (Creamy Flavour)", category: "grocery" },
+            { name: "Baby Shark Topokki (Sweet & Mild Spicy Flavour)", category: "grocery" },
+            { name: "Sing Song Ssamjang 170g", category: "grocery" },
+            { name: "Sing Song Ssamjang 500g", category: "grocery" },
+            { name: "Sing Song Ssamjang 14kg", category: "grocery" },
+            { name: "Nongbu Ssamjang 200g", category: "grocery" },
+            { name: "Nongbu Ssamjang 14kg", category: "grocery" },
+            { name: "Chakhan Ssamjang 14kg", category: "grocery" },
+            { name: "JINPUM Ssamjang 14kg", category: "grocery" },
+            { name: "Sing Song Gochujang 170g", category: "grocery" },
+            { name: "Sing Song Gochujang 500g", category: "grocery" },
+            { name: "Sing Song Gochujang 14kg", category: "grocery" },
+            { name: "Nongbu Gochujang 200g", category: "grocery" },
+            { name: "Nongbu Gochujang 14kg", category: "grocery" },
+            { name: "Chakhan Gochujang 14kg", category: "grocery" },
+            { name: "JINPUM Gochujang 14kg", category: "grocery" },
+            { name: "JINPUM Doenjang 14kg", category: "grocery" },
+            { name: "Sweet Corn 410g", category: "grocery" },
+            { name: "Fruits Cocktail 850g", category: "grocery" },
+            { name: "Black olive slice 405g", category: "grocery" },
+            { name: "Vinegar 1.8L", category: "grocery" },
+            { name: "Roasted Sesame Oil(100%) 1.8L (Bulk)", category: "grocery" },
+            { name: "Nongbu Chili Powder Green Pack 1kg (Fine)", category: "grocery" },
+            { name: "Taeyangcho Chili powder 1kg (Flakes)", category: "grocery" },
+            { name: "JINPUM Chili Powder 1kg (Fine)", category: "grocery" },
+            { name: "JINPUM Chili Powder 1kg (Flakes)", category: "grocery" },
+            { name: "Chili Powder (Fine) 1kg", category: "grocery" },
+            { name: "Chili Powder (Coarse) 1kg", category: "grocery" },
+            { name: "NONGBU Fish Cake 200g", category: "grocery" },
+            { name: "NONGBU Fish Cake 1kg", category: "grocery" },
+            { name: "JINPUM Fish Cake 1kg", category: "grocery" },
+            { name: "Jin Kimchi 10kg", category: "grocery" },
+            { name: "Safe Butane", category: "grocery" },
+            { name: "Ssen Butane 220g", category: "grocery" },
+            { name: "Max Safe Butane", category: "grocery" },
+            { name: "EZ Cooking Machine", category: "grocery" }
+        ];
+
+        function displayProducts(items) {
+            const grid = document.getElementById("productGrid");
+            grid.innerHTML = "";
+
+            items.forEach(item => {
+                const card = `
+                    <div class="product-card bg-white p-4 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                        <div class="space-y-2">
+                            <span class="inline-block text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-brand-black text-brand-yellow">
+                                ${item.category}
+                            </span>
+                            <h3 class="font-bold text-sm text-brand-black leading-snug">${item.name}</h3>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between">
+                            <span class="text-[10px] font-bold text-gray-400 uppercase">Wholesale</span>
+                            <a href="#rfq" class="text-xs font-extrabold bg-brand-yellow text-brand-black px-3 py-1.5 rounded hover:bg-brand-yellowHover transition">
+                                Request Quote
+                            </a>
+                        </div>
+                    </div>
+                `;
+                grid.innerHTML += card;
+            });
+        }
+
+        function filterCategory(cat, event) {
+            const buttons = document.querySelectorAll(".tab-btn");
+            buttons.forEach(btn => btn.classList.remove("active"));
+            if(event && event.target) {
+                event.target.classList.add("active");
+            }
+
+            if (cat === 'all') {
+                displayProducts(products);
+            } else {
+                const filtered = products.filter(p => p.category === cat);
+                displayProducts(filtered);
+            }
+        }
+
+        function searchProducts() {
+            const query = document.getElementById("searchInput").value.toLowerCase();
+            const filtered = products.filter(p => p.name.toLowerCase().includes(query));
+            displayProducts(filtered);
+        }
+
+        displayProducts(products);
+    </script>
+</body>
+</html>
