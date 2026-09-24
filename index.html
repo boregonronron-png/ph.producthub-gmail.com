@@ -44,7 +44,7 @@
         }
     </style>
 </head>
-<body class="bg-white text-brand-black font-sans antialiased">
+<body class="bg-white text-brand-black font-sans antialiased pb-24">
 
     <!-- HEADER / NAVIGATION -->
     <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
@@ -124,10 +124,10 @@
             
             <div class="text-center space-y-3 max-w-2xl mx-auto">
                 <h2 class="text-3xl font-extrabold text-brand-black sm:text-4xl">Wholesale Product Catalog</h2>
-                <p class="text-gray-600 text-sm">Select a category below to filter our product list.</p>
+                <p class="text-gray-600 text-sm">Select items below and click "+ Add to Quote" to build your inquiry list easily.</p>
             </div>
 
-            <!-- CATEGORY TABS WITH BEST SELLER -->
+            <!-- CATEGORY TABS -->
             <div class="flex flex-wrap justify-center gap-2" id="categoryTabs">
                 <button onclick="filterCategory('all', event)" class="tab-btn active px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">All Products</button>
                 <button onclick="filterCategory('bestseller', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-amber-100 text-amber-900 border border-amber-300 shadow-sm transition">🔥 Best Sellers</button>
@@ -150,6 +150,20 @@
         </div>
     </section>
 
+    <!-- FLOATING INQUIRY CART BAR -->
+    <div id="quoteCartBar" class="hidden fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 w-11/12 max-w-2xl bg-brand-black text-white p-4 rounded-2xl shadow-2xl border border-gray-800 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <div class="bg-brand-yellow text-brand-black font-extrabold px-3 py-1.5 rounded-lg text-sm" id="cartCount">0 Items</div>
+            <div>
+                <p class="font-bold text-sm">Quote List Selected</p>
+                <p class="text-[11px] text-gray-400">Ready to request bulk pricing</p>
+            </div>
+        </div>
+        <a href="#rfq" onclick="syncCartToForm()" class="bg-brand-yellow text-brand-black font-extrabold px-5 py-2.5 rounded-xl hover:bg-brand-yellowHover transition text-xs flex items-center gap-2">
+            Proceed to Form <i class="fa-solid fa-arrow-down"></i>
+        </a>
+    </div>
+
     <!-- BULK QUOTE / RFQ SECTION -->
     <section id="rfq" class="py-20 bg-white px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl mx-auto bg-brand-black text-white p-8 sm:p-12 rounded-3xl shadow-2xl">
@@ -157,6 +171,15 @@
                 <span class="text-brand-yellow font-extrabold text-xs tracking-wider uppercase">B2B Wholesale Inquiry</span>
                 <h2 class="text-3xl font-extrabold">Request a Bulk Quote</h2>
                 <p class="text-gray-400 text-sm">Fill out the form below and our Angeles City sales team will contact you with wholesale pricing.</p>
+            </div>
+
+            <!-- SELECTED ITEMS PREVIEW BOX -->
+            <div id="selectedItemsContainer" class="hidden mb-6 p-4 bg-brand-darkGray rounded-xl border border-gray-800">
+                <div class="flex justify-between items-center mb-3 border-b border-gray-700 pb-2">
+                    <h4 class="text-xs font-bold text-brand-yellow uppercase">Selected Items for Quote</h4>
+                    <button type="button" onclick="clearCart()" class="text-[11px] text-red-400 hover:underline">Clear List</button>
+                </div>
+                <div id="selectedItemsList" class="space-y-2 text-xs text-gray-300"></div>
             </div>
 
             <!-- DIRECT TO GMAIL FORM INTEGRATION -->
@@ -191,7 +214,7 @@
 
                 <div>
                     <label class="block text-xs font-bold text-gray-300 mb-1">Target Products & Quantities</label>
-                    <textarea name="Orders & Quantities" rows="4" required placeholder="List down the items and quantity needed (e.g., JINRO Soju 10 cases, Binggrae Banana 5 cases)..." class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow"></textarea>
+                    <textarea id="orderTextarea" name="Orders & Quantities" rows="5" required placeholder="Click '+ Add to Quote' above or manually type your items here (e.g., JINRO Soju 10 cases)..." class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow"></textarea>
                 </div>
 
                 <button type="submit" class="w-full bg-brand-yellow text-brand-black font-extrabold py-4 rounded-xl hover:bg-brand-yellowHover transition text-base">
@@ -235,69 +258,53 @@
 
     <script>
         const products = [
-            { name: "Pepero Almond 32g", category: "snacks", bestseller: true },
-            { name: "Pepero White Cookie 32g", category: "snacks", bestseller: true },
-            { name: "Pepero Choco Cookie 32g", category: "snacks", bestseller: true },
-            { name: "Pepero Strawberry 32g", category: "snacks", bestseller: true },
-            { name: "Pepero Snowy almond 32g", category: "snacks", bestseller: true },
-            { name: "Pepero Crunchy 39g", category: "snacks", bestseller: true },
-            { name: "Pepero Chocolate original 47g", category: "snacks", bestseller: true },
-            { name: "Pepero Choco Filled 50g", category: "snacks", bestseller: true },
-            { name: "Almond Chocoball 46g (40 pcs)", category: "snacks", bestseller: true },
-            { name: "Binch 102g", category: "snacks", bestseller: false },
-            { name: "Choco Pie Original 336g", category: "snacks", bestseller: false },
+            { id: 1, name: "Pepero Almond 32g", category: "snacks", bestseller: true },
+            { id: 2, name: "Pepero White Cookie 32g", category: "snacks", bestseller: true },
+            { id: 3, name: "Pepero Choco Cookie 32g", category: "snacks", bestseller: true },
+            { id: 4, name: "Pepero Strawberry 32g", category: "snacks", bestseller: true },
+            { id: 5, name: "Pepero Snowy almond 32g", category: "snacks", bestseller: true },
+            { id: 6, name: "Pepero Crunchy 39g", category: "snacks", bestseller: true },
+            { id: 7, name: "Pepero Chocolate original 47g", category: "snacks", bestseller: true },
+            { id: 8, name: "Pepero Choco Filled 50g", category: "snacks", bestseller: true },
+            { id: 9, name: "Almond Chocoball 46g (40 pcs)", category: "snacks", bestseller: true },
+            { id: 10, name: "Binch 102g", category: "snacks", bestseller: false },
+            { id: 11, name: "Choco Pie Original 336g", category: "snacks", bestseller: false },
 
-            { name: "Samyang Buldak Carbonara", category: "ramen", bestseller: true },
-            { name: "Samyang Buldak Original", category: "ramen", bestseller: true },
-            { name: "Jin Ramen Mild Multi-pack", category: "ramen", bestseller: false },
-            { name: "Stir-Fry Cheese Ramen 120g", category: "ramen", bestseller: false },
-            { name: "Stir-Fry Cheese Ramen Spicy 130g", category: "ramen", bestseller: false },
-            { name: "Cheese Ramen Mild 111g", category: "ramen", bestseller: false },
-            { name: "Cheese Ramen Spicy 111g", category: "ramen", bestseller: false },
-            { name: "Pho Story Noodles 67g", category: "ramen", bestseller: false },
+            { id: 12, name: "Samyang Buldak Carbonara", category: "ramen", bestseller: true },
+            { id: 13, name: "Samyang Buldak Original", category: "ramen", bestseller: true },
+            { id: 14, name: "Jin Ramen Mild Multi-pack", category: "ramen", bestseller: false },
+            { id: 15, name: "Stir-Fry Cheese Ramen 120g", category: "ramen", bestseller: false },
+            { id: 16, name: "Stir-Fry Cheese Ramen Spicy 130g", category: "ramen", bestseller: false },
+            { id: 17, name: "Cheese Ramen Mild 111g", category: "ramen", bestseller: false },
+            { id: 18, name: "Cheese Ramen Spicy 111g", category: "ramen", bestseller: false },
 
-            { name: "Hansung Pork Luncheon Meat", category: "meat", bestseller: true },
-            { name: "Hansung Chicken Luncheon Meat", category: "meat", bestseller: true },
-            { name: "Lotte Luncheon Meat", category: "meat", bestseller: true },
-            { name: "Hansung Luncheon Meat Cheese", category: "meat", bestseller: false },
-            { name: "Rose Farm Luncheon Meat", category: "meat", bestseller: false },
-            { name: "Namkwang Luncheon Meat", category: "meat", bestseller: false },
-            { name: "Densing Dak Pork Luncheon Meat", category: "meat", bestseller: false },
+            { id: 19, name: "Hansung Pork Luncheon Meat", category: "meat", bestseller: true },
+            { id: 20, name: "Hansung Chicken Luncheon Meat", category: "meat", bestseller: true },
+            { id: 21, name: "Lotte Luncheon Meat", category: "meat", bestseller: true },
+            { id: 22, name: "Hansung Luncheon Meat Cheese", category: "meat", bestseller: false },
+            { id: 23, name: "Rose Farm Luncheon Meat", category: "meat", bestseller: false },
 
-            { name: "NamKwang Seaweed 3*24", category: "seaweed", bestseller: true },
-            { name: "NamKwang Seaweed Cheese 3*24", category: "seaweed", bestseller: false },
-            { name: "NamKwang Seaweed 9*8", category: "seaweed", bestseller: false },
-            { name: "NamKwang Seaweed 16*6", category: "seaweed", bestseller: false },
-            { name: "NamKwang Kimbob Kim 10s", category: "seaweed", bestseller: false },
-            { name: "NamKwang Kimbob Kim 100s", category: "seaweed", bestseller: false },
-            { name: "Nongbu Kimbob Kim 10s", category: "seaweed", bestseller: false },
-            { name: "Nongbu Kimbob Kim 100s", category: "seaweed", bestseller: false },
-            { name: "Sura Laver Seaweeds 3*24", category: "seaweed", bestseller: false },
-            { name: "Sura Laver Seaweeds 16*8", category: "seaweed", bestseller: false },
-            { name: "Kimjaban Seaweeds (Vegetable)", category: "seaweed", bestseller: false },
-            { name: "Kimjaban Seaweeds (Original)", category: "seaweed", bestseller: false },
-            { name: "Kimjaban Seaweeds (Seafood)", category: "seaweed", bestseller: false },
+            { id: 24, name: "NamKwang Seaweed 3*24", category: "seaweed", bestseller: true },
+            { id: 25, name: "NamKwang Seaweed Cheese 3*24", category: "seaweed", bestseller: false },
+            { id: 26, name: "NamKwang Seaweed 9*8", category: "seaweed", bestseller: false },
+            { id: 27, name: "Sura Laver Seaweeds 3*24", category: "seaweed", bestseller: false },
 
-            { name: "Binggrae Banana", category: "beverage", bestseller: false },
-            { name: "Binggrae Banana Light", category: "beverage", bestseller: false },
-            { name: "Binggrae Coffee", category: "beverage", bestseller: false },
-            { name: "Binggrae Melon", category: "beverage", bestseller: false },
-            { name: "Binggrae Strawberry", category: "beverage", bestseller: false },
-            { name: "Café Bene Peach / 190 ML", category: "beverage", bestseller: false },
-            { name: "Ice Talk A1 Peach / 230 ML", category: "beverage", bestseller: false },
-            { name: "Maxim Mocha Gold 100T", category: "beverage", bestseller: false },
+            { id: 28, name: "Binggrae Banana", category: "beverage", bestseller: false },
+            { id: 29, name: "Binggrae Strawberry", category: "beverage", bestseller: false },
+            { id: 30, name: "Maxim Mocha Gold 100T", category: "beverage", bestseller: false },
 
-            { name: "JINRO Soju All Flavors (ChamIsul, Grapefruit, Green Grape, Peach, Plum, Lemon)", category: "alcohol", bestseller: true },
-            { name: "JINRO Soju 360ml*20", category: "alcohol", bestseller: false },
-            { name: "JINRO Chamisul Fresh 360ml*20", category: "alcohol", bestseller: false },
-            { name: "ILPOOM JINRO Soju 25% 375ml*6", category: "alcohol", bestseller: false },
+            { id: 31, name: "JINRO Soju All Flavors (ChamIsul, Grapefruit, Green Grape, Peach, Plum, Lemon)", category: "alcohol", bestseller: true },
+            { id: 32, name: "JINRO Soju 360ml*20", category: "alcohol", bestseller: false },
+            { id: 33, name: "ILPOOM JINRO Soju 25% 375ml*6", category: "alcohol", bestseller: false },
 
-            { name: "Chakhan Vermicelli 14kg", category: "grocery", bestseller: false },
-            { name: "Nongbu Tteokbokki 1kg", category: "grocery", bestseller: false },
-            { name: "Sing Song Ssamjang 500g", category: "grocery", bestseller: false },
-            { name: "Sing Song Gochujang 500g", category: "grocery", bestseller: false },
-            { name: "Safe Butane", category: "grocery", bestseller: false }
+            { id: 34, name: "Chakhan Vermicelli 14kg", category: "grocery", bestseller: false },
+            { id: 35, name: "Nongbu Tteokbokki 1kg", category: "grocery", bestseller: false },
+            { id: 36, name: "Sing Song Ssamjang 500g", category: "grocery", bestseller: false },
+            { id: 37, name: "Sing Song Gochujang 500g", category: "grocery", bestseller: false },
+            { id: 38, name: "Safe Butane", category: "grocery", bestseller: false }
         ];
+
+        let cart = {};
 
         function displayProducts(items) {
             const grid = document.getElementById("productGrid");
@@ -308,6 +315,8 @@
                     ? `<span class="inline-block text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-amber-400 text-black">🔥 Best Seller</span>`
                     : `<span class="inline-block text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-brand-black text-brand-yellow">${item.category}</span>`;
 
+                const qtyInCart = cart[item.id] ? cart[item.id].qty : 0;
+
                 const card = `
                     <div class="product-card bg-white p-4 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                         <div class="space-y-2">
@@ -316,14 +325,88 @@
                         </div>
                         <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between">
                             <span class="text-[10px] font-bold text-gray-400 uppercase">Wholesale</span>
-                            <a href="#rfq" class="text-xs font-extrabold bg-brand-yellow text-brand-black px-3 py-1.5 rounded hover:bg-brand-yellowHover transition">
-                                Request Quote
-                            </a>
+                            <button onclick="addToCart(${item.id})" class="text-xs font-extrabold ${qtyInCart > 0 ? 'bg-black text-brand-yellow' : 'bg-brand-yellow text-brand-black'} px-3 py-1.5 rounded hover:bg-brand-yellowHover transition flex items-center gap-1">
+                                <i class="fa-solid ${qtyInCart > 0 ? 'fa-check' : 'fa-plus'}"></i>
+                                ${qtyInCart > 0 ? 'Added (' + qtyInCart + ')' : 'Add to Quote'}
+                            </button>
                         </div>
                     </div>
                 `;
                 grid.innerHTML += card;
             });
+        }
+
+        function addToCart(id) {
+            const product = products.find(p => p.id === id);
+            if (!cart[id]) {
+                cart[id] = { name: product.name, qty: 1 };
+            } else {
+                cart[id].qty += 1;
+            }
+            updateCartUI();
+            displayProducts(products);
+        }
+
+        function updateQty(id, change) {
+            if (cart[id]) {
+                cart[id].qty += change;
+                if (cart[id].qty <= 0) {
+                    delete cart[id];
+                }
+            }
+            updateCartUI();
+            displayProducts(products);
+        }
+
+        function clearCart() {
+            cart = {};
+            updateCartUI();
+            displayProducts(products);
+        }
+
+        function updateCartUI() {
+            const keys = Object.keys(cart);
+            const totalCount = keys.reduce((sum, key) => sum + cart[key].qty, 0);
+
+            const cartBar = document.getElementById("quoteCartBar");
+            const cartCount = document.getElementById("cartCount");
+            const container = document.getElementById("selectedItemsContainer");
+            const list = document.getElementById("selectedItemsList");
+
+            if (totalCount > 0) {
+                cartBar.classList.remove("hidden");
+                cartCount.innerText = totalCount + " Item" + (totalCount > 1 ? "s" : "");
+                container.classList.remove("hidden");
+
+                list.innerHTML = "";
+                let textSummary = "";
+
+                keys.forEach(id => {
+                    const item = cart[id];
+                    textSummary += `- ${item.name} (Qty/Cases: ${item.qty})\n`;
+
+                    list.innerHTML += `
+                        <div class="flex items-center justify-between bg-brand-black p-2 rounded border border-gray-800">
+                            <span class="font-medium text-white">${item.name}</span>
+                            <div class="flex items-center gap-2">
+                                <button type="button" onclick="updateQty(${id}, -1)" class="w-5 h-5 bg-gray-800 hover:bg-gray-700 rounded text-white font-bold flex items-center justify-between justify-center">-</button>
+                                <span class="font-bold text-brand-yellow">${item.qty}</span>
+                                <button type="button" onclick="updateQty(${id}, 1)" class="w-5 h-5 bg-gray-800 hover:bg-gray-700 rounded text-white font-bold flex items-center justify-between justify-center">+</button>
+                            </div>
+                        </div>
+                    `;
+                });
+
+                document.getElementById("orderTextarea").value = textSummary;
+            } else {
+                cartBar.classList.add("hidden");
+                container.classList.add("hidden");
+                document.getElementById("orderTextarea").value = "";
+            }
+        }
+
+        function syncCartToForm() {
+            updateCartUI();
         }
 
         function filterCategory(cat, event) {
