@@ -244,11 +244,11 @@
                 </ul>
             </div>
 
-           <div class="space-y-3">
-    <h4 class="text-white font-bold text-sm">Business Hours</h4>
-    <p class="text-xs text-gray-400">Monday – Saturday: 8:00 AM – 5:00 PM</p>
-    <p class="text-xs text-gray-400">Warehouse Pickups & Bulk Delivery Available</p>
-</div>
+            <div class="space-y-3">
+                <h4 class="text-white font-bold text-sm">Business Hours</h4>
+                <p class="text-xs text-gray-400">Monday – Saturday: 8:00 AM – 5:00 PM</p>
+                <p class="text-xs text-gray-400">Warehouse Pickups & Bulk Delivery Available</p>
+            </div>
         </div>
 
         <div class="max-w-7xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
@@ -258,7 +258,7 @@
 
     <script>
         const products = [
-            { id: 1, name: "Pepero Almond 32g", category: "snacks", bestseller: true },
+            { id: 1, name: "Pepero Almond 32g", category: "snacks", bestseller: true, image: "images/65299c64-3661-45dc-82a4-c625b218652b.png" },
             { id: 2, name: "Pepero White Cookie 32g", category: "snacks", bestseller: true },
             { id: 3, name: "Pepero Choco Cookie 32g", category: "snacks", bestseller: true },
             { id: 4, name: "Pepero Strawberry 32g", category: "snacks", bestseller: true },
@@ -317,6 +317,11 @@
 
                 const qtyInCart = cart[item.id] ? cart[item.id].qty : 0;
 
+                // Billedhåndtering
+                const imgHtml = item.image 
+                    ? `<img src="${item.image}" alt="${item.name}" class="w-full h-36 object-contain rounded-lg mb-2 bg-gray-50 p-2">`
+                    : `<div class="w-full h-36 bg-gray-100 rounded-lg mb-2 flex items-center justify-center text-gray-400 text-xs font-semibold">No Image</div>`;
+
                 // INTERACTIVE BUTTON: Switch between "+ Add to Quote" and [- 1 +] counter
                 let actionButton = '';
                 if (qtyInCart === 0) {
@@ -339,6 +344,7 @@
                     <div class="product-card bg-white p-4 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
                         <div class="space-y-2">
                             <div>${badge}</div>
+                            ${imgHtml}
                             <h3 class="font-bold text-sm text-brand-black leading-snug">${item.name}</h3>
                         </div>
                         <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between">
