@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRODUCT HUB | Authentic Korean Wholesale & B2B Distribution</title>
-    
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts & FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <script>
         tailwind.config = {
             theme: {
@@ -109,7 +104,7 @@
                     <p class="text-xs text-gray-400">Competitive bulk pricing tailored for resellers.</p>
                 </div>
                 <div class="bg-brand-darkGray p-6 rounded-2xl border border-gray-800 space-y-2">
-                    <i class="fa-solid fa-shield-check text-brand-yellow text-3xl"></i>
+                    <i class="fa-solid fa-shield text-brand-yellow text-3xl"></i>
                     <h3 class="font-bold text-lg">100% Authentic</h3>
                     <p class="text-xs text-gray-400">Direct imported top-tier Korean brands.</p>
                 </div>
@@ -126,28 +121,23 @@
                 <p class="text-gray-600 text-sm">Select a category below to filter our product list.</p>
             </div>
 
-            <!-- CATEGORY FILTER BUTTONS -->
             <div class="flex flex-wrap justify-center gap-2" id="categoryTabs">
-                <button onclick="filterCategory('all')" class="tab-btn active px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">All Products</button>
-                <button onclick="filterCategory('snacks')" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Snacks & Sweets</button>
-                <button onclick="filterCategory('ramen')" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Noodles & Ramen</button>
-                <button onclick="filterCategory('meat')" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Luncheon Meat</button>
-                <button onclick="filterCategory('seaweed')" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Seaweed & Laver</button>
-                <button onclick="filterCategory('beverage')" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Beverages & Coffee</button>
-                <button onclick="filterCategory('alcohol')" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Soju & Alcohol</button>
-                <button onclick="filterCategory('grocery')" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Grocery & Sauces</button>
+                <button onclick="filterCategory('all', event)" class="tab-btn active px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">All Products</button>
+                <button onclick="filterCategory('snacks', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Snacks & Sweets</button>
+                <button onclick="filterCategory('ramen', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Noodles & Ramen</button>
+                <button onclick="filterCategory('meat', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Luncheon Meat</button>
+                <button onclick="filterCategory('seaweed', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Seaweed & Laver</button>
+                <button onclick="filterCategory('beverage', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Beverages & Coffee</button>
+                <button onclick="filterCategory('alcohol', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Soju & Alcohol</button>
+                <button onclick="filterCategory('grocery', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Grocery & Sauces</button>
             </div>
 
-            <!-- SEARCH BAR -->
             <div class="max-w-md mx-auto relative">
                 <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search product name..." class="w-full px-4 py-3 pl-10 rounded-xl border border-gray-300 focus:outline-none focus:border-brand-black text-sm">
                 <i class="fa-solid fa-magnifying-glass absolute left-3 top-3.5 text-gray-400 text-sm"></i>
             </div>
 
-            <!-- PRODUCT GRID CONTAINER -->
-            <div id="productGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                <!-- Products dynamically inserted via JavaScript below -->
-            </div>
+            <div id="productGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"></div>
 
         </div>
     </section>
@@ -224,14 +214,12 @@
         </div>
 
         <div class="max-w-7xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
-            &copy; 2026 PRODUCT HUB. All Rights Reserved. Angeles City, Pampanga.
+            &copy; PRODUCT HUB. All Rights Reserved. Angeles City, Pampanga.
         </div>
     </footer>
 
-    <!-- JAVASCRIPT FOR DYNAMIC PRODUCTS & FILTERING -->
     <script>
         const products = [
-            // Snacks & Sweets
             { name: "Pepero Chocolate original 47g", category: "snacks" },
             { name: "Pepero White Cookie 32g", category: "snacks" },
             { name: "Pepero Almond 32g", category: "snacks" },
@@ -245,7 +233,6 @@
             { name: "Binch 102g", category: "snacks" },
             { name: "Choco Pie Original 336g", category: "snacks" },
 
-            // Noodles
             { name: "Jin Ramen Mild Multi-pack", category: "ramen" },
             { name: "Stir-Fry Cheese Ramen 120g", category: "ramen" },
             { name: "Stir-Fry Cheese Ramen Spicy 130g", category: "ramen" },
@@ -253,7 +240,6 @@
             { name: "Cheese Ramen Spicy 111g", category: "ramen" },
             { name: "Pho Story Noodles 67g", category: "ramen" },
 
-            // Luncheon Meat
             { name: "Hansung Pork Luncheon Meat", category: "meat" },
             { name: "Hansung Chicken Luncheon Meat", category: "meat" },
             { name: "Hansung Luncheon Meat Cheese", category: "meat" },
@@ -262,7 +248,6 @@
             { name: "Namkwang Luncheon Meat", category: "meat" },
             { name: "Densing Dak Pork Luncheon Meat", category: "meat" },
 
-            // Seaweed & Laver
             { name: "NamKwang Seaweed 3*24", category: "seaweed" },
             { name: "NamKwang Seaweed Cheese 3*24", category: "seaweed" },
             { name: "NamKwang Seaweed 9*8", category: "seaweed" },
@@ -289,7 +274,6 @@
             { name: "Sigolkim Seaweeds with Sesame Oil 9*12", category: "seaweed" },
             { name: "Sigolkim Seaweeds with Sesame Oil 16*12", category: "seaweed" },
 
-            // Beverages & Coffee
             { name: "Binggrae Banana", category: "beverage" },
             { name: "Binggrae Banana Light", category: "beverage" },
             { name: "Binggrae Coffee", category: "beverage" },
@@ -334,7 +318,6 @@
             { name: "Maxim Decaf Coffee 100T", category: "beverage" },
             { name: "Maxim Arabica 100T", category: "beverage" },
 
-            // Soju & Alcohol
             { name: "JINRO Soju 360ml*20", category: "alcohol" },
             { name: "JINRO Chamisul Fresh 360ml*20", category: "alcohol" },
             { name: "JINRO Chamisul Original 360ml*20", category: "alcohol" },
@@ -347,7 +330,6 @@
             { name: "JR Jinro Soju 24 700ml*12", category: "alcohol" },
             { name: "JINRO Plum 360ml*20", category: "alcohol" },
 
-            // Grocery & Ingredients
             { name: "Chakhan Vermicelli 14kg", category: "grocery" },
             { name: "Nongbu Glass Noodle 500g", category: "grocery" },
             { name: "Nongbu Glass Noodle 14kg", category: "grocery" },
@@ -418,11 +400,12 @@
             });
         }
 
-        function filterCategory(cat) {
-            // Update active button styling
+        function filterCategory(cat, event) {
             const buttons = document.querySelectorAll(".tab-btn");
             buttons.forEach(btn => btn.classList.remove("active"));
-            event.target.classList.add("active");
+            if(event && event.target) {
+                event.target.classList.add("active");
+            }
 
             if (cat === 'all') {
                 displayProducts(products);
@@ -438,7 +421,6 @@
             displayProducts(filtered);
         }
 
-        // Initialize products on load
         displayProducts(products);
     </script>
 </body>
