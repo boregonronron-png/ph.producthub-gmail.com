@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUCT HUB | Authentic Korean Wholesale & B2B Distribution</title>
+    
+    <!-- SEO META TAGS -->
+    <title>PRODUCT HUB | Authentic Korean Wholesale & B2B Distribution Pampanga</title>
+    <meta name="description" content="PRODUCT HUB is a premier Korean wholesale supplier in Angeles City, Pampanga. We offer direct imports of Korean food, beverages, snacks, soju, and grocery bulk items.">
+    <meta name="keywords" content="Product Hub, Product Hub Pampanga, Korean Wholesale Philippines, Korean Food Supplier Angeles City, B2B Korean Distributor">
+    <meta name="author" content="PRODUCT HUB">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -151,32 +157,39 @@
                 <p class="text-gray-400 text-sm">Fill out the form below and our Angeles City sales team will contact you with wholesale pricing.</p>
             </div>
 
-            <form action="mailto:ph.producthub@gmail.com" method="post" enctype="text/plain" class="space-y-4">
+            <!-- DIRECT TO GMAIL FORM INTEGRATION -->
+            <form action="https://formsubmit.co/ph.producthub@gmail.com" method="POST" class="space-y-4">
+                
+                <!-- FormSubmit Configuration Settings -->
+                <input type="hidden" name="_subject" value="NEW WEBSITE INQUIRY - PRODUCT HUB">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="true">
+
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-bold text-gray-300 mb-1">Company / Store Name</label>
-                        <input type="text" required placeholder="Your Business Name" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
+                        <input type="text" name="Company Name" required placeholder="Your Business Name" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-gray-300 mb-1">Contact Person</label>
-                        <input type="text" required placeholder="Full Name" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
+                        <input type="text" name="Contact Person" required placeholder="Full Name" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-xs font-bold text-gray-300 mb-1">Mobile Number / Viber</label>
-                        <input type="tel" required placeholder="09088212181" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
+                        <input type="tel" name="Mobile Number" required placeholder="09088212181" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
                     </div>
                     <div>
                         <label class="block text-xs font-bold text-gray-300 mb-1">Email Address</label>
-                        <input type="email" required placeholder="ph.producthub@gmail.com" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
+                        <input type="email" name="Email Address" required placeholder="ph.producthub@gmail.com" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
                     </div>
                 </div>
 
                 <div>
                     <label class="block text-xs font-bold text-gray-300 mb-1">Target Products & Quantities</label>
-                    <textarea rows="4" required placeholder="List down the items and quantity needed (e.g., JINRO Soju 10 cases, Binggrae Banana 5 cases)..." class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow"></textarea>
+                    <textarea name="Orders & Quantities" rows="4" required placeholder="List down the items and quantity needed (e.g., JINRO Soju 10 cases, Binggrae Banana 5 cases)..." class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow"></textarea>
                 </div>
 
                 <button type="submit" class="w-full bg-brand-yellow text-brand-black font-extrabold py-4 rounded-xl hover:bg-brand-yellowHover transition text-base">
