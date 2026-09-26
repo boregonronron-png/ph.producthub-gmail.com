@@ -318,8 +318,8 @@ const products = [
 
                 // Billedhåndtering
                 const imgHtml = item.image 
-                    ? `<img src="${item.image}" alt="${item.name}" class="w-full h-36 object-contain rounded-lg mb-2 bg-gray-50 p-2">`
-                    : `<div class="w-full h-36 bg-gray-100 rounded-lg mb-2 flex items-center justify-center text-gray-400 text-xs font-semibold">No Image</div>`;
+    ? `<img src="${item.image}" alt="${item.name}" onclick="openModal('${item.image}')" class="w-full h-36 object-contain rounded-lg mb-2 bg-gray-50 p-2 cursor-pointer hover:opacity-90 transition">`
+    : `<div class="w-full h-36 bg-gray-100 rounded-lg mb-2 flex items-center justify-center text-gray-400 text-xs font-semibold">No Image</div>`;
 
                 // INTERACTIVE BUTTON: Switch between "+ Add to Quote" and [- 1 +] counter
                 let actionButton = '';
