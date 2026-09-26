@@ -454,5 +454,17 @@ const products = [
 
         displayProducts(products);
     </script>
+ 
+    <script src="script.js"></script>
+
+    <!-- Image Lightbox Modal -->
+    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-80 flex items-center justify-center p-4">
+        <div class="relative max-w-4xl max-h-full">
+            <button onclick="closeModal()" class="absolute -top-10 right-0 text-white text-3xl font-bold hover:text-gray-300">&times;</button>
+            <img id="modalImage" src="" alt="Zoomed Product" class="max-h-[85vh] max-w-full object-contain rounded-lg shadow-2xl">
+        </div>
+    </div>
+
 </body>
 </html>
+
