@@ -380,25 +380,25 @@ const products = [
             });
         }
 
-        function addToCart(id) {
-            const product = products.find(p => p.id === id);
-            if (!cart[id]) {
-                cart[id] = { name: product.name, qty: 1 };
-            }
-            updateCartUI();
-            displayProducts(products);
-        }
+       function addToCart(id) {
+    const product = products.find(p => p.id === Number(id));
+    if (!cart[id]) {
+        cart[id] = { name: product.name, qty: 1 };
+    }
+    updateCartUI();
+    reapplyCurrentFilter(); // Dito pinapanatili kung nasaan kang category
+}
 
-        function updateQty(id, change) {
-            if (cart[id]) {
-                cart[id].qty += change;
-                if (cart[id].qty <= 0) {
-                    delete cart[id];
-                }
-            }
-            updateCartUI();
-            displayProducts(products);
+function updateQty(id, change) {
+    if (cart[id]) {
+        cart[id].qty += change;
+        if (cart[id].qty <= 0) {
+            delete cart[id];
         }
+    }
+    updateCartUI();
+    reapplyCurrentFilter(); // Dito rin para hindi bumalik sa Pepero
+}
 
         function clearCart() {
             cart = {};
