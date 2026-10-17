@@ -435,7 +435,7 @@ function sendToMessenger() {
         copyText.select();
         copyText.setSelectionRange(0, 99999);
         navigator.clipboard.writeText(copyText.value);
-    }
+    
     
     alert("Order Summary copied to clipboard! You will now be redirected to Product Hub's Facebook Messenger. Please paste your order details into the chat.");
     window.open("https://m.me/ProductHub88", "_blank");
