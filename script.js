@@ -202,7 +202,7 @@ function renderProducts() {
         const card = document.createElement('div');
         card.className = "bg-brand-darkCard rounded-xl border border-brand-gold/30 hover:border-brand-gold p-4 flex flex-col justify-between transition-all hover:shadow-xl group";
 
-        card.innerHTML = `
+      card.innerHTML = `
             <div>
                 <div class="flex justify-between items-start mb-2">
                     <span class="bg-brand-black text-brand-gold text-[10px] font-extrabold px-2 py-0.5 rounded border border-brand-gold/40 uppercase tracking-wider">
@@ -212,6 +212,15 @@ function renderProducts() {
                         <i class="fa-solid fa-boxes-stacked mr-1 text-brand-gold"></i> B2B Wholesale
                     </span>
                 </div>
+
+                <!-- PRODUCT IMAGE DISPLAY CONTAINER -->
+                <div class="w-full h-40 rounded-lg overflow-hidden bg-brand-black border border-brand-gold/20 mb-3 flex items-center justify-center">
+                    <img src="${p.img || p.image || 'images/logo.jpg'}" 
+                         alt="${p.name}" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                         onerror="this.onerror=null; this.src='images/logo.jpg';">
+                </div>
+
                 <h3 class="font-bold text-white text-base group-hover:text-brand-goldLight transition-colors leading-snug">
                     ${p.name}
                 </h3>
@@ -225,7 +234,7 @@ function renderProducts() {
                     <span class="text-[10px] text-gray-400 block uppercase">Wholesale Price</span>
                     <span class="text-xs font-bold text-white">${p.price ? '₱' + p.price : 'B2B Wholesale Rate'}</span>
                 </div>
-                <button onclick="addToCart(${p.id})" class="bg-brand-black hover:bg-brand-gold hover:text-brand-black text-brand-gold border border-brand-gold font-extrabold text-xs px-3 py-2 rounded-lg transition-all flex items-center gap-1.5 shadow">
+                <button onclick="addToCart(${p.id})" class="bg-brand-black hover:bg-brand-gold hover:text-brand-black text-brand-gold border border-brand-gold font-extrabold text-xs px-3 py-2 rounded-lg transition-all flex items-center gap-1.5">
                     <i class="fa-solid fa-plus"></i> Add Case
                 </button>
             </div>
