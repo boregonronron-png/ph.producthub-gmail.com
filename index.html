@@ -281,6 +281,57 @@
             </div>
         </div>
     </div>
+    <!-- Logo Preview Modal (Pop-up) -->
+    <div id="logoModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85 backdrop-blur-md transition-all duration-300">
+        <div class="relative bg-brand-darkCard border-2 border-brand-gold/80 rounded-2xl p-4 sm:p-6 max-w-md w-full text-center shadow-2xl transform scale-95 transition-transform duration-300" id="logoModalContainer">
+            
+            <!-- Close Button -->
+            <button onclick="closeLogoModal()" class="absolute top-3 right-3 text-gray-400 hover:text-brand-gold w-8 h-8 flex items-center justify-center rounded-full bg-brand-black border border-brand-gold/30 transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Large Logo Image Display -->
+            <div class="w-full max-w-xs mx-auto aspect-square rounded-xl overflow-hidden border border-brand-gold/40 shadow-inner bg-brand-black mb-4 flex items-center justify-center mt-2">
+                <img id="modalLogoImg" src="images/logo.jpg.jpg" alt="Product Hub Large Logo" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='images/logo.jpg';">
+            </div>
+
+            <!-- Title / Branding Footer -->
+            <h3 class="text-lg font-black text-brand-gold uppercase tracking-wider">PRODUCT HUB</h3>
+            <p class="text-xs text-gray-300 font-semibold tracking-widest uppercase mt-0.5">AUTHENTIC KOREAN GOODS • WHOLESALE DISTRIBUTOR</p>
+            
+            <button onclick="closeLogoModal()" class="mt-5 w-full bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-black font-extrabold py-2.5 rounded-xl text-xs uppercase tracking-wider shadow hover:brightness-110 transition-all">
+                Close Preview
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function openLogoModal() {
+            const modal = document.getElementById('logoModal');
+            const container = document.getElementById('logoModalContainer');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                container.classList.remove('scale-95');
+                container.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeLogoModal() {
+            const modal = document.getElementById('logoModal');
+            const container = document.getElementById('logoModalContainer');
+            container.classList.remove('scale-100');
+            container.classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 150);
+        }
+
+        document.getElementById('logoModal')?.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLogoModal();
+            }
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
