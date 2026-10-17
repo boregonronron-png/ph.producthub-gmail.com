@@ -5,7 +5,7 @@
 // Complete Korean Wholesale Product Catalog
 const productsData = [
     // --- K-SNACKS & SWEETS ---
-    { id: 1, name: "Pepero Chocolate Original 47g", cat: "SNACKS", spec: "40 Boxes / Case", price: null },
+  { id: 1, name: "Pepero Chocolate Original 47g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-original.jpg" },
     { id: 2, name: "Pepero White Cookie 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null },
     { id: 3, name: "Pepero Almond 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null },
     { id: 4, name: "Pepero Choco Filled 50g", cat: "SNACKS", spec: "40 Boxes / Case", price: null },
