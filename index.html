@@ -349,7 +349,11 @@
             <p class="text-xs text-gray-300">Copy the summary below and send it directly to our Sales Team via Facebook Messenger or Viber for instant order processing.</p>
             
             <textarea id="receiptText" readonly rows="8" class="w-full bg-brand-black text-brand-goldLight font-mono text-xs p-3 rounded-xl border border-brand-gold/30 focus:outline-none select-all custom-scrollbar"></textarea>
-
+<!-- MESSENGER DIRECT ORDER BUTTON -->
+<button onclick="sendToMessenger()" class="w-full bg-[#0084FF] hover:bg-[#0072CE] text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all mt-3 cursor-pointer shadow-lg">
+    <i class="fa-brands fa-facebook-messenger text-xl"></i>
+    Send Order via Facebook Messenger
+</button>
             <div class="flex gap-3">
                 <button onclick="copyReceipt()" class="flex-1 bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-black font-extrabold py-2.5 rounded-lg text-xs uppercase tracking-wider shadow hover:brightness-110">
                     <i class="fa-solid fa-copy mr-1"></i> Copy Order Summary
