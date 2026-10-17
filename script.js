@@ -437,8 +437,7 @@ function sendToMessenger() {
         navigator.clipboard.writeText(copyText.value);
     }
     
-    alert("Nai-copy na ang Order Summary! Ilalagay ka na sa Facebook Messenger ng Product Hub. I-paste mo na lang sa chat!");
-    
+    alert("Order Summary copied to clipboard! You will now be redirected to Product Hub's Facebook Messenger. Please paste your order details into the chat.");
     window.open("https://m.me/ProductHub88", "_blank");
 }
 function closeReceiptModal() {
