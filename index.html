@@ -66,26 +66,30 @@
         </div>
     </div>
 
-    <!-- Header / Branding with OFFICIAL LOGO -->
-    <header class="bg-brand-black text-white sticky top-0 z-40 shadow-2xl border-b border-brand-gold/40">
-        <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between gap-4">
-                
-                <!-- Company Logo Image & Title -->
-                <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg border-2 border-brand-gold/60 p-0.5 bg-brand-black overflow-hidden shadow-lg flex-shrink-0">
-                        <!-- Naka-point sa 'images/logo.jpg' dahil nasa loob ng images folder sa GitHub ang logo mo -->
-                        <img src="images/logo.jpg" alt="Product Hub Logo" class="w-full h-full object-cover rounded" onerror="this.onerror=null; this.src='logo.jpg';">
-                    </div>
-                    <div>
-                        <h1 class="text-xl sm:text-2xl font-extrabold tracking-wider text-white uppercase leading-none">
-                            PRODUCT HUB
-                        </h1>
-                        <p class="text-[10px] sm:text-xs font-bold text-brand-gold tracking-widest uppercase mt-0.5">
-                            WHOLESALE DISTRIBUTOR
-                        </p>
-                    </div>
-                </div>
+   <!-- Company Logo Image & Title -->
+<div class="flex items-center space-x-3">
+    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg border-2 border-brand-gold/60 p-0.5 bg-brand-black overflow-hidden shadow-lg flex-shrink-0">
+        <img src="images/logo.jpg" 
+             alt="Product Hub Logo" 
+             class="w-full h-full object-cover rounded" 
+             onerror="
+                if(!this.tried1){ this.tried1=true; this.src='images/logo.png'; }
+                else if(!this.tried2){ this.tried2=true; this.src='images/Logo.jpg'; }
+                else if(!this.tried3){ this.tried3=true; this.src='images/Logo.png'; }
+                else if(!this.tried4){ this.tried4=true; this.src='images/logo.jpeg'; }
+                else if(!this.tried5){ this.tried5=true; this.src='logo.jpg'; }
+                else if(!this.tried6){ this.tried6=true; this.src='logo.png'; }
+             ">
+    </div>
+    <div>
+        <h1 class="text-xl sm:text-2xl font-extrabold tracking-wider text-white uppercase leading-none">
+            PRODUCT HUB
+        </h1>
+        <p class="text-[10px] sm:text-xs font-bold text-brand-gold tracking-widest uppercase mt-0.5">
+            WHOLESALE DISTRIBUTOR
+        </p>
+    </div>
+</div>
 
                 <!-- Live Search Bar -->
                 <div class="hidden md:flex flex-1 max-w-md mx-6">
