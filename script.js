@@ -424,22 +424,26 @@ function processOrder(e) {
 
 function copyReceipt() {
     const copyText = document.getElementById("receiptText");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(copyText.value);
-    alert("Order Summary copied to clipboard! Paste it into Facebook Messenger or Viber.");
+    if (copyText) {
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.value);
+        alert("Order Summary copied to clipboard! Paste it into Facebook Messenger or Viber.");
+    }
 }
+
 function sendToMessenger() {
     const copyText = document.getElementById("receiptText");
     if (copyText) {
         copyText.select();
         copyText.setSelectionRange(0, 99999);
         navigator.clipboard.writeText(copyText.value);
-    
+    }
     
     alert("Order Summary copied to clipboard! You will now be redirected to Product Hub's Facebook Messenger. Please paste your order details into the chat.");
     window.open("https://m.me/ProductHub88", "_blank");
 }
+
 function closeReceiptModal() {
     document.getElementById('receiptModal').classList.add('hidden');
 }
