@@ -3,508 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO META TAGS -->
-    <title>PRODUCT HUB | Authentic Korean Wholesale & B2B Distribution Pampanga</title>
-    <meta name="description" content="PRODUCT HUB is a premier Korean wholesale supplier in Angeles City, Pampanga. We offer direct imports of Korean food, beverages, snacks, soju, and grocery bulk items.">
-    <meta name="keywords" content="Product Hub, Product Hub Pampanga, Korean Wholesale Philippines, Korean Food Supplier Angeles City, B2B Korean Distributor">
-    <meta name="author" content="PRODUCT HUB">
-
+    <title>Product Hub Wholesale Distributor | Direct Importer of Korean Goods</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         brand: {
-                            yellow: '#FFD600',
-                            yellowHover: '#E6C200',
-                            black: '#111111',
-                            darkGray: '#1C1C1E',
-                            lightGray: '#F4F4F6'
+                            gold: '#D2A669',
+                            goldLight: '#E8CA97',
+                            goldDark: '#9A7138',
+                            kraft: '#C39A5D',
+                            black: '#0F0E0D',
+                            darkCard: '#1C1B1A',
+                            darkHover: '#2A2825',
+                            accentGold: '#E5C384'
                         }
                     },
                     fontFamily: {
-                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        sans: ['Montserrat', 'Noto Sans KR', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
     <style>
-        html { scroll-behavior: smooth; }
-        .tab-btn.active {
-            background-color: #FFD600;
-            color: #111111;
-            font-weight: 700;
+        body {
+            background-color: #D2A669;
+            background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 0);
+            background-size: 24px 24px;
+            color: #0F0E0D;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1C1B1A;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #D2A669;
+            border-radius: 3px;
         }
     </style>
 </head>
-<body class="bg-white text-brand-black font-sans antialiased pb-24">
+<body class="min-h-screen flex flex-col font-sans">
 
-    <!-- HEADER / NAVIGATION -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-         <a href="#" class="flex items-center gap-2">
-  <span class="bg-yellow-400 text-black font-bold px-2 py-1 rounded">PRODUCT</span>
-  <span class="font-bold">HUB</span>
-</a>
-            
-            <nav class="hidden md:flex items-center space-x-8 font-semibold text-sm">
-                <a href="#about" class="hover:text-brand-yellowHover transition">About Us</a>
-                <a href="#catalog" class="hover:text-brand-yellowHover transition">Product Catalog</a>
-                <a href="#rfq" class="hover:text-brand-yellowHover transition">Bulk Quote</a>
-                <a href="#contact" class="hover:text-brand-yellowHover transition">Contact</a>
-            </nav>
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-black text-brand-goldLight text-xs py-2 px-4 border-b border-brand-gold/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
+            <div class="flex items-center gap-2 font-medium">
+                <span class="bg-brand-gold text-brand-black text-[10px] font-bold px-2 py-0.5 rounded">DIRECT IMPORTER</span>
+                <span>Official B2B Wholesale Portal — Korean Food, Beverages & Goods</span>
+            </div>
+            <div class="flex items-center gap-4 text-xs font-semibold">
+                <span><i class="fa-solid fa-truck-fast mr-1 text-brand-gold"></i> Wholesale Bulk Shipping</span>
+                <span><i class="fa-solid fa-boxes-packing mr-1 text-brand-gold"></i> Case & Container Load Orders</span>
+            </div>
+        </div>
+    </div>
 
-            <div class="hidden md:flex items-center space-x-4">
-                <a href="#rfq" class="bg-brand-yellow text-brand-black font-bold px-5 py-2.5 rounded-lg hover:bg-brand-yellowHover transition shadow-sm">
-                    Inquire Wholesale
-                </a>
+    <!-- Header / Branding with OFFICIAL LOGO -->
+    <header class="bg-brand-black text-white sticky top-0 z-40 shadow-2xl border-b border-brand-gold/40">
+        <div class="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between gap-4">
+                
+                <!-- Company Logo Image & Title -->
+<div class="flex items-center space-x-3">
+    <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg border-2 border-brand-gold/60 bg-cover bg-center overflow-hidden shadow-lg flex-shrink-0" style="background-image: url('logo.jpg.jpg');">
+    </div>
+    <div>
+        <h1 class="text-xl sm:text-2xl font-extrabold tracking-wider text-white uppercase leading-none">
+            PRODUCT HUB
+        </h1>
+        <p class="text-[10px] sm:text-xs font-bold text-brand-gold tracking-widest uppercase mt-0.5">
+            WHOLESALE DISTRIBUTOR
+        </p>
+    </div>
+</div>
+                        <h1 class="text-xl sm:text-2xl font-extrabold tracking-wider text-white uppercase leading-none">
+                            PRODUCT HUB
+                        </h1>
+                        <p class="text-[10px] sm:text-xs font-bold text-brand-gold tracking-widest uppercase mt-0.5">
+                            WHOLESALE DISTRIBUTOR
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Live Search Bar -->
+                <div class="hidden md:flex flex-1 max-w-md mx-6">
+                    <div class="relative w-full">
+                        <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Search Korean products (e.g. Pepero, Soju, Luncheon Meat...)" 
+                            class="w-full bg-brand-darkCard border border-brand-gold/40 text-white placeholder-gray-400 text-sm rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-brand-gold transition-colors">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-brand-gold"></i>
+                    </div>
+                </div>
+
+                <!-- Right Actions: Inquiry & Cart -->
+                <div class="flex items-center gap-3">
+                    <button onclick="openRFQModal()" class="hidden sm:flex items-center gap-2 bg-brand-darkCard hover:bg-brand-darkHover text-brand-gold border border-brand-gold/50 px-3 py-2 rounded-lg text-xs font-semibold transition-all">
+                        <i class="fa-solid fa-file-invoice"></i>
+                        <span>Request RFQ</span>
+                    </button>
+
+                    <button onclick="toggleCartDrawer()" class="relative bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-black px-4 py-2 rounded-lg font-bold text-sm shadow-md hover:brightness-110 transition-all flex items-center gap-2">
+                        <i class="fa-solid fa-cart-flatbed text-lg"></i>
+                        <span class="hidden sm:inline">Wholesale Cart</span>
+                        <span id="cartCountBadge" class="bg-brand-black text-brand-gold text-xs font-black px-2 py-0.5 rounded-full border border-brand-gold">0</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Search Bar -->
+            <div class="mt-3 md:hidden">
+                <div class="relative w-full">
+                    <input type="text" id="mobileSearchInput" onkeyup="filterProductsMobile()" placeholder="Search products..." 
+                        class="w-full bg-brand-darkCard border border-brand-gold/40 text-white placeholder-gray-400 text-sm rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:border-brand-gold">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-brand-gold"></i>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="bg-brand-black text-white pt-20 pb-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <img src="images/logo.png" alt="Product Hub Logo" class="h-28 w-auto object-contain">
-                <div class="inline-flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-full text-xs font-semibold text-brand-yellow">
-                    <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>
-                    Direct Korean Import & B2B Supply
-                </div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none">
-                    Your Premier <span class="text-brand-yellow">Korean Wholesale</span> Hub.
-                </h1>
-                <p class="text-gray-400 text-lg max-w-xl">
-                    Authentic Korean food, beverages, liquor, snacks, and commercial ingredients supplied directly to supermarkets, marts, restaurants, and resellers.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <a href="#catalog" class="bg-brand-yellow text-brand-black font-bold px-8 py-4 rounded-xl text-center hover:bg-brand-yellowHover transition shadow-lg">
-                        Browse Catalog
-                    </a>
-                    <a href="#contact" class="border border-gray-700 text-white font-bold px-8 py-4 rounded-xl text-center hover:bg-white/10 transition">
-                        Contact Sales
-                    </a>
-                </div>
-            </div>
-            
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-brand-darkGray p-6 rounded-2xl border border-gray-800 space-y-2">
-                    <i class="fa-solid fa-truck-fast text-brand-yellow text-3xl"></i>
-                    <h3 class="font-bold text-lg">Fast Delivery</h3>
-                    <p class="text-xs text-gray-400">Directly dispatched from our Angeles City Warehouse.</p>
-                </div>
-                <div class="bg-brand-darkGray p-6 rounded-2xl border border-gray-800 space-y-2">
-                    <i class="fa-solid fa-box-open text-brand-yellow text-3xl"></i>
-                    <h3 class="font-bold text-lg">130+ Products</h3>
-                    <p class="text-xs text-gray-400">Extensive Korean catalog for all business needs.</p>
-                </div>
-                <div class="bg-brand-darkGray p-6 rounded-2xl border border-gray-800 space-y-2">
-                    <i class="fa-solid fa-tags text-brand-yellow text-3xl"></i>
-                    <h3 class="font-bold text-lg">B2B Wholesale</h3>
-                    <p class="text-xs text-gray-400">Competitive bulk pricing tailored for resellers.</p>
-                </div>
-                <div class="bg-brand-darkGray p-6 rounded-2xl border border-gray-800 space-y-2">
-                    <i class="fa-solid fa-shield text-brand-yellow text-3xl"></i>
-                    <h3 class="font-bold text-lg">100% Authentic</h3>
-                    <p class="text-xs text-gray-400">Direct imported top-tier Korean brands.</p>
-                </div>
+    <!-- Main Content Layout -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full">
+        
+        <!-- Category Filter Pills -->
+        <div class="mb-8 overflow-x-auto pb-2 custom-scrollbar">
+            <div class="flex items-center gap-2 min-w-max" id="categoryFilters">
+                <button onclick="setCategory('ALL')" class="cat-btn active bg-brand-black text-brand-gold border border-brand-gold font-bold text-xs px-4 py-2 rounded-full shadow transition-all">
+                    All Products (112+)
+                </button>
+                <button onclick="setCategory('SNACKS')" class="cat-btn bg-brand-darkCard text-gray-200 border border-brand-gold/30 hover:border-brand-gold font-semibold text-xs px-4 py-2 rounded-full transition-all">
+                    Pepero & Snacks
+                </button>
+                <button onclick="setCategory('RAMEN')" class="cat-btn bg-brand-darkCard text-gray-200 border border-brand-gold/30 hover:border-brand-gold font-semibold text-xs px-4 py-2 rounded-full transition-all">
+                    Ramen & Noodles
+                </button>
+                <button onclick="setCategory('MEAT')" class="cat-btn bg-brand-darkCard text-gray-200 border border-brand-gold/30 hover:border-brand-gold font-semibold text-xs px-4 py-2 rounded-full transition-all">
+                    Canned & Meat
+                </button>
+                <button onclick="setCategory('SEAWEED')" class="cat-btn bg-brand-darkCard text-gray-200 border border-brand-gold/30 hover:border-brand-gold font-semibold text-xs px-4 py-2 rounded-full transition-all">
+                    Seaweed & Kim
+                </button>
+                <button onclick="setCategory('DRINKS')" class="cat-btn bg-brand-darkCard text-gray-200 border border-brand-gold/30 hover:border-brand-gold font-semibold text-xs px-4 py-2 rounded-full transition-all">
+                    Beverages & Milk
+                </button>
+                <button onclick="setCategory('COFFEE')" class="cat-btn bg-brand-darkCard text-gray-200 border border-brand-gold/30 hover:border-brand-gold font-semibold text-xs px-4 py-2 rounded-full transition-all">
+                    Maxim Coffee
+                </button>
+                <button onclick="setCategory('SOJU')" class="cat-btn bg-brand-darkCard text-gray-200 border border-brand-gold/30 hover:border-brand-gold font-semibold text-xs px-4 py-2 rounded-full transition-all">
+                    Jinro & Soju
+                </button>
+                <button onclick="setCategory('SAUCE')" class="cat-btn bg-brand-darkCard text-gray-200 border border-brand-gold/30 hover:border-brand-gold font-semibold text-xs px-4 py-2 rounded-full transition-all">
+                    Sauces & Pantry
+                </button>
+                <button onclick="setCategory('NONFOOD')" class="cat-btn bg-brand-darkCard text-gray-200 border border-brand-gold/30 hover:border-brand-gold font-semibold text-xs px-4 py-2 rounded-full transition-all">
+                    Butane & Appliances
+                </button>
             </div>
         </div>
-    </section>
 
-    <!-- CATALOG SECTION -->
-    <section id="catalog" class="py-20 bg-brand-lightGray px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto space-y-8">
-            
-            <div class="text-center space-y-3 max-w-2xl mx-auto">
-                <h2 class="text-3xl font-extrabold text-brand-black sm:text-4xl">Wholesale Product Catalog</h2>
-                <p class="text-gray-600 text-sm">Select items below and adjust quantities (+ / -) to build your inquiry list.</p>
-            </div>
-
-            <!-- CATEGORY TABS -->
-            <div class="flex flex-wrap justify-center gap-2" id="categoryTabs">
-                <button onclick="filterCategory('all', event)" class="tab-btn active px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">All Products</button>
-                <button onclick="filterCategory('bestseller', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-amber-100 text-amber-900 border border-amber-300 shadow-sm transition">🔥 Best Sellers</button>
-                <button onclick="filterCategory('snacks', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Snacks & Sweets</button>
-                <button onclick="filterCategory('ramen', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Noodles & Ramen</button>
-                <button onclick="filterCategory('meat', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Luncheon Meat</button>
-                <button onclick="filterCategory('seaweed', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Seaweed & Laver</button>
-                <button onclick="filterCategory('beverage', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Beverages & Coffee</button>
-                <button onclick="filterCategory('alcohol', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Soju & Alcohol</button>
-                <button onclick="filterCategory('grocery', event)" class="tab-btn px-4 py-2 rounded-lg text-xs font-bold bg-white text-gray-700 shadow-sm transition">Grocery & Sauces</button>
-            </div>
-
-            <div class="max-w-md mx-auto relative">
-                <input type="text" id="searchInput" onkeyup="searchProducts()" placeholder="Search product name..." class="w-full px-4 py-3 pl-10 rounded-xl border border-gray-300 focus:outline-none focus:border-brand-black text-sm">
-                <i class="fa-solid fa-magnifying-glass absolute left-3 top-3.5 text-gray-400 text-sm"></i>
-            </div>
-
-            <div id="productGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4"></div>
-
+        <!-- Product Grid -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Dynamically populated via JavaScript -->
         </div>
-    </section>
 
-    <!-- FLOATING INQUIRY CART BAR -->
-    <div id="quoteCartBar" class="hidden fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 w-11/12 max-w-2xl bg-brand-black text-white p-4 rounded-2xl shadow-2xl border border-gray-800 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-            <div class="bg-brand-yellow text-brand-black font-extrabold px-3 py-1.5 rounded-lg text-sm" id="cartCount">0 Items</div>
-            <div>
-                <p class="font-bold text-sm">Quote List Selected</p>
-                <p class="text-[11px] text-gray-400">Ready to request bulk pricing</p>
-            </div>
+        <div id="noResults" class="hidden text-center py-16 bg-brand-darkCard rounded-2xl border border-brand-gold/40 text-white my-8">
+            <i class="fa-solid fa-box-open text-5xl text-brand-gold mb-3"></i>
+            <h3 class="text-xl font-bold">No Products Found</h3>
+            <p class="text-sm text-gray-400 mt-1">Try searching for another Korean product or change category.</p>
         </div>
-        <a href="#rfq" onclick="syncCartToForm()" class="bg-brand-yellow text-brand-black font-extrabold px-5 py-2.5 rounded-xl hover:bg-brand-yellowHover transition text-xs flex items-center gap-2">
-            Proceed to Form <i class="fa-solid fa-arrow-down"></i>
-        </a>
     </div>
 
-    <!-- BULK QUOTE / RFQ SECTION -->
-    <section id="rfq" class="py-20 bg-white px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mx-auto bg-brand-black text-white p-8 sm:p-12 rounded-3xl shadow-2xl">
-            <div class="text-center space-y-3 mb-8">
-                <span class="text-brand-yellow font-extrabold text-xs tracking-wider uppercase">B2B Wholesale Inquiry</span>
-                <h2 class="text-3xl font-extrabold">Request a Bulk Quote</h2>
-                <p class="text-gray-400 text-sm">Fill out the form below and our Angeles City sales team will contact you with wholesale pricing.</p>
+    <!-- Floating Wholesale Cart Drawer -->
+    <div id="cartDrawer" class="fixed inset-y-0 right-0 w-full sm:w-96 bg-brand-darkCard text-white shadow-2xl transform translate-x-full transition-transform duration-300 z-50 flex flex-col border-l border-brand-gold/40">
+        <div class="bg-brand-black p-4 border-b border-brand-gold/30 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-boxes-packing text-brand-gold text-lg"></i>
+                <h2 class="text-lg font-bold text-white uppercase tracking-wider">Wholesale Order Cart</h2>
             </div>
+            <button onclick="toggleCartDrawer()" class="text-gray-400 hover:text-white p-2">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
 
-            <!-- SELECTED ITEMS PREVIEW BOX -->
-            <div id="selectedItemsContainer" class="hidden mb-6 p-4 bg-brand-darkGray rounded-xl border border-gray-800">
-                <div class="flex justify-between items-center mb-3 border-b border-gray-700 pb-2">
-                    <h4 class="text-xs font-bold text-brand-yellow uppercase">Selected Items Summary</h4>
-                    <button type="button" onclick="clearCart()" class="text-[11px] text-red-400 hover:underline">Clear List</button>
-                </div>
-                <div id="selectedItemsList" class="space-y-2 text-xs text-gray-300"></div>
+        <!-- Cart Items List -->
+        <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-4 space-y-4 custom-scrollbar">
+            <!-- Dynamic Cart Items -->
+        </div>
+
+        <!-- Cart Footer -->
+        <div class="p-4 bg-brand-black border-t border-brand-gold/30 space-y-3">
+            <div class="flex justify-between items-center text-sm">
+                <span class="text-gray-400">Total Cases / Units:</span>
+                <span id="cartTotalCases" class="font-bold text-white">0 Case(s)</span>
             </div>
+            <div class="flex justify-between items-center text-lg font-extrabold border-t border-gray-800 pt-2">
+                <span class="text-brand-gold">Estimated Total:</span>
+                <span id="cartTotalPrice" class="text-brand-goldLight">Confirmed upon Order</span>
+            </div>
+            <p class="text-[11px] text-gray-400 text-center">
+                <i class="fa-solid fa-circle-info mr-1 text-brand-gold"></i> Final pricing & shipping terms confirmed upon order submission.
+            </p>
+            <button onclick="openCheckoutModal()" id="checkoutBtn" disabled class="w-full bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-black font-extrabold py-3 rounded-lg shadow-lg opacity-50 cursor-not-allowed hover:brightness-110 transition-all uppercase tracking-wider">
+                Proceed to Checkout
+            </button>
+        </div>
+    </div>
 
-            <!-- DIRECT TO GMAIL FORM INTEGRATION -->
-            <form action="https://formsubmit.co/ph.producthub@gmail.com" method="POST" class="space-y-4">
-                
-                <!-- FormSubmit Configuration Settings -->
-                <input type="hidden" name="_subject" value="NEW WEBSITE INQUIRY - PRODUCT HUB">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_captcha" value="true">
+    <!-- Overlay Backdrop -->
+    <div id="drawerOverlay" onclick="toggleCartDrawer()" class="fixed inset-0 bg-black/70 z-40 hidden backdrop-blur-sm"></div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-gray-300 mb-1">Company / Store Name</label>
-                        <input type="text" name="Company Name" required placeholder="Your Business Name" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-gray-300 mb-1">Contact Person</label>
-                        <input type="text" name="Contact Person" required placeholder="Full Name" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
-                    </div>
+    <!-- Checkout Modal -->
+    <div id="checkoutModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
+        <div class="bg-brand-darkCard border border-brand-gold/50 rounded-2xl max-w-lg w-full text-white overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+            <div class="bg-brand-black p-4 border-b border-brand-gold/30 flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                    <img src="logo.jpg" alt="Logo" class="w-7 h-7 rounded border border-brand-gold/50 object-cover" onerror="this.style.display='none'">
+                    <h3 class="text-lg font-bold text-brand-gold uppercase tracking-wider">Complete Wholesale Order</h3>
                 </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-bold text-gray-300 mb-1">Mobile Number / Viber</label>
-                        <input type="tel" name="Mobile Number" required placeholder="09088212181" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-gray-300 mb-1">Email Address</label>
-                        <input type="email" name="Email Address" required placeholder="ph.producthub@gmail.com" class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow">
-                    </div>
-                </div>
-
+                <button onclick="closeCheckoutModal()" class="text-gray-400 hover:text-white">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+            </div>
+            <form id="checkoutForm" onsubmit="processOrder(event)" class="p-6 overflow-y-auto custom-scrollbar space-y-4 text-sm">
                 <div>
-                    <label class="block text-xs font-bold text-gray-300 mb-1">Target Products & Quantities</label>
-                    <textarea id="orderTextarea" name="Orders & Quantities" rows="5" required placeholder="Select items above using '+ / -' buttons or manually type your items here..." class="w-full px-4 py-3 rounded-lg bg-brand-darkGray text-white border border-gray-800 text-sm focus:outline-none focus:border-brand-yellow"></textarea>
+                    <label class="block text-xs font-bold text-brand-gold uppercase mb-1">Company / Store Name *</label>
+                    <input type="text" required id="custCompany" placeholder="e.g. K-Mart Convenience / Supermarket" class="w-full bg-brand-black border border-brand-gold/40 rounded-lg p-2.5 text-white focus:outline-none focus:border-brand-gold">
                 </div>
-
-                <button type="submit" class="w-full bg-brand-yellow text-brand-black font-extrabold py-4 rounded-xl hover:bg-brand-yellowHover transition text-base">
-                    Submit Quote Request
+                <div>
+                    <label class="block text-xs font-bold text-brand-gold uppercase mb-1">Contact Person Name *</label>
+                    <input type="text" required id="custName" placeholder="Full Name" class="w-full bg-brand-black border border-brand-gold/40 rounded-lg p-2.5 text-white focus:outline-none focus:border-brand-gold">
+                </div>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-bold text-brand-gold uppercase mb-1">Mobile / Viber No. *</label>
+                        <input type="tel" required id="custPhone" placeholder="0917XXXXXXX" class="w-full bg-brand-black border border-brand-gold/40 rounded-lg p-2.5 text-white focus:outline-none focus:border-brand-gold">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-brand-gold uppercase mb-1">Delivery Region *</label>
+                        <select id="custRegion" class="w-full bg-brand-black border border-brand-gold/40 rounded-lg p-2.5 text-white focus:outline-none focus:border-brand-gold">
+                            <option>Metro Manila</option>
+                            <option>Luzon Province</option>
+                            <option>Visayas</option>
+                            <option>Mindanao</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-brand-gold uppercase mb-1">Delivery Address *</label>
+                    <textarea required id="custAddress" rows="2" placeholder="Complete Warehouse or Store Address" class="w-full bg-brand-black border border-brand-gold/40 rounded-lg p-2.5 text-white focus:outline-none focus:border-brand-gold"></textarea>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-brand-gold uppercase mb-1">Order Type</label>
+                    <select id="custOrderType" class="w-full bg-brand-black border border-brand-gold/40 rounded-lg p-2.5 text-white focus:outline-none focus:border-brand-gold">
+                        <option>Direct Wholesale Purchase Order</option>
+                        <option>Request Official Price Quotation (RFQ)</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-black font-extrabold py-3 rounded-lg shadow-lg hover:brightness-110 transition-all uppercase tracking-wider text-base mt-2">
+                    Submit Order & Generate Order Summary
                 </button>
             </form>
         </div>
-    </section>
+    </div>
 
-    <!-- CONTACT & FOOTER -->
-  <footer id="contact" class="bg-brand-darkGray text-gray-300 pt-16 pb-8 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-        <!-- Kolum 1: Brand Info -->
-        <div class="space-y-4">
-            <div class="flex items-center gap-2">
-                <span class="bg-brand-yellow text-brand-black px-2 py-0.5 font-extrabold text-xl rounded">PRODUCT</span>
-                <span class="font-extrabold text-xl text-white">HUB</span>
+    <!-- Digital Receipt Summary Modal -->
+    <div id="receiptModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+        <div class="bg-brand-darkCard border border-brand-gold rounded-2xl max-w-lg w-full text-white p-6 shadow-2xl text-center space-y-4">
+            <div class="w-16 h-16 bg-brand-gold/20 text-brand-gold rounded-full flex items-center justify-center mx-auto border border-brand-gold">
+                <i class="fa-solid fa-circle-check text-3xl"></i>
             </div>
-            <p class="text-xs text-gray-400">Authorized importer and B2B wholesale distributor of authentic Korean food, beverages, snacks, and ingredients in the Philippines.</p>
-        </div>
+            <h3 class="text-xl font-extrabold text-brand-gold uppercase tracking-wider">Wholesale Order Generated!</h3>
+            <p class="text-xs text-gray-300">Copy the summary below and send it directly to our Sales Team via Facebook Messenger or Viber for instant order processing.</p>
+            
+            <textarea id="receiptText" readonly rows="8" class="w-full bg-brand-black text-brand-goldLight font-mono text-xs p-3 rounded-xl border border-brand-gold/30 focus:outline-none select-all custom-scrollbar"></textarea>
 
-        <!-- Kolum 2: Contact Information -->
-        <div class="space-y-3">
-            <h4 class="text-white font-bold text-sm">Contact Information</h4>
-            <ul class="space-y-2 text-xs">
-                <li class="flex items-center gap-2"><i class="fa-solid fa-phone text-brand-yellow"></i> 09088212181</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-brand-yellow"></i> ph.producthub@gmail.com</li>
-                <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-brand-yellow"></i> Angeles City, Pampanga</li>
-            </ul>
-        </div>
-
-        <!-- Kolum 3: Business Hours -->
-        <div class="space-y-3">
-            <h4 class="text-white font-bold text-sm">Business Hours</h4>
-            <p class="text-xs text-gray-400">Monday – Saturday: 8:00 AM – 5:00 PM</p>
-            <p class="text-xs text-gray-400">Warehouse Pickups & Bulk Delivery Available</p>
-        </div>
-
-        <!-- Kolum 4: Social Media Accounts -->
-        <div class="space-y-3">
-            <h4 class="text-white font-bold text-sm">SOCIAL MEDIA ACCOUNTS</h4>
-            <div class="flex items-center gap-4 text-xl pt-1">
-                <a href="https://www.facebook.com/ProductHub88" target="_blank" class="text-gray-300 hover:text-brand-yellow transition" title="Facebook">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.tiktok.com/@ph.producthub?lang=en" target="_blank" class="text-gray-300 hover:text-brand-yellow transition" title="TikTok">
-                    <i class="fa-brands fa-tiktok"></i>
-                </a>
-                <a href="https://shopee.ph/producthub_1988" target="_blank" class="text-gray-300 hover:text-brand-yellow transition" title="Shopee">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </a>
-                <a href="https://www.lazada.com.ph/shop/xvmv17bo" target="_blank" class="text-gray-300 hover:text-gray-100 transition" title="Lazada">
-                    <i class="fa-solid fa-store"></i>
-                </a>
+            <div class="flex gap-3">
+                <button onclick="copyReceipt()" class="flex-1 bg-gradient-to-r from-brand-gold to-brand-goldDark text-brand-black font-extrabold py-2.5 rounded-lg text-xs uppercase tracking-wider shadow hover:brightness-110">
+                    <i class="fa-solid fa-copy mr-1"></i> Copy Order Summary
+                </button>
+                <button onclick="closeReceiptModal()" class="bg-gray-800 text-gray-300 font-bold px-4 py-2.5 rounded-lg text-xs hover:bg-gray-700">
+                    Close
+                </button>
             </div>
         </div>
     </div>
 
-    <!-- Copyright Bar -->
-    <div class="max-w-7xl mx-auto border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
-        &copy; PRODUCT HUB. All Rights Reserved. Angeles City, Pampanga.
-    </div>
-</footer>
-
-    <script>
-       
-    
-
-const products = [
-  { id: 1, name: "Pepero Almond 32g", category: "snacks", bestseller: true, image: "images/pepero-almond.png", description: "Crispy biscuit sticks coated in rich chocolate and crunchy almond bits." },
-  { id: 2, name: "Pepero White Cookie 32g", category: "snacks", bestseller: true, image: "images/pepero-white-cookie.png", description: "Crunchy biscuit sticks covered in sweet white chocolate and cookie crumbs." },
-  { id: 3, name: "Pepero Choco Cookie 32g", category: "snacks", bestseller: true, image: "images/pepero-choco-cookie.png.png", description: "Delicious chocolate biscuit sticks topped with delightful cookie bits." },
-  { id: 4, name: "Pepero Strawberry 32g", category: "snacks", bestseller: true, image: "images/pepero-strawberry.png.png", description: "Crispy biscuit sticks coated in smooth and sweet strawberry cream." },
-  { id: 5, name: "Pepero Snowy Almond 32g", category: "snacks", bestseller: true, image: "images/pepero-snowy-almond.jpg", description: "Biscuit sticks covered in white chocolate and crushed almonds." },
-  { id: 6, name: "Pepero Crunchy 39g", category: "snacks", bestseller: true, image: "images/pepero-crunchy.jpg", description: "Extra crunchy biscuit sticks packed with rich chocolate and cereal puffs." },
-  { id: 7, name: "Pepero Original 32g", category: "snacks", bestseller: true, image: "images/pepero-original.jpg", description: "The classic crispy biscuit sticks coated in smooth milk chocolate." },
-  { id: 8, name: "Pepero Choco Filled", category: "snacks", bestseller: true, image: "images/pepero-choco-filled.jpg", description: "Crunchy hollow biscuit tubes filled with luscious chocolate cream." },
-  { id: 9, name: "Almond Chocoball 46g", category: "snacks", bestseller: true, image: "images/almond-chocoball-46g.jpg", description: "Whole roasted almonds coated in thick, decadent milk chocolate." },
-  { id: 10, name: "Binch Biscuit", category: "snacks", bestseller: true, image: "images/binch-biscuits.jpg", description: "Delightful semi-sweet biscuits half-coated in rich milk chocolate." },
-  { id: 11, name: "Choco Pie Original 336g", category: "snacks", bestseller: false, image: "images/choco-pie-original-336g.jpg", description: "Soft cakes filled with marshmallow and coated in chocolate." },
-  { id: 12, name: "Samyang Buldak Carbonara", category: "ramen", bestseller: true, image: "images/Samyang Buldak Carbonara..jpg", description: "Spicy and creamy carbonara-flavored Korean instant noodles." },
-  { id: 13, name: "Samyang Original Buldak", category: "ramen", bestseller: true, image: "images/samyang-original-buldak.jpg", description: "The famous intensely spicy fire-roasted Korean hot chicken ramen." },
-  { id: 14, name: "Jin Ramen Mild", category: "ramen", bestseller: false, image: "images/jin-ramen-mild.jpg", description: "Savor a comforting bowl of rich, mild beef-flavored broth with chewy noodles." },
-  { id: 15, name: "Stir-Fry Cheese Ramen 120g", category: "ramen", bestseller: true, image: "images/Stir-Fry Cheese Ramen 120g.jpg", description: "Savory stir-fry noodles loaded with rich and creamy cheese flavor." },
-  { id: 16, name: "Stir-Fry Cheese Ramen Spicy 130g", category: "ramen", bestseller: true, image: "images/stir-fry-cheese-ramen-spicy-130g.jpg", description: "A fiery twist of creamy cheese combined with spicy stir-fried noodles." },
-  { id: 17, name: "Cheese Ramen Mild 111g", category: "ramen", bestseller: true, image: "images/cheese-ramen-mild-111g.jpg", description: "Smooth and creamy mild cheese flavor ramen for a quick savory treat." },
-  { id: 18, name: "Cheese Ramen Spicy 111g", category: "ramen", bestseller: false, image: "images/cheese-ramen-spicy-111g.jpg", description: "Spicy ramen soup enriched with a savory cheese powder packet." },
-  { id: 19, name: "Hansung Pork Luncheon Meat", category: "meat", bestseller: true, image: "images/hansung-pork-luncheon-meat.jpg", description: "High-quality savory pork luncheon meat, perfect for frying or stews." },
-  { id: 20, name: "Hansung Chicken Luncheon Meat", category: "meat", bestseller: true, image: "images/hansung-chicken-luncheon-meat.jpg", description: "Delicious and tender chicken-based luncheon meat option." },
-  { id: 21, name: "Lotte Luncheon Meat", category: "meat", bestseller: true, image: "images/lotte-luncheon-meat.jpg", description: "Premium canned luncheon meat with a rich and savory flavor." },
-  { id: 22, name: "Hansung Luncheon Meat Cheese", category: "meat", bestseller: false, image: "images/hansung-luncheon-meat-cheese.jpg", description: "Savory luncheon meat infused with rich chunks of cheese." },
-  { id: 23, name: "Rose Farm Luncheon Meat", category: "meat", bestseller: false, image: "images/rose-farm-luncheon-meat.jpg", description: "Classic canned meat choice ideal for breakfast meals and sandwiches." },
-  { id: 24, name: "NamKwang Seaweed 3*24", category: "seaweed", bestseller: true, image: "images/namkwang-seaweed-3-24.jpg", description: "Crispy and seasoned roasted seaweed snacks in convenient packs." },
-  { id: 25, name: "NamKwang Seaweed Cheese 3*24", category: "seaweed", bestseller: false, image: "images/namkwang-seaweed-cheese-3-24.jpg", description: "Roasted seaweed sheets flavored with a tasty hint of cheese." },
-  { id: 26, name: "NamKwang Seaweed 9*8", category: "seaweed", bestseller: false, image: "images/namkwang-seaweed-9-8.jpg", description: "Value pack of crispy, lightly salted roasted seaweed sheets." },
-  { id: 27, name: "Sura Laver Seaweeds 3*24", category: "seaweed", bestseller: false, image: "images/sura-laver-seaweeds-3-24.jpg", description: "Traditional Korean roasted laver seasoned with sesame oil and salt." },
-  { id: 28, name: "Binggrae Banana", category: "beverage", bestseller: false, image: "images/binggrae-banana.jpg", description: "Iconic and smooth sweet banana-flavored milk drink." },
-  { id: 29, name: "Binggrae Strawberry", category: "beverage", bestseller: false, image: "images/binggrae-strawberry.jpg", description: "Creamy and refreshing strawberry-flavored milk beverage." },
-  { id: 30, name: "Maxim Mocha Gold 100T", category: "beverage", bestseller: false, image: "images/maxim-mocha-gold-100t.jpg", description: "Popular Korean instant coffee mix with a smooth mocha flavor." },
-  { id: 31, name: "JINRO Soju All Flavors", category: "alcohol", bestseller: true, image: "images/jinro-soju-all-flavors.jpg", description: "Assorted refreshing fruit and original flavored Korean soju." },
-  { id: 32, name: "JINRO Soju 360ml*20", category: "alcohol", bestseller: false, image: "images/jinro-soju-360ml-20.jpg", description: "Case pack of classic clear and crisp Korean soju." },
-  { id: 33, name: "ILPOOM JINRO Soju 25% 375ml*6", category: "alcohol", bestseller: false, image: "images/ilpoom-jinro-soju-25.jpg", description: "Premium distilled high-proof traditional Korean soju." },
-  { id: 34, name: "Chakhan Vermicelli 14kg", category: "grocery", bestseller: false, image: "images/chakhan-vermicelli-14kg.jpg", description: "Bulk sweet potato starch noodles ideal for japchae and Asian dishes." },
-  { id: 35, name: "Nongbu Tteokbokki 1kg", category: "grocery", bestseller: false, image: "images/nongbu-tteokbokki-1kg.jpg", description: "Chewy Korean rice cakes perfect for spicy street-style tteokbokki." },
-  { id: 36, name: "Sing Song Ssamjang 500g", category: "grocery", bestseller: false, image: "images/sing-song-ssamjang-500g.jpg", description: "Savory and slightly sweet seasoned soybean paste for wrapping meat." },
-  { id: 37, name: "Sing Song Gochujang 500g", category: "grocery", bestseller: false, image: "images/sing-song-gochujang-500g.jpg", description: "Traditional Korean hot pepper paste to add rich spicy depth to recipes." },
-  { id: 38, name: "Safe Butane", category: "grocery", bestseller: false, image: "images/safe-butane.jpg", description: "Reliable portable gas canister for camping stoves and tabletop cooking." }
-];
-
-
-        let cart = {};
-
-        function displayProducts(items) {
-            const grid = document.getElementById("productGrid");
-            grid.innerHTML = "";
-
-            items.forEach(item => {
-                const badge = item.bestseller 
-                    ? `<span class="inline-block text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-amber-400 text-black">🔥 Best Seller</span>`
-                    : `<span class="inline-block text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-brand-black text-brand-yellow">${item.category}</span>`;
-
-                const qtyInCart = cart[item.id] ? cart[item.id].qty : 0;
-
-                // Billedhåndtering
-                const imgHtml = item.image 
-    ? `<img src="${item.image}" alt="${item.name}" onclick="openModal('${item.image}')" class="w-full h-36 object-contain rounded-lg mb-2 bg-gray-50 p-2 cursor-pointer hover:opacity-90 transition">`
-    : `<div class="w-full h-36 bg-gray-100 rounded-lg mb-2 flex items-center justify-center text-gray-400 text-xs font-semibold">No Image</div>`;
-
-                // INTERACTIVE BUTTON: Switch between "+ Add to Quote" and [- 1 +] counter
-                let actionButton = '';
-                if (qtyInCart === 0) {
-                    actionButton = `
-                        <button onclick="addToCart(${item.id})" class="text-xs font-extrabold bg-brand-yellow text-brand-black px-3 py-1.5 rounded hover:bg-brand-yellowHover transition flex items-center gap-1">
-                            <i class="fa-solid fa-plus text-[10px]"></i> Add to Quote
-                        </button>
-                    `;
-                } else {
-                    actionButton = `
-                        <div class="flex items-center bg-brand-black text-white rounded-lg p-1 space-x-2">
-                            <button onclick="updateQty(${item.id}, -1)" class="w-6 h-6 flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-brand-yellow font-extrabold rounded">-</button>
-                            <span class="text-xs font-bold px-1">${qtyInCart}</span>
-                            <button onclick="updateQty(${item.id}, 1)" class="w-6 h-6 flex items-center justify-center bg-gray-800 hover:bg-gray-700 text-brand-yellow font-extrabold rounded">+</button>
-                        </div>
-                    `;
-                }
-
-                const card = `
-                    <div class="product-card bg-white p-4 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition flex flex-col justify-between">
-                        <div class="space-y-2">
-                            <div>${badge}</div>
-                            ${imgHtml}
-                            <h3 class="font-bold text-sm text-brand-black leading-snug">${item.name}</h3>
-                            <p class="text-xs text-gray-500 mt-1">${item.description}</p>
-                        </div>
-                        <div class="mt-4 pt-3 border-t border-gray-100 flex items-center justify-between">
-                            <span class="text-[10px] font-bold text-gray-400 uppercase">Wholesale</span>
-                            ${actionButton}
-                        </div>
-                    </div>
-                `;
-                grid.innerHTML += card;
-            });
-        }
-
-       function addToCart(id) {
-    const product = products.find(p => p.id === Number(id));
-    if (!cart[id]) {
-        cart[id] = { name: product.name, qty: 1 };
-    }
-    updateCartUI();
-    reapplyCurrentFilter(); // Dito pinapanatili kung nasaan kang category
-}
-
-function updateQty(id, change) {
-    if (cart[id]) {
-        cart[id].qty += change;
-        if (cart[id].qty <= 0) {
-            delete cart[id];
-        }
-    }
-    updateCartUI();
-    reapplyCurrentFilter(); // Dito rin para hindi bumalik sa Pepero
-}
-
-        function clearCart() {
-            cart = {};
-            updateCartUI();
-            displayProducts(products);
-        }
-
-        function updateCartUI() {
-            const keys = Object.keys(cart);
-            const totalCount = keys.reduce((sum, key) => sum + cart[key].qty, 0);
-
-            const cartBar = document.getElementById("quoteCartBar");
-            const cartCount = document.getElementById("cartCount");
-            const container = document.getElementById("selectedItemsContainer");
-            const list = document.getElementById("selectedItemsList");
-
-            if (totalCount > 0) {
-                cartBar.classList.remove("hidden");
-                cartCount.innerText = totalCount + " Item" + (totalCount > 1 ? "s" : "");
-                container.classList.remove("hidden");
-
-                list.innerHTML = "";
-                let textSummary = "";
-
-                keys.forEach(id => {
-                    const item = cart[id];
-                    textSummary += `- ${item.name} (${item.qty} qty/case)\n`;
-
-                    list.innerHTML += `
-                        <div class="flex items-center justify-between bg-brand-black p-2 rounded border border-gray-800">
-                            <span class="font-medium text-white">${item.name}</span>
-                            <div class="flex items-center gap-2">
-                                <button type="button" onclick="updateQty(${id}, -1)" class="w-5 h-5 bg-gray-800 hover:bg-gray-700 rounded text-brand-yellow font-bold flex items-center justify-center">-</button>
-                                <span class="font-bold text-white">${item.qty}</span>
-                                <button type="button" onclick="updateQty(${id}, 1)" class="w-5 h-5 bg-gray-800 hover:bg-gray-700 rounded text-brand-yellow font-bold flex items-center justify-center">+</button>
-                            </div>
-                        </div>
-                    `;
-                });
-
-                document.getElementById("orderTextarea").value = textSummary;
-            } else {
-                cartBar.classList.add("hidden");
-                container.classList.add("hidden");
-                document.getElementById("orderTextarea").value = "";
-            }
-        }
-
-        function syncCartToForm() {
-            updateCartUI();
-        }
-
-        function filterCategory(cat, event) {
-            const buttons = document.querySelectorAll(".tab-btn");
-            buttons.forEach(btn => btn.classList.remove("active"));
-            if(event && event.target) {
-                event.target.classList.add("active");
-            }
-
-            if (cat === 'all') {
-                displayProducts(products);
-            } else if (cat === 'bestseller') {
-                const filtered = products.filter(p => p.bestseller === true);
-                displayProducts(filtered);
-            } else {
-                const filtered = products.filter(p => p.category === cat);
-                displayProducts(filtered);
-            }
-        }
-
-        function searchProducts() {
-            const query = document.getElementById("searchInput").value.toLowerCase();
-            const filtered = products.filter(p => p.name.toLowerCase().includes(query));
-            displayProducts(filtered);
-        }
-
-        displayProducts(products);
-        function openModal(imageSrc) {
-        const modal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImage');
-        modalImg.src = imageSrc;
-        modal.classList.remove('hidden');
-    }
-
-    function closeModal() {
-        const modal = document.getElementById('imageModal');
-        modal.classList.add('hidden');
-    }
-
-    document.addEventListener('keydown', function(event) {
-        if (event.key === "Escape") {
-            closeModal();
-        }
-    });
-    </script>
- 
     <script src="script.js"></script>
-
-    <!-- Image Lightbox Modal -->
-    <div id="imageModal" class="fixed inset-0 z-50 hidden bg-black bg-opacity-80 flex items-center justify-center p-4">
-        <div class="relative max-w-4xl max-h-full">
-            <button onclick="closeModal()" class="absolute -top-10 right-0 text-white text-3xl font-bold hover:text-gray-300">&times;</button>
-            <img id="modalImage" src="" alt="Zoomed Product" class="max-h-[85vh] max-w-full object-contain rounded-lg shadow-2xl">
-        </div>
-    </div>
-
 </body>
 </html>
-
