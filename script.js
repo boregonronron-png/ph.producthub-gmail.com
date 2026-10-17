@@ -429,7 +429,18 @@ function copyReceipt() {
     navigator.clipboard.writeText(copyText.value);
     alert("Order Summary copied to clipboard! Paste it into Facebook Messenger or Viber.");
 }
-
+function sendToMessenger() {
+    const copyText = document.getElementById("receiptText");
+    if (copyText) {
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.value);
+    }
+    
+    alert("Nai-copy na ang Order Summary! Ilalagay ka na sa Facebook Messenger ng Product Hub. I-paste mo na lang sa chat!");
+    
+    window.open("https://m.me/ProductHub88", "_blank");
+}
 function closeReceiptModal() {
     document.getElementById('receiptModal').classList.add('hidden');
 }
