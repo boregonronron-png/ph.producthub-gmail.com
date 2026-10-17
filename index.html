@@ -58,30 +58,27 @@
         <div class="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center justify-between gap-4">
                 
-                <!-- Company Logo Image & Title (Centered on mobile, left on desktop) -->
-                <div class="flex items-center space-x-3.5 justify-center md:justify-start w-full md:w-auto">
-                    <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl border-2 border-brand-gold/60 p-0.5 bg-brand-black overflow-hidden shadow-xl flex-shrink-0 flex items-center justify-center">
-                        <img src="images/logo.jpg" 
-                             alt="Product Hub Logo" 
-                             class="w-full h-full object-cover rounded-lg" 
-                             onerror="
-                                if(!this.tried1){ this.tried1=true; this.src='images/logo.png'; }
-                                else if(!this.tried2){ this.tried2=true; this.src='images/Logo.jpg'; }
-                                else if(!this.tried3){ this.tried3=true; this.src='images/Logo.png'; }
-                                else if(!this.tried4){ this.tried4=true; this.src='images/logo.jpeg'; }
-                                else if(!this.tried5){ this.tried5=true; this.src='logo.jpg'; }
-                                else if(!this.tried6){ this.tried6=true; this.src='logo.jpg.jpg'; }
-                             ">
-                    </div>
-                    <div class="text-left">
-                        <h1 class="text-2xl sm:text-3xl font-black tracking-wider text-white uppercase leading-none">
-                            PRODUCT HUB
-                        </h1>
-                        <p class="text-[11px] sm:text-xs font-bold text-brand-gold tracking-widest uppercase mt-1">
-                            WHOLESALE DISTRIBUTOR
-                        </p>
-                    </div>
-                </div>
+               <!-- Company Logo Image & Title (Clickable Logo) -->
+<div class="flex items-center space-x-3.5 justify-center md:justify-start w-full md:w-auto">
+    <div onclick="openLogoModal()" class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl border-2 border-brand-gold/60 p-0.5 bg-brand-black overflow-hidden shadow-xl flex-shrink-0 flex items-center justify-center cursor-pointer hover:scale-105 hover:border-brand-gold transition-all relative group" title="Click to view full logo">
+        <img id="headerLogoImg"
+             src="images/logo.jpg.jpg" 
+             alt="Product Hub Logo" 
+             class="w-full h-full object-cover rounded-lg"
+             onerror="this.onerror=null; this.src='images/logo.jpg';">
+        <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-lg">
+            <i class="fa-solid fa-magnifying-glass-plus text-brand-gold text-xs"></i>
+        </div>
+    </div>
+    <div class="text-left">
+        <h1 class="text-2xl sm:text-3xl font-black tracking-wider text-white uppercase leading-none">
+            PRODUCT HUB
+        </h1>
+        <p class="text-[11px] sm:text-xs font-bold text-brand-gold tracking-widest uppercase mt-1">
+            WHOLESALE DISTRIBUTOR
+        </p>
+    </div>
+</div>
 
                 <!-- Live Search Bar (Centered) -->
                 <div class="flex-1 w-full max-w-xl mx-auto">
