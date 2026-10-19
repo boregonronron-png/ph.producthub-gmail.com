@@ -46,7 +46,7 @@ const productsData = [
 
     // --- SEAWEEDS & KIM ---
   { id: 34, name: "NamKwang Seaweed 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null, img: "images/NamKwang Seaweed 324.jpeg" },
-    { id: 35, name: "NamKwang Seaweed Cheese 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null },
+   { id: 34, name: "NamKwang Seaweed 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null, img: "images/namkwang-seaweed-3-24.jpg" },
     { id: 36, name: "NamKwang Seaweed 9*8", cat: "SEAWEED", spec: "8 Packs / Case", price: null },
     { id: 37, name: "NamKwang Seaweed 16*6", cat: "SEAWEED", spec: "6 Packs / Case", price: null },
     { id: 38, name: "NamKwang Kimbob Kim 10s", cat: "SEAWEED", spec: "100 Packs / Case", price: null },
