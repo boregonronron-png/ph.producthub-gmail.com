@@ -36,9 +36,10 @@ const productsData = [
     { id: 26, name: "JINPUM Glass Noodles 10kg", cat: "RAMEN", spec: "10kg Bulk Sack", price: null },
 
     // --- CANNED & MEAT ---
-    { id: 27, name: "Hansung Pork Luncheon Meat", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-pork-luncheon-meat.jpg" },
-    { id: 28, name: "Hansung Chicken Luncheon Meat", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-chicken-luncheon-meat.jpg" },
-    { id: 29, name: "Hansung Luncheon Meat Cheese", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-luncheon-meat-cheese.jpg" },
+  // --- CANNED & MEAT ---
+    { id: 27, name: "Hansung Pork Luncheon Meat", cat: "MEAT", spec: "Cans / Case", price: null, img: "images/hansung-pork-luncheon-meat.jpg" },
+    { id: 28, name: "Hansung Chicken Luncheon Meat", cat: "MEAT", spec: "Cans / Case", price: null, img: "images/hansung-chicken-luncheon-meat.jpg" },
+    { id: 29, name: "Hansung Luncheon Meat Cheese", cat: "MEAT", spec: "Cans / Case", price: null, img: "images/hansung-luncheon-meat-cheese.jpg" },
     { id: 30, name: "Lotte Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
     { id: 31, name: "Rose Farm Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
     { id: 32, name: "Namkwang Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
