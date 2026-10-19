@@ -392,7 +392,7 @@ function processOrder(e) {
     const address = document.getElementById('custAddress').value;
     const type = document.getElementById('custOrderType').value;
 
-  let receipt = `🛒 PRODUCT HUB WHOLESALE ORDER\n\n`;
+let receipt = `🛒 PRODUCT HUB WHOLESALE ORDER\n\n`;
     receipt += `📋 CUSTOMER DETAILS:\n`;
     receipt += `- Store: ${company}\n`;
     receipt += `- Contact: ${name}\n`;
@@ -411,10 +411,7 @@ function processOrder(e) {
         }
     });
 
- const totalAmount = typeof total !== 'undefined' ? total : (typeof calculateTotal === 'function' ? calculateTotal() : 0);
-    receipt += `\n💰 TOTAL ESTIMATE: ₱${totalAmount.toLocaleString('en-US', {minimumFractionDigits: 2})}\n`;
-    receipt += `📌 Sent via Product Hub B2B Portal`;
-
+    receipt += `\n📌 Sent via Product Hub B2B Portal`;
     document.getElementById('receiptText').value = receipt;
     closeCheckoutModal();
     document.getElementById('receiptModal').classList.remove('hidden');
