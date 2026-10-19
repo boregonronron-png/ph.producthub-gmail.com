@@ -23,7 +23,7 @@ const productsData = [
    { id: 12, name: "Stir-Fry Cheese Ramen 120g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/Stir-Fry Cheese Ramen 120g.jpg" },
    { id: 13, name: "Stir-Fry Cheese Ramen Spicy 130g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/stir-fry-cheese-ramen-spicy-130g.jpg" },
     { id: 14, name: "Cheese Ramen Mild 111g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/cheese-ramen-mild-111g.jpg" },
-    { id: 17, name: "Cheese Ramen Spicy 111g", cat: "RAMEN", spec: "32 Packs / Case", price: null },
+    { id: 15, name: "Cheese Ramen Spicy 111g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/cheese-ramen-spicy-111g.jpg" },
     { id: 18, name: "Pho Story Noodles 67g", cat: "RAMEN", spec: "30 Cups / Case", price: null },
     { id: 19, name: "Chakhan Vermicelli 14kg", cat: "RAMEN", spec: "14kg Commercial Sack", price: null },
     { id: 20, name: "Nongbu Glass Noodle 500g", cat: "RAMEN", spec: "20 Packs / Case", price: null },
