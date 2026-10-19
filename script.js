@@ -76,7 +76,7 @@ const productsData = [
     { id: 59, name: "Binggrae Banana Milk", cat: "DRINKS", spec: "24 x 200ml / Case", price: null, img: "images/binggrae-banana..jpg" },
     { id: 60, name: "Binggrae Coffee Milk", cat: "DRINKS", spec: "24 x 200ml / Case", price: null, img: "images/binggrae coffee milk drink.jpg" },
     { id: 61, name: "Binggrae Banana Light Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null },
-    { id: 62, name: "Binggrae Melon Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null },
+  { id: 62, name: "Binggrae Melon Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae-melon.jpg" },
     { id: 63, name: "Binggrae Strawberry Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null },
     { id: 64, name: "Binggrae Strawberry Light Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null },
     { id: 65, name: "Binggrae Taro Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null },
