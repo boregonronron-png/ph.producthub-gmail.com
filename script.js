@@ -20,7 +20,7 @@ const productsData = [
 
     // --- RAMEN & NOODLES ---
   { id: 11, name: "Jin Ramen Mild", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/jin-ramen-mild.jpg" },
-    { id: 14, name: "Stir-Fry Cheese Ramen 120g", cat: "RAMEN", spec: "32 Packs / Case", price: null },
+   { id: 12, name: "Stir-Fry Cheese Ramen 120g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/Stir-Fry Cheese Ramen 120g.jpg" },
     { id: 15, name: "Stir-Fry Cheese Ramen Spicy 130g", cat: "RAMEN", spec: "32 Packs / Case", price: null },
     { id: 16, name: "Cheese Ramen Mild 111g", cat: "RAMEN", spec: "32 Packs / Case", price: null },
     { id: 17, name: "Cheese Ramen Spicy 111g", cat: "RAMEN", spec: "32 Packs / Case", price: null },
