@@ -392,30 +392,27 @@ function processOrder(e) {
     const address = document.getElementById('custAddress').value;
     const type = document.getElementById('custOrderType').value;
 
-    let receipt = `====================================\n`;
-    receipt += `PRODUCT HUB WHOLESALE DISTRIBUTOR\n`;
-    receipt += `B2B WHOLESALE ORDER / RFQ SUMMARY\n`;
-    receipt += `====================================\n\n`;
-    receipt += `Store/Company: ${company}\n`;
-    receipt += `Contact Person: ${name}\n`;
-    receipt += `Mobile/Viber: ${phone}\n`;
-    receipt += `Region: ${region}\n`;
-    receipt += `Address: ${address}\n`;
-    receipt += `Transaction Type: ${type}\n\n`;
-    receipt += `------------------------------------\n`;
-    receipt += `ORDERED WHOLESALE ITEMS:\n`;
-    receipt += `------------------------------------\n`;
+  let receipt = `🛒 PRODUCT HUB WHOLESALE ORDER\n\n`;
+    receipt += `📋 CUSTOMER DETAILS:\n`;
+    receipt += `- Store: ${company}\n`;
+    receipt += `- Contact: ${name}\n`;
+    receipt += `- Phone: ${phone}\n`;
+    receipt += `- Region: ${region}\n`;
+    receipt += `- Address: ${address}\n`;
+    receipt += `- Type: ${type}\n\n`;
+    receipt += `📦 ORDERED ITEMS:\n`;
 
     Object.keys(cart).forEach(id => {
         const p = productsData.find(item => item.id == id);
         if (p) {
-            receipt += `• ${p.name} (${p.spec}) x ${cart[id]} Case(s)\n`;
+            const qty = cart[id];
+            const unitText = qty === 1 ? 'Box' : 'Boxes';
+            receipt += `- ${p.name} = ${qty} ${unitText}\n`;
         }
     });
 
-    receipt += `\n------------------------------------\n`;
-    receipt += `Status: Pending Sales Confirmation\n`;
-    receipt += `====================================`;
+    receipt += `\n💰 TOTAL ESTIMATE: ₱${total.toLocaleString('en-US', {minimumFractionDigits: 2})}\n`;
+    receipt += `📌 Sent via Product Hub B2B Portal`;
 
     document.getElementById('receiptText').value = receipt;
     closeCheckoutModal();
