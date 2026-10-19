@@ -31,7 +31,7 @@ const productsData = [
     { id: 22, name: "JINPUM Glass Noodles 10kg", cat: "RAMEN", spec: "10kg Bulk Sack", price: null },
 
     // --- CANNED & MEAT ---
-    { id: 23, name: "Hansung Pork Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
+{ id: 17, name: "Hansung Pork Luncheon Meat", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-pork-luncheon-meat.jpg" },
  { id: 16, name: "Hansung Chicken Luncheon Meat", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-chicken-luncheon-meat.jpg" },
     { id: 25, name: "Hansung Luncheon Meat Cheese", cat: "MEAT", spec: "24 Cans / Case", price: null },
     { id: 26, name: "Lotte Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
