@@ -5,25 +5,26 @@
 // Complete Korean Wholesale Product Catalog
 const productsData = [
     // --- K-SNACKS & SWEETS ---
-  { id: 1, name: "Pepero Chocolate Original 47g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-original.jpg" },
- { id: 2, name: "Pepero White Cookie 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-white-cookie.png" },
-  { id: 3, name: "Pepero Almond 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-almond.png" },
-   { id: 4, name: "Pepero Choco Filled 50g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-choco-filled.jpg" },
-   { id: 5, name: "Pepero Snowy Almond 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-snowy-almond.jpg" },
-   { id: 6, name: "Pepero Strawberry 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-strawberry.png.png" },
-   { id: 7, name: "Pepero Crunchy 39g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-crunchy.jpg" },
-   { id: 2, name: "Pepero White Cookie 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-choco-cookie.png.png" },
-   { id: 8, name: "Almond Chocoball 46g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/almond-chocoball-46g.jpg" },
-    { id: 10, name: "Almond Chocoball 46g (39 pcs)", cat: "SNACKS", spec: "39 pcs / Display Box", price: null },
-    { id: 9, name: "Binch Biscuits", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/binch-biscuits.jpg" },
- { id: 10, name: "Choco Pie Original 336g", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/choco-pie-original-336g.jpg" },
+ // --- K-SNACKS & SWEETS ---
+    { id: 1, name: "Pepero Chocolate Original 47g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-original.jpg" },
+    { id: 2, name: "Pepero White Cookie 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-choco-cookie.png" },
+    { id: 3, name: "Pepero Almond 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-almond.png" },
+    { id: 4, name: "Pepero Choco Filled 50g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-choco-filled.jpg" },
+    { id: 5, name: "Pepero Snowy Almond 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-snowy-almond.jpg" },
+    { id: 6, name: "Pepero Strawberry 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-strawberry.png" },
+    { id: 7, name: "Pepero Crunchy 39g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-crunchy.jpg" },
+    { id: 8, name: "Almond Chocoball 46g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/almond-chocoball-46g.jpg" },
+    { id: 9, name: "Almond Chocoball 46g (39 pcs)", cat: "SNACKS", spec: "39 pcs / Display Box", price: null },
+    { id: 10, name: "Binch Biscuits", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/binch-biscuits.jpg" },
+    { id: 11, name: "Choco Pie Original 336g", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/choco-pie-original-336g.jpg" },
 
     // --- RAMEN & NOODLES ---
-  { id: 11, name: "Jin Ramen Mild", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/jin-ramen-mild.jpg" },
-   { id: 12, name: "Stir-Fry Cheese Ramen 120g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/Stir-Fry Cheese Ramen 120g.jpg" },
-   { id: 13, name: "Stir-Fry Cheese Ramen Spicy 130g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/stir-fry-cheese-ramen-spicy-130g.jpg" },
-    { id: 14, name: "Cheese Ramen Mild 111g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/cheese-ramen-mild-111g.jpg" },
-    { id: 15, name: "Cheese Ramen Spicy 111g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/cheese-ramen-spicy-111g.jpg" },
+    { id: 12, name: "Jin Ramen Mild", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/jin-ramen-mild.jpg" },
+    { id: 13, name: "Stir-Fry Cheese Ramen 120g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/Stir-Fry Cheese Ramen 120g.jpg" },
+    { id: 14, name: "Stir-Fry Cheese Ramen Spicy 130g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/stir-fry-cheese-ramen-spicy-130g.jpg" },
+    { id: 15, name: "Cheese Ramen Mild 111g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/cheese-ramen-mild-111g.jpg" },
+    { id: 16, name: "Samyang Original Buldak", cat: "NOODLES", spec: "Packs / Case", price: null, img: "images/samyang-original-buldak.jpg" },
+    { id: 17, name: "Cheese Ramen Spicy 111g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/cheese-ramen-spicy-111g.jpg" },
     { id: 18, name: "Pho Story Noodles 67g", cat: "RAMEN", spec: "30 Cups / Case", price: null },
     { id: 19, name: "Chakhan Vermicelli 14kg", cat: "RAMEN", spec: "14kg Commercial Sack", price: null },
     { id: 20, name: "Nongbu Glass Noodle 500g", cat: "RAMEN", spec: "20 Packs / Case", price: null },
@@ -31,14 +32,13 @@ const productsData = [
     { id: 22, name: "JINPUM Glass Noodles 10kg", cat: "RAMEN", spec: "10kg Bulk Sack", price: null },
 
     // --- CANNED & MEAT ---
-{ id: 17, name: "Hansung Pork Luncheon Meat", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-pork-luncheon-meat.jpg" },
- { id: 16, name: "Hansung Chicken Luncheon Meat", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-chicken-luncheon-meat.jpg" },
-   { id: 18, name: "Hansung Luncheon Meat Cheese", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-luncheon-meat-cheese.jpg" },
+    { id: 23, name: "Hansung Pork Luncheon Meat", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-pork-luncheon-meat.jpg" },
+    { id: 24, name: "Hansung Chicken Luncheon Meat", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-chicken-luncheon-meat.jpg" },
+    { id: 25, name: "Hansung Luncheon Meat Cheese", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-luncheon-meat-cheese.jpg" },
     { id: 26, name: "Lotte Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
     { id: 27, name: "Rose Farm Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
     { id: 28, name: "Namkwang Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
     { id: 29, name: "Densing Dak Pork Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
-
     // --- SEAWEEDS & KIM ---
     { id: 30, name: "NamKwang Seaweed 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null },
     { id: 31, name: "NamKwang Seaweed Cheese 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null },
