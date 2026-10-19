@@ -16,7 +16,7 @@ const productsData = [
    { id: 8, name: "Almond Chocoball 46g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/almond-chocoball-46g.jpg" },
     { id: 10, name: "Almond Chocoball 46g (39 pcs)", cat: "SNACKS", spec: "39 pcs / Display Box", price: null },
     { id: 9, name: "Binch Biscuits", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/binch-biscuits.jpg" },
-    { id: 12, name: "Choco Pie Original 336g", cat: "SNACKS", spec: "12 Boxes / Case", price: null },
+ { id: 10, name: "Choco Pie Original 336g", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/choco-pie-original-336g.jpg" },
 
     // --- RAMEN & NOODLES ---
     { id: 13, name: "Jin Ramen Mild Multi-pack", cat: "RAMEN", spec: "40 Packs / Case", price: null },
