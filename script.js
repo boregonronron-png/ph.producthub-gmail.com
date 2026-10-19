@@ -19,7 +19,7 @@ const productsData = [
  { id: 10, name: "Choco Pie Original 336g", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/choco-pie-original-336g.jpg" },
 
     // --- RAMEN & NOODLES ---
-    { id: 13, name: "Jin Ramen Mild Multi-pack", cat: "RAMEN", spec: "40 Packs / Case", price: null },
+  { id: 11, name: "Jin Ramen Mild", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/jin-ramen-mild.jpg" },
     { id: 14, name: "Stir-Fry Cheese Ramen 120g", cat: "RAMEN", spec: "32 Packs / Case", price: null },
     { id: 15, name: "Stir-Fry Cheese Ramen Spicy 130g", cat: "RAMEN", spec: "32 Packs / Case", price: null },
     { id: 16, name: "Cheese Ramen Mild 111g", cat: "RAMEN", spec: "32 Packs / Case", price: null },
