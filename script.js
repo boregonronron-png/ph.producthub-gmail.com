@@ -411,7 +411,8 @@ function processOrder(e) {
         }
     });
 
-    receipt += `\n💰 TOTAL ESTIMATE: ₱${total.toLocaleString('en-US', {minimumFractionDigits: 2})}\n`;
+ const totalAmount = typeof total !== 'undefined' ? total : (typeof calculateTotal === 'function' ? calculateTotal() : 0);
+    receipt += `\n💰 TOTAL ESTIMATE: ₱${totalAmount.toLocaleString('en-US', {minimumFractionDigits: 2})}\n`;
     receipt += `📌 Sent via Product Hub B2B Portal`;
 
     document.getElementById('receiptText').value = receipt;
