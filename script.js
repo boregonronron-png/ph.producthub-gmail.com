@@ -5,7 +5,7 @@
 // Complete Korean Wholesale Product Catalog
 const productsData = [
     // --- K-SNACKS & SWEETS ---
-// --- K-SNACKS & SWEETS ---
+// --- SNACKS & PEPERO ---
     { id: 1, name: "Pepero Chocolate Original 47g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-original.jpg" },
     { id: 2, name: "Pepero White Cookie 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-white-cookie.png" },
     { id: 3, name: "Pepero Choco Cookie 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-choco-cookie.png.png" },
@@ -15,7 +15,7 @@ const productsData = [
     { id: 7, name: "Pepero Strawberry 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-strawberry.png.png" },
     { id: 8, name: "Pepero Crunchy 39g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-crunchy.jpg" },
     { id: 9, name: "Almond Chocoball 46g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/almond-chocoball-46g.jpg" },
-   { id: 10, name: "Almond Chocoball 46g (39 pcs)", cat: "SNACKS", spec: "39 pcs / Display Box", price: null, img: "images/Almond Chocoball 46g (39 pcs).jpeg" },
+    { id: 10, name: "Almond Chocoball 46g (39 pcs)", cat: "SNACKS", spec: "39 pcs / Display Box", price: null, img: "images/Almond Chocoball 46g (39 pcs).jpeg" },
     { id: 11, name: "Binch Biscuits", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/binch-biscuits.jpg" },
     { id: 12, name: "Choco Pie Original 336g", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/choco-pie-original-336g.jpg" },
 
@@ -29,14 +29,13 @@ const productsData = [
     { id: 19, name: "Samyang Buldak Rose", cat: "NOODLES", spec: "Packs / Case", price: null, img: "images/samyang-buldak-rose.jpg" },
     { id: 20, name: "Samyang Buldak Quattro Cheese", cat: "NOODLES", spec: "Packs / Case", price: null, img: "images/samyang-buldak-quattro-cheese.jpg" },
     { id: 21, name: "Cheese Ramen Spicy 111g", cat: "NOODLES", spec: "Boxes / Case", price: null, img: "images/cheese-ramen-spicy-111g.jpg" },
-    { id: 22, name: "Pho Story Noodles 67g", cat: "RAMEN", spec: "30 Cups / Case", price: null },
-   { id: 23, name: "Chakhan Vermicelli 14kg", cat: "RAMEN", spec: "14kg Commercial Sack", price: null, img: "images/Chakhan Vermicelli 14kg.jpg" },
-    { id: 24, name: "Nongbu Glass Noodle 500g", cat: "RAMEN", spec: "20 Packs / Case", price: null, img: "images/Nongbu Glass Noodle 500g.jpeg" },
-   { id: 25, name: "Nongbu Glass Noodle 14kg", cat: "RAMEN", spec: "14kg Bulk Sack", price: null, img: "images/Nongbu Glass Noodle 14kg.jpg" },
-    { id: 26, name: "JINPUM Glass Noodles 10kg", cat: "RAMEN", spec: "10kg Bulk Sack", price: null },
+    { id: 22, name: "Pho Story Noodles 67g", cat: "NOODLES", spec: "30 Cups / Case", price: null },
+    { id: 23, name: "Chakhan Vermicelli 14kg", cat: "NOODLES", spec: "14kg Commercial Sack", price: null, img: "images/Chakhan Vermicelli 14kg.jpg" },
+    { id: 24, name: "Nongbu Glass Noodle 500g", cat: "NOODLES", spec: "20 Packs / Case", price: null, img: "images/Nongbu Glass Noodle 500g.jpeg" },
+    { id: 25, name: "Nongbu Glass Noodle 14kg", cat: "NOODLES", spec: "14kg Bulk Sack", price: null, img: "images/Nongbu Glass Noodle 14kg.jpg" },
+    { id: 26, name: "JINPUM Glass Noodles 10kg", cat: "NOODLES", spec: "10kg Bulk Sack", price: null },
 
     // --- CANNED & MEAT ---
-  // --- CANNED & MEAT ---
     { id: 27, name: "Hansung Pork Luncheon Meat", cat: "MEAT", spec: "Cans / Case", price: null, img: "images/hansung-pork-luncheon-meat.jpg" },
     { id: 28, name: "Hansung Chicken Luncheon Meat", cat: "MEAT", spec: "Cans / Case", price: null, img: "images/hansung-chicken-luncheon-meat.jpg" },
     { id: 29, name: "Hansung Luncheon Meat Cheese", cat: "MEAT", spec: "Cans / Case", price: null, img: "images/hansung-luncheon-meat-cheese.jpg" },
@@ -46,10 +45,10 @@ const productsData = [
     { id: 33, name: "Densing Dak Pork Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
 
     // --- SEAWEEDS & KIM ---
-{ id: 34, name: "NamKwang Seaweed 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null, img: "images/namkwang-seaweed-3-24.jpg" },
+    { id: 34, name: "NamKwang Seaweed 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null, img: "images/namkwang-seaweed-3-24.jpg" },
     { id: 35, name: "NamKwang Seaweed Cheese 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null, img: "images/namkwang-seaweed-cheese-3-24.jpg" },
-  { id: 36, name: "NamKwang Seaweed 9*8", cat: "SEAWEED", spec: "8 Packs / Case", price: null, img: "images/Namkwang 98.jpg" },
-  { id: 37, name: "NamKwang Seaweed 16*6", cat: "SEAWEED", spec: "6 Packs / Case", price: null, img: "images/namkwang.jpg" },
+    { id: 36, name: "NamKwang Seaweed 9*8", cat: "SEAWEED", spec: "8 Packs / Case", price: null, img: "images/Namkwang 98.jpg" },
+    { id: 37, name: "NamKwang Seaweed 16*6", cat: "SEAWEED", spec: "6 Packs / Case", price: null, img: "images/namkwang.jpg" },
     { id: 38, name: "NamKwang Kimbob Kim 10s", cat: "SEAWEED", spec: "100 Packs / Case", price: null },
     { id: 39, name: "NamKwang Kimbob Kim 100s", cat: "SEAWEED", spec: "10 Packs / Case", price: null },
     { id: 40, name: "Nongbu Kimbob Kim 10s", cat: "SEAWEED", spec: "100 Packs / Case", price: null },
@@ -73,15 +72,14 @@ const productsData = [
     { id: 58, name: "Sigolkim Seaweeds with Sesame Oil 16*12", cat: "SEAWEED", spec: "12 Packs / Case", price: null },
 
     // --- BEVERAGES & MILK ---
-
     { id: 59, name: "Binggrae Banana Milk", cat: "DRINKS", spec: "24 x 200ml / Case", price: null, img: "images/binggrae-banana..jpg" },
-    { id: 60, name: "Binggrae Coffee Milk", cat: "DRINKS", spec: "24 x 200ml / Case", price: null, img: "images/bingrae coffee milk drink.jpg" },
+    { id: 60, name: "Binggrae Coffee Milk", cat: "DRINKS", spec: "24 x 200ml / Case", price: null, img: "images/binggrae coffee milk drink.jpg" },
     { id: 61, name: "Binggrae Banana Light Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null },
-  { id: 62, name: "Binggrae Melon Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae melon.jpg" },
- { id: 63, name: "Binggrae Strawberry Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae strawberry.jpg" },
+    { id: 62, name: "Binggrae Melon Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae-melon.jpg" },
+    { id: 63, name: "Binggrae Strawberry Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae strawberry.jpg" },
     { id: 64, name: "Binggrae Strawberry Light Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null },
-  { id: 65, name: "Binggrae Taro Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae taro.jpg" },
-  { id: 66, name: "Binggrae Vanilla Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae vanilla.jpg" },
+    { id: 65, name: "Binggrae Taro Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae taro.jpg" },
+    { id: 66, name: "Binggrae Vanilla Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae vanilla.jpg" },
     { id: 67, name: "Café Bene Peach / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
     { id: 68, name: "Café Bene Blue Lemon / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
     { id: 69, name: "Café Bene Green Grape / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
