@@ -15,7 +15,7 @@ const productsData = [
     { id: 7, name: "Pepero Strawberry 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-strawberry.png.png" },
     { id: 8, name: "Pepero Crunchy 39g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-crunchy.jpg" },
     { id: 9, name: "Almond Chocoball 46g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/almond-chocoball-46g.jpg" },
-    { id: 10, name: "Almond Chocoball 46g (39 pcs)", cat: "SNACKS", spec: "39 pcs / Display Box", price: null },
+   { id: 10, name: "Almond Chocoball 46g (39 pcs)", cat: "SNACKS", spec: "39 pcs / Display Box", price: null, img: "images/Almond Chocoball 46g (39 pcs).jpeg" },
     { id: 11, name: "Binch Biscuits", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/binch-biscuits.jpg" },
     { id: 12, name: "Choco Pie Original 336g", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/choco-pie-original-336g.jpg" },
 
