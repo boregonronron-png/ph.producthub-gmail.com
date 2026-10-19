@@ -33,7 +33,7 @@ const productsData = [
     // --- CANNED & MEAT ---
 { id: 17, name: "Hansung Pork Luncheon Meat", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-pork-luncheon-meat.jpg" },
  { id: 16, name: "Hansung Chicken Luncheon Meat", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-chicken-luncheon-meat.jpg" },
-    { id: 25, name: "Hansung Luncheon Meat Cheese", cat: "MEAT", spec: "24 Cans / Case", price: null },
+   { id: 18, name: "Hansung Luncheon Meat Cheese", cat: "CANNED GOODS", spec: "Cans / Case", price: null, img: "images/hansung-luncheon-meat-cheese.jpg" },
     { id: 26, name: "Lotte Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
     { id: 27, name: "Rose Farm Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
     { id: 28, name: "Namkwang Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
