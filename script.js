@@ -9,7 +9,7 @@ const productsData = [
  { id: 2, name: "Pepero White Cookie 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-white-cookie.png" },
   { id: 3, name: "Pepero Almond 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-almond.png" },
    { id: 4, name: "Pepero Choco Filled 50g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-choco-filled.jpg" },
-    { id: 5, name: "Pepero Snowy Almond 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null },
+   { id: 5, name: "Pepero Snowy Almond 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-snowy-almond.jpg" },
     { id: 6, name: "Pepero Strawberry 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null },
     { id: 7, name: "Pepero Crunchy 39g", cat: "SNACKS", spec: "40 Boxes / Case", price: null },
     { id: 8, name: "Pepero Choco Cookie 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null },
