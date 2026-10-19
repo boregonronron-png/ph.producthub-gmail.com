@@ -45,7 +45,7 @@ const productsData = [
     { id: 33, name: "Densing Dak Pork Luncheon Meat", cat: "MEAT", spec: "24 Cans / Case", price: null },
 
     // --- SEAWEEDS & KIM ---
-    { id: 34, name: "NamKwang Seaweed 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null },
+  { id: 34, name: "NamKwang Seaweed 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null, img: "images/NamKwang Seaweed 324.jpeg" },
     { id: 35, name: "NamKwang Seaweed Cheese 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null },
     { id: 36, name: "NamKwang Seaweed 9*8", cat: "SEAWEED", spec: "8 Packs / Case", price: null },
     { id: 37, name: "NamKwang Seaweed 16*6", cat: "SEAWEED", spec: "6 Packs / Case", price: null },
