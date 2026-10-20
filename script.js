@@ -169,7 +169,7 @@ const productsData = [
 
     // --- NON-FOOD & EQUIPMENT ---
     { id: 148, name: "Safe Butane", cat: "NONFOOD", spec: "28 Cans / Case", price: null },
-    { id: 149, name: "Ssen Butane 220g", cat: "NONFOOD", spec: "28 Cans / Case", price: null },
+  { id: 149, name: "Ssen Butane 220g", cat: "NONFOOD", spec: "28 Cans / Case", price: null, img: "images/Ssen Butane 220g.jpg" },
     { id: 150, name: "Max Safe Butane", cat: "NONFOOD", spec: "28 Cans / Case", price: null },
     { id: 151, name: "EZ Cooking Machine", cat: "NONFOOD", spec: "Commercial Unit", price: null }
 ];
