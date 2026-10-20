@@ -101,7 +101,7 @@ const productsData = [
     { id: 86, name: "Welchs Grape / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null },
     { id: 87, name: "Welchs Grape Zero / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null },
     { id: 88, name: "Welchs White Grape / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null },
-    { id: 89, name: "Welchs Apple Mango / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null },
+  { id: 89, name: "Welchs Apple Mango / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/Welchs Apple Mango.jpg" },
     { id: 90, name: "Welchs Orange Zero / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null },
     { id: 91, name: "Welchs Shinemuscat Zero / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null },
     { id: 92, name: "Lets Be Mild / 175 ML", cat: "DRINKS", spec: "30 Cans / Case", price: null },
