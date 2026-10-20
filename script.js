@@ -30,7 +30,7 @@ const productsData = [
     { id: 20, name: "Samyang Buldak Quattro Cheese", cat: "RAMEN", spec: "Packs / Case", price: null, img: "images/samyang-buldak-quattro-cheese.jpg" },
     { id: 21, name: "Cheese Ramen Spicy 111g", cat: "RAMEN", spec: "Boxes / Case", price: null, img: "images/cheese-ramen-spicy-111g.jpg" },
     { id: 22, name: "Pho Story Noodles 67g", cat: "RAMEN", spec: "30 Cups / Case", price: null },
-    { id: 23, name: "Chakhan Vermicelli 14kg", cat: "RAMEN", spec: "14kg Commercial Sack", price: null, img: "images/Chakhan Vermicelli 14kg.jpg" },
+ { id: 23, name: "Chakhan Vermicelli 14kg", cat: "RAMEN", spec: "14kg Commercial Sack", price: null, img: "images/Chakhan Vermicelli 14kg.jpg", isReservation: true },
     { id: 24, name: "Nongbu Glass Noodle 500g", cat: "RAMEN", spec: "20 Packs / Case", price: null, img: "images/Nongbu Glass Noodle 500g.jpeg" },
     { id: 25, name: "Nongbu Glass Noodle 14kg", cat: "RAMEN", spec: "14kg Bulk Sack", price: null, img: "images/Nongbu Glass Noodle 14kg.jpg" },
     { id: 26, name: "JINPUM Glass Noodles 10kg", cat: "RAMEN", spec: "10kg Bulk Sack", price: null },
