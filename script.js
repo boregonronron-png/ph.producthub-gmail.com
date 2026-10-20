@@ -205,13 +205,23 @@ function renderProducts() {
     filtered.forEach(p => {
         const card = document.createElement('div');
         card.className = "bg-brand-darkCard rounded-xl border border-brand-gold/30 hover:border-brand-gold p-4 flex flex-col justify-between transition-all hover:shadow-xl group";
+const isRes = p.isReservation;
 
+        // Badge Logic
+        const badgeHTML = isRes 
+            ? `<span class="bg-amber-500/20 text-amber-500 text-[10px] font-extrabold px-2 py-0.5 rounded border border-amber-500/40 uppercase tracking-wider">For Reservation</span>`
+            : `<span class="bg-brand-black text-brand-gold text-[10px] font-extrabold px-2 py-0.5 rounded border border-brand-gold/40 uppercase tracking-wider">${p.cat}</span>`;
+
+        // Button Logic
+        const btnText = isRes ? "📌 Reserve Box" : "+ Add Box";
+        const btnClass = isRes 
+            ? "border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-black"
+            : "border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-black";
       card.innerHTML = `
             <div>
                 <div class="flex justify-between items-start mb-2">
-                    <span class="bg-brand-black text-brand-gold text-[10px] font-extrabold px-2 py-0.5 rounded border border-brand-gold/40 uppercase tracking-wider">
-                        ${p.cat}
-                    </span>
+                   ${badgeHTML}
+                  
                     <span class="text-[11px] font-semibold text-gray-400">
                         <i class="fa-solid fa-boxes-stacked mr-1 text-brand-gold"></i> B2B Wholesale
                     </span>
@@ -238,9 +248,7 @@ function renderProducts() {
                     <span class="text-[10px] text-gray-400 block uppercase">Wholesale Price</span>
                     <span class="text-xs font-bold text-white">${p.price ? '₱' + p.price : 'B2B Wholesale Rate'}</span>
                 </div>
-                <button onclick="addToCart(${p.id})" class="bg-brand-black hover:bg-brand-gold hover:text-brand-black text-brand-gold border border-brand-gold font-extrabold text-xs px-3 py-2 rounded-lg transition-all flex items-center gap-1.5">
-                    <i class="fa-solid fa-plus"></i> Add Case
-                </button>
+               <button onclick="addToCart(${p.id})" class="bg-brand-black font-extrabold text-xs px-3 py-1.5 rounded border transition-all ${btnClass}">${btnText}</button>
             </div>
         `;
         grid.appendChild(card);
