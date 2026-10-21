@@ -134,9 +134,9 @@ const productsData = [
     // --- SAUCES & PANTRY ---
     { id: 113, name: "Nongbu Tteokbokki 1kg", cat: "SAUCE", spec: "10 Packs / Case", price: null },
     { id: 114, name: "Nongbu Tteokbokki 500g", cat: "SAUCE", spec: "20 Packs / Case", price: null },
-    { id: 115, name: "Sliced Rice Cake 300g (Shelf-Stable)", cat: "SAUCE", spec: "30 Packs / Case", price: null },
-    { id: 116, name: "Baby Shark Topokki (Creamy Flavour)", cat: "SAUCE", spec: "24 Cups / Case", price: null },
-    { id: 117, name: "Baby Shark Topokki (Sweet & Mild Spicy)", cat: "SAUCE", spec: "24 Cups / Case", price: null },
+  { id: 115, name: "Sliced Rice Cake 300g (Shelf-Stable)", cat: "SAUCE", spec: "30 Packs / Case", price: null, isReservation: true },
+    { id: 116, name: "Baby Shark Topokki (Creamy Flavour)", cat: "SAUCE", spec: "24 Cups / Case", price: null, isReservation: true },
+    { id: 117, name: "Baby Shark Topokki (Sweet & Mild Spicy)", cat: "SAUCE", spec: "24 Cups / Case", price: null, isReservation: true },
     { id: 118, name: "Sing Song Ssamjang 170g", cat: "SAUCE", spec: "30 Tubs / Case", price: null },
     { id: 119, name: "Sing Song Ssamjang 500g", cat: "SAUCE", spec: "20 Tubs / Case", price: null },
     { id: 120, name: "Sing Song Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
