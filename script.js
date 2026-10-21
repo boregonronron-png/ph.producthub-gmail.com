@@ -150,7 +150,7 @@ const productsData = [
  { id: 129, name: "Nongbu Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, img: "images/Nongbu Gochujang 14kg.jpg" },
     { id: 130, name: "Chakhan Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
     { id: 131, name: "JINPUM Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
-    { id: 132, name: "JINPUM Doenjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
+   { id: 132, name: "JINPUM Doenjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, isReservation: true },
     { id: 133, name: "Sweet Corn 410g", cat: "SAUCE", spec: "24 Cans / Case", price: null },
     { id: 134, name: "Fruits Cocktail 850g", cat: "SAUCE", spec: "12 Cans / Case", price: null },
     { id: 135, name: "Black Olive Slice 405g", cat: "SAUCE", spec: "24 Cans / Case", price: null },
