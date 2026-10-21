@@ -1,11 +1,11 @@
 /* ============================================================
-   PRODUCT HUB WHOLESALE DISTRIBUTOR - LOGIC ENGINE
-   ============================================================ */
+    PRODUCT HUB WHOLESALE DISTRIBUTOR - LOGIC ENGINE
+    ============================================================ */
 
 // Complete Korean Wholesale Product Catalog
 const productsData = [
     // --- K-SNACKS & SWEETS ---
-// --- SNACKS & PEPERO ---
+    // --- SNACKS & PEPERO ---
     { id: 1, name: "Pepero Chocolate Original 47g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-original.jpg" },
     { id: 2, name: "Pepero White Cookie 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-white-cookie.png" },
     { id: 3, name: "Pepero Choco Cookie 32g", cat: "SNACKS", spec: "40 Boxes / Case", price: null, img: "images/pepero-choco-cookie.png.png" },
@@ -19,7 +19,7 @@ const productsData = [
     { id: 11, name: "Binch Biscuits", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/binch-biscuits.jpg" },
     { id: 12, name: "Choco Pie Original 336g", cat: "SNACKS", spec: "Boxes / Case", price: null, img: "images/choco-pie-original-336g.jpg" },
 
-   // --- RAMEN & NOODLES ---
+    // --- RAMEN & NOODLES ---
     { id: 13, name: "Jin Ramen Mild", cat: "RAMEN", spec: "Boxes / Case", price: null, img: "images/jin-ramen-mild.jpg" },
     { id: 14, name: "Stir-Fry Cheese Ramen 120g", cat: "RAMEN", spec: "Boxes / Case", price: null, img: "images/Stir-Fry Cheese Ramen 120g.jpg" },
     { id: 15, name: "Stir-Fry Cheese Ramen Spicy 130g", cat: "RAMEN", spec: "Boxes / Case", price: null, img: "images/stir-fry-cheese-ramen-spicy-130g.jpg" },
@@ -30,10 +30,11 @@ const productsData = [
     { id: 20, name: "Samyang Buldak Quattro Cheese", cat: "RAMEN", spec: "Packs / Case", price: null, img: "images/samyang-buldak-quattro-cheese.jpg" },
     { id: 21, name: "Cheese Ramen Spicy 111g", cat: "RAMEN", spec: "Boxes / Case", price: null, img: "images/cheese-ramen-spicy-111g.jpg" },
     { id: 22, name: "Pho Story Noodles 67g", cat: "RAMEN", spec: "30 Cups / Case", price: null },
- { id: 23, name: "Chakhan Vermicelli 14kg", cat: "RAMEN", spec: "14kg Commercial Sack", price: null, img: "images/Chakhan Vermicelli 14kg.jpg", isReservation: true },
+    { id: 23, name: "Chakhan Vermicelli 14kg", cat: "RAMEN", spec: "14kg Commercial Sack", price: null, img: "images/Chakhan Vermicelli 14kg.jpg", isReservation: true },
     { id: 24, name: "Nongbu Glass Noodle 500g", cat: "RAMEN", spec: "20 Packs / Case", price: null, img: "images/Nongbu Glass Noodle 500g.jpeg" },
     { id: 25, name: "Nongbu Glass Noodle 14kg", cat: "RAMEN", spec: "14kg Bulk Sack", price: null, img: "images/Nongbu Glass Noodle 14kg.jpg" },
     { id: 26, name: "JINPUM Glass Noodles 10kg", cat: "RAMEN", spec: "10kg Bulk Sack", price: null },
+    
     // --- CANNED & MEAT ---
     { id: 27, name: "Hansung Pork Luncheon Meat", cat: "MEAT", spec: "Cans / Case", price: null, img: "images/hansung-pork-luncheon-meat.jpg" },
     { id: 28, name: "Hansung Chicken Luncheon Meat", cat: "MEAT", spec: "Cans / Case", price: null, img: "images/hansung-chicken-luncheon-meat.jpg" },
@@ -98,12 +99,12 @@ const productsData = [
     { id: 83, name: "Ice Talk A7 Passion Mango / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
     { id: 84, name: "Ice Talk A9 Watermelon / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
     { id: 85, name: "Ice Talk A10 Greengrape / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
-{ id: 86, name: "Welchs Grape / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/Welchs Grape.jpg" },
+    { id: 86, name: "Welchs Grape / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/Welchs Grape.jpg" },
     { id: 87, name: "Welchs Grape Zero / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null },
     { id: 88, name: "Welchs White Grape / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null },
-  { id: 89, name: "Welchs Apple Mango / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/Welchs Apple Mango.jpg" },
+    { id: 89, name: "Welchs Apple Mango / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/Welchs Apple Mango.jpg" },
     { id: 90, name: "Welchs Orange Zero / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null },
-  { id: 91, name: "Welchs Shinemuscat Zero / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/Welchs Shinemuscat Zero.jpg" },
+    { id: 91, name: "Welchs Shinemuscat Zero / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/Welchs Shinemuscat Zero.jpg" },
     { id: 92, name: "Lets Be Mild / 175 ML", cat: "DRINKS", spec: "30 Cans / Case", price: null },
     { id: 93, name: "Lets Be Mocha / 175 ML", cat: "DRINKS", spec: "30 Cans / Case", price: null },
 
@@ -122,10 +123,10 @@ const productsData = [
     { id: 103, name: "JINRO Chamisul Fresh 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
     { id: 104, name: "JINRO Chamisul Original 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
     { id: 105, name: "JINRO Grapefruit 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
-  { id: 102, name: "Jinro Green Grape 360ml", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/JINRO Green Grape.jpg" },
+    { id: 106, name: "Jinro Green Grape 360ml", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/JINRO Green Grape.jpg" },
     { id: 107, name: "JINRO Strawberry 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
     { id: 108, name: "JINRO Peach 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
- { name: "Jinro Lemon Soju 360ml", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/JINRO Lemon.jpg" },
+    { id: 109, name: "Jinro Lemon Soju 360ml", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/JINRO Lemon.jpg" },
     { id: 110, name: "ILPOOM JINRO Soju 25% 375ml*6", cat: "SOJU", spec: "6 Bottles / Case", price: null },
     { id: 111, name: "JR Jinro Soju 24 700ml*12", cat: "SOJU", spec: "12 Bottles / Case", price: null },
     { id: 112, name: "JINRO Plum 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
@@ -140,17 +141,17 @@ const productsData = [
     { id: 119, name: "Sing Song Ssamjang 500g", cat: "SAUCE", spec: "20 Tubs / Case", price: null },
     { id: 120, name: "Sing Song Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
     { id: 121, name: "Nongbu Ssamjang 200g", cat: "SAUCE", spec: "30 Tubs / Case", price: null },
-{ id: 122, name: "Nongbu Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, img: "images/Nongbu Ssamjang 14kg.jpg" },
+    { id: 122, name: "Nongbu Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, img: "images/Nongbu Ssamjang 14kg.jpg" },
     { id: 123, name: "Chakhan Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
     { id: 124, name: "JINPUM Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
     { id: 125, name: "Sing Song Gochujang 170g", cat: "SAUCE", spec: "30 Tubs / Case", price: null },
     { id: 126, name: "Sing Song Gochujang 500g", cat: "SAUCE", spec: "20 Tubs / Case", price: null },
     { id: 127, name: "Sing Song Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
     { id: 128, name: "Nongbu Gochujang 200g", cat: "SAUCE", spec: "30 Tubs / Case", price: null },
- { id: 129, name: "Nongbu Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, img: "images/Nongbu Gochujang 14kg.jpg" },
+    { id: 129, name: "Nongbu Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, img: "images/Nongbu Gochujang 14kg.jpg" },
     { id: 130, name: "Chakhan Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
     { id: 131, name: "JINPUM Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
-   { id: 132, name: "JINPUM Doenjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, isReservation: true },
+    { id: 132, name: "JINPUM Doenjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, isReservation: true },
     { id: 133, name: "Sweet Corn 410g", cat: "SAUCE", spec: "24 Cans / Case", price: null },
     { id: 134, name: "Fruits Cocktail 850g", cat: "SAUCE", spec: "12 Cans / Case", price: null },
     { id: 135, name: "Black Olive Slice 405g", cat: "SAUCE", spec: "24 Cans / Case", price: null },
@@ -168,10 +169,10 @@ const productsData = [
     { id: 147, name: "Jin Kimchi 10kg", cat: "SAUCE", spec: "10kg Commercial Tub", price: null },
 
     // --- NON-FOOD & EQUIPMENT ---
-   { id: 148, name: "Safe Butane", cat: "NONFOOD", spec: "28 Cans / Case", price: null, img: "images/Safe Butane.jpg" },
-  { id: 149, name: "Ssen Butane 220g", cat: "NONFOOD", spec: "28 Cans / Case", price: null, img: "images/Ssen Butane 220g.jpg" },
+    { id: 148, name: "Safe Butane", cat: "NONFOOD", spec: "28 Cans / Case", price: null, img: "images/Safe Butane.jpg" },
+    { id: 149, name: "Ssen Butane 220g", cat: "NONFOOD", spec: "28 Cans / Case", price: null, img: "images/Ssen Butane 220g.jpg" },
     { id: 150, name: "Max Safe Butane", cat: "NONFOOD", spec: "28 Cans / Case", price: null },
-    { id: 151, name: "EZ Cooking Machine", cat: "NONFOOD", spec: "Commercial Unit", price: null }
+    { id: 151, name: "EZ Cooking Machine", cat: "NONFOOD", spec: "Commercial Unit", price: null, isReservation: true }
 ];
 
 // App State
@@ -205,7 +206,7 @@ function renderProducts() {
     filtered.forEach(p => {
         const card = document.createElement('div');
         card.className = "bg-brand-darkCard rounded-xl border border-brand-gold/30 hover:border-brand-gold p-4 flex flex-col justify-between transition-all hover:shadow-xl group";
-const isRes = p.isReservation;
+        const isRes = p.isReservation;
 
         // Badge Logic
         const badgeHTML = isRes 
@@ -217,11 +218,11 @@ const isRes = p.isReservation;
         const btnClass = isRes 
             ? "border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-black"
             : "border-brand-gold text-brand-gold hover:bg-brand-gold hover:text-black";
-      card.innerHTML = `
+            
+        card.innerHTML = `
             <div>
                 <div class="flex justify-between items-start mb-2">
-                   ${badgeHTML}
-                  
+                    ${badgeHTML}
                     <span class="text-[11px] font-semibold text-gray-400">
                         <i class="fa-solid fa-boxes-stacked mr-1 text-brand-gold"></i> B2B Wholesale
                     </span>
@@ -404,7 +405,7 @@ function processOrder(e) {
     const address = document.getElementById('custAddress').value;
     const type = document.getElementById('custOrderType').value;
 
-let receipt = `🛒 PRODUCT HUB WHOLESALE ORDER\n\n`;
+    let receipt = `🛒 PRODUCT HUB WHOLESALE ORDER\n\n`;
     receipt += `📋 CUSTOMER DETAILS:\n`;
     receipt += `- Store: ${company}\n`;
     receipt += `- Contact: ${name}\n`;
