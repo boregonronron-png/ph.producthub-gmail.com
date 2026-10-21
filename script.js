@@ -171,8 +171,7 @@ const productsData = [
    { id: 148, name: "Safe Butane", cat: "NONFOOD", spec: "28 Cans / Case", price: null, img: "images/Safe Butane.jpg" },
   { id: 149, name: "Ssen Butane 220g", cat: "NONFOOD", spec: "28 Cans / Case", price: null, img: "images/Ssen Butane 220g.jpg" },
     { id: 150, name: "Max Safe Butane", cat: "NONFOOD", spec: "28 Cans / Case", price: null },
-    { id: 151, name: "EZ Cooking Machine", cat: "NONFOOD", spec: "Commercial Unit", price: null }
-];
+  { id: 151, name: "EZ Cooking Machine", cat: "NONFOOD", spec: "Commercial Unit", price: null, isReservation: true }
 
 // App State
 let cart = JSON.parse(localStorage.getItem('product_hub_cart')) || {};
