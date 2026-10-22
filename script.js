@@ -25,7 +25,7 @@ const productsData = [
     { id: 15, name: "Stir-Fry Cheese Ramen Spicy 130g", cat: "RAMEN", spec: "Boxes / Case", price: null, img: "images/stir-fry-cheese-ramen-spicy-130g.jpg" },
     { id: 16, name: "Cheese Ramen Mild 111g", cat: "RAMEN", spec: "Boxes / Case", price: null, img: "images/cheese-ramen-mild-111g.jpg" },
     { id: 17, name: "Samyang Original Buldak", cat: "RAMEN", spec: "Packs / Case", price: null, img: "images/samyang-original-buldak.jpg" },
-    { id: 18, name: "Samyang Buldak Carbonara", cat: "RAMEN", spec: "Packs / Case", price: null, img: "images/samyang-buldak-carbonara.jpg" },
+    { id: 18, name: "Samyang Buldak Carbonara", cat: "RAMEN", spec: "Packs / Case", price: null, img: "images/Samyang Buldak Carbonara.jpg" },
     { id: 19, name: "Samyang Buldak Rose", cat: "RAMEN", spec: "Packs / Case", price: null, img: "images/samyang-buldak-rose.jpg" },
     { id: 20, name: "Samyang Buldak Quattro Cheese", cat: "RAMEN", spec: "Packs / Case", price: null, img: "images/samyang-buldak-quattro-cheese.jpg" },
     { id: 21, name: "Cheese Ramen Spicy 111g", cat: "RAMEN", spec: "Boxes / Case", price: null, img: "images/cheese-ramen-spicy-111g.jpg" },
