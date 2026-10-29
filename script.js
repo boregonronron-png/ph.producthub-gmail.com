@@ -106,8 +106,7 @@ const productsData = [
     { id: 90, name: "Welchs Orange Zero / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null },
     { id: 91, name: "Welchs Shinemuscat Zero / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/Welchs Shinemuscat Zero.jpg" },
   { id: 92, name: "Lets Be Mild / 175 ML", cat: "DRINKS", spec: "30 Cans / Case", price: null, isReservation: true, image: "images/lets-be-mild.jpg" },
-    { id: 93, name: "Lets Be Mocha / 175 ML", cat: "DRINKS", spec: "30 Cans / Case", price: null },
-
+  { id: 93, name: "Lets Be Mocha / 175 ML", cat: "DRINKS", spec: "30 Cans / Case", price: null, isReservation: true, image: "images/lets-be-mocha.jpg" },
     // --- MAXIM COFFEE ---
     { id: 94, name: "Maxim Mocha Gold 20T", cat: "COFFEE", spec: "20 Boxes / Case", price: null },
     { id: 95, name: "Maxim Original 100T", cat: "COFFEE", spec: "8 Boxes / Case", price: null },
