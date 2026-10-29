@@ -387,7 +387,12 @@
             </button>
         </div>
     </div>
-
+<!-- Image Zoom Modal / Lightbox -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="close-btn">&times;</span>
+  <img class="modal-content" id="imgFull">
+  <div id="caption"></div>
+</div>
     <script>
         function openLogoModal() {
             const modal = document.getElementById('logoModal');
