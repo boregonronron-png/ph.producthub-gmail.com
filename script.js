@@ -84,7 +84,7 @@ const productsData = [
     { id: 68, name: "Café Bene Blue Lemon / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
   { id: 69, name: "Café Bene Green Grape / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/caffe-bene-green-grape-ade.jpg" },
     { id: 70, name: "Café Bene Watermelon / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
-    { id: 71, name: "Café Bene Honey Grapefruit / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
+  { id: 71, name: "Café Bene Honey Grapefruit / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/caffe-bene-honey-grapefruit.jpg" },
    { id: 72, name: "Café Bene Pineapple / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/caffe-bene-pineapple.jpg" },
  { id: 73, name: "Café Bene Omija / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/caffe-bene-omija.jpg" },
     { id: 74, name: "Café Bene Vanilla Americano / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
