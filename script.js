@@ -77,7 +77,7 @@ const productsData = [
   { id: 61, name: "Binggrae Banana Light Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, isReservation: true, image: "images/binggrae-banana-light-milk.jpg" },
     { id: 62, name: "Binggrae Melon Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae melon.jpg" },
     { id: 63, name: "Binggrae Strawberry Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae strawberry.jpg" },
-    { id: 64, name: "Binggrae Strawberry Light Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null },
+   { id: 64, name: "Binggrae Strawberry Light Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, isReservation: true, image: "images/binggrae-strawberry-light-milk.jpg" },
     { id: 65, name: "Binggrae Taro Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae taro.jpg" },
     { id: 66, name: "Binggrae Vanilla Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae vanilla.jpg" },
     { id: 67, name: "Café Bene Peach / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
