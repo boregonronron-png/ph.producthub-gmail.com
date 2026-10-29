@@ -454,3 +454,25 @@ function sendToMessenger() {
 function closeReceiptModal() {
     document.getElementById('receiptModal').classList.add('hidden');
 }
+// Function para mag-open ang Zoom Modal
+function openModal(imgSrc, altText) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("imgFull");
+  const captionText = document.getElementById("caption");
+
+  modal.style.display = "block";
+  modalImg.src = imgSrc;
+  captionText.innerHTML = altText || "";
+}
+
+// Function para isara ang Zoom Modal
+function closeModal() {
+  document.getElementById("imageModal").style.display = "none";
+}
+
+// Para pwede ring isara gamit ang 'Esc' key sa keyboard
+document.addEventListener('keydown', function(event) {
+  if (event.key === "Escape") {
+    closeModal();
+  }
+});
