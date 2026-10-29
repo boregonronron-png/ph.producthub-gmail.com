@@ -82,7 +82,7 @@ const productsData = [
     { id: 66, name: "Binggrae Vanilla Milk", cat: "DRINKS", spec: "24 Packs / Case", price: null, img: "images/binggrae vanilla.jpg" },
     { id: 67, name: "Café Bene Peach / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
     { id: 68, name: "Café Bene Blue Lemon / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
-    { id: 69, name: "Café Bene Green Grape / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
+  { id: 69, name: "Café Bene Green Grape / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/caffe-bene-green-grape-ade.jpg" },
     { id: 70, name: "Café Bene Watermelon / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
     { id: 71, name: "Café Bene Honey Grapefruit / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
     { id: 72, name: "Café Bene Pineapple / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
