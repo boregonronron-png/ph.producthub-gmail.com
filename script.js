@@ -156,7 +156,7 @@ const productsData = [
     { id: 135, name: "Black Olive Slice 405g", cat: "SAUCE", spec: "24 Cans / Case", price: null },
     { id: 136, name: "Vinegar 1.8L", cat: "SAUCE", spec: "6 Bottles / Case", price: null },
     { id: 137, name: "Roasted Sesame Oil (100%) 1.8L", cat: "SAUCE", spec: "6 Containers / Case", price: null },
-    { id: 138, name: "Nongbu Chili Powder Green 1kg (Fine)", cat: "SAUCE", spec: "10 Packs / Case", price: null },
+  { id: 138, name: "Nongbu Chili Powder Green 1kg (Fine)", cat: "SAUCE", spec: "10 Packs / Case", price: null, img: "images/nongbu-chili-powder-green-1kg-fine.jpg" },
     { id: 139, name: "Taeyangcho Chili Powder 1kg (Flakes)", cat: "SAUCE", spec: "10 Packs / Case", price: null },
     { id: 140, name: "JINPUM Chili Powder 1kg (Fine)", cat: "SAUCE", spec: "10 Packs / Case", price: null },
     { id: 141, name: "JINPUM Chili Powder 1kg (Flakes)", cat: "SAUCE", spec: "10 Packs / Case", price: null },
