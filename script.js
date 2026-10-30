@@ -131,7 +131,7 @@ const productsData = [
     { id: 112, name: "JINRO Plum 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
 
     // --- SAUCES & PANTRY ---
-    { id: 113, name: "Nongbu Tteokbokki 1kg", cat: "SAUCE", spec: "10 Packs / Case", price: null },
+  { id: 113, name: "Nongbu Tteokbokki 1kg", cat: "SAUCE", spec: "10 Packs / Case", price: null, img: "images/nongbu-tteokbokki.jpg" },
     { id: 114, name: "Nongbu Tteokbokki 500g", cat: "SAUCE", spec: "20 Packs / Case", price: null },
   { id: 115, name: "Sliced Rice Cake 300g (Shelf-Stable)", cat: "SAUCE", spec: "30 Packs / Case", price: null, isReservation: true },
 { id: 116, name: "Baby Shark Topokki (Creamy Flavour)", cat: "SAUCE", spec: "24 Cups / Case", price: null, isReservation: true, image: "images/Baby Shark Topokki (Creamy Flavour).jpg" },
