@@ -229,10 +229,11 @@ function renderProducts() {
 
                 <!-- PRODUCT IMAGE DISPLAY CONTAINER -->
                 <div class="w-full h-40 rounded-lg overflow-hidden bg-brand-black border border-brand-gold/20 mb-3 flex items-center justify-center">
-                    <img src="${p.img || p.image || 'images/logo.jpg'}" 
-                         alt="${p.name}" 
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                         onerror="this.onerror=null; this.src='images/logo.jpg';">
+                   <img src="${p.img || p.image || 'images/logo.jpg'}"
+    alt="${p.name}"
+    onclick="openModal(this.src, this.alt)"
+    class="w-full h-full object-cover cursor-pointer group-hover:scale-105 transition-transform duration-300"
+    onerror="this.onerror=null; this.src='images/logo.jpg';">
                 </div>
 
                 <h3 class="font-bold text-white text-base group-hover:text-brand-goldLight transition-colors leading-snug">
