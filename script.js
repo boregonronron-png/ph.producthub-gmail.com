@@ -68,7 +68,7 @@ const productsData = [
     { id: 54, name: "Sigolkim Seaweeds Original 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null },
     { id: 55, name: "Sigolkim Seaweeds Original 9*12", cat: "SEAWEED", spec: "12 Packs / Case", price: null },
     { id: 56, name: "Sigolkim Seaweeds Original 16*12", cat: "SEAWEED", spec: "12 Packs / Case", price: null },
-    { id: 57, name: "Sigolkim Seaweeds with Sesame Oil 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null },
+  { id: 57, name: "Sigolkim Seaweeds with Sesame Oil 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null, img: "images/sigolkim-seaweeds-sesame-oil-3-24.jpg" },
     { id: 58, name: "Sigolkim Seaweeds with Sesame Oil 9*12", cat: "SEAWEED", spec: "12 Packs / Case", price: null },
     { id: 59, name: "Sigolkim Seaweeds with Sesame Oil 16*12", cat: "SEAWEED", spec: "12 Packs / Case", price: null },
 
