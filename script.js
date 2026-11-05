@@ -61,7 +61,7 @@ const productsData = [
     { id: 47, name: "Kimjaban Seaweeds (Seafood)", cat: "SEAWEED", spec: "30 Packs / Case", price: null },
     { id: 48, name: "Kimbap Laver Seaweeds 10s", cat: "SEAWEED", spec: "100 Packs / Case", price: null },
     { id: 49, name: "Kimbap Laver Seaweeds 100s", cat: "SEAWEED", spec: "10 Packs / Case", price: null },
-    { id: 50, name: "Boryeong Seaweeds 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null },
+  { id: 50, name: "Boryeong Seaweeds 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null, img: "images/boryeong-seaweeds-3-24.jpg" },
     { id: 51, name: "Boryeong Seaweeds 16*8", cat: "SEAWEED", spec: "8 Packs / Case", price: null },
     { id: 52, name: "Boryeong Extra Olive Seaweeds 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null },
     { id: 53, name: "Boryeong Extra Olive Seaweeds 16*6", cat: "SEAWEED", spec: "6 Packs / Case", price: null },
