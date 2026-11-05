@@ -110,7 +110,7 @@ const productsData = [
     { id: 94, name: "Lets Be Mocha / 175 ML", cat: "DRINKS", spec: "30 Cans / Case", price: null, isReservation: true, image: "images/lets-be-mocha.jpg" },
 
     // --- MAXIM COFFEE ---
-    { id: 95, name: "Maxim Mocha Gold 20T", cat: "COFFEE", spec: "20 Boxes / Case", price: null },
+  { id: 95, name: "Maxim Mocha Gold 20T", cat: "COFFEE", spec: "20 Boxes / Case", price: null, img: "images/maxim-mocha-gold-20t.jpg" },
     { id: 96, name: "Maxim Original 100T", cat: "COFFEE", spec: "8 Boxes / Case", price: null },
     { id: 97, name: "Maxim Mocha Gold 100T", cat: "COFFEE", spec: "8 Boxes / Case", price: null },
     { id: 98, name: "Maxim White Gold 20T", cat: "COFFEE", spec: "20 Boxes / Case", price: null },
