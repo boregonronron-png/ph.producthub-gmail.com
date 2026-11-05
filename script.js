@@ -113,7 +113,7 @@ const productsData = [
   { id: 95, name: "Maxim Mocha Gold 20T", cat: "COFFEE", spec: "20 Boxes / Case", price: null, img: "images/maxim-mocha-gold-20t.jpg" },
    { id: 96, name: "Maxim Original 100T", cat: "COFFEE", spec: "8 Boxes / Case", price: null, img: "images/maxim-original-100t.jpg" },
     { id: 97, name: "Maxim Mocha Gold 100T", cat: "COFFEE", spec: "8 Boxes / Case", price: null },
-    { id: 98, name: "Maxim White Gold 20T", cat: "COFFEE", spec: "20 Boxes / Case", price: null },
+ { id: 98, name: "Maxim White Gold 20T", cat: "COFFEE", spec: "20 Boxes / Case", price: null, img: "images/maxim-white-gold-20t.jpg" },
    { id: 99, name: "Maxim White Gold 100T", cat: "COFFEE", spec: "8 Boxes / Case", price: null, img: "images/maxim-white-gold-100t.jpg" },
     { id: 100, name: "Maxim Supreme Gold Coffee Mix 20T", cat: "COFFEE", spec: "20 Boxes / Case", price: null },
     { id: 101, name: "Maxim Decaf Coffee 100T", cat: "COFFEE", spec: "8 Boxes / Case", price: null },
