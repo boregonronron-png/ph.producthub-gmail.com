@@ -34,7 +34,7 @@ const productsData = [
     { id: 24, name: "Chakhan Vermicelli 14kg", cat: "RAMEN", spec: "14kg Commercial Sack", price: null, img: "images/Chakhan Vermicelli 14kg.jpg", isReservation: true },
     { id: 25, name: "Nongbu Glass Noodle 500g", cat: "RAMEN", spec: "20 Packs / Case", price: null, img: "images/Nongbu Glass Noodle 500g.jpeg" },
     { id: 26, name: "Nongbu Glass Noodle 14kg", cat: "RAMEN", spec: "14kg Bulk Sack", price: null, img: "images/Nongbu Glass Noodle 14kg.jpg" },
-    { id: 27, name: "JINPUM Glass Noodles 10kg", cat: "RAMEN", spec: "10kg Bulk Sack", price: null },
+  { id: 27, name: "JINPUM Glass Noodles 10kg", cat: "RAMEN", spec: "10kg Bulk Sack", price: null, img: "images/jinpum-glass-noodles-10kg.jpg" },
     
     // --- CANNED & MEAT ---
     { id: 28, name: "Hansung Pork Luncheon Meat", cat: "MEAT", spec: "Cans / Case", price: null, img: "images/hansung-pork-luncheon-meat.jpg" },
