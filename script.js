@@ -121,7 +121,7 @@ const productsData = [
 
     // --- SOJU & ALCOHOL ---
     { id: 103, name: "JINRO Soju 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
-    { id: 104, name: "JINRO Chamisul Fresh 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
+  { id: 104, name: "JINRO Chamisul Fresh 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/jinro-chamisul-fresh-360ml-20.jpg" },
     { id: 105, name: "JINRO Chamisul Original 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
     { id: 106, name: "JINRO Grapefruit 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
     { id: 107, name: "Jinro Green Grape 360ml", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/JINRO Green Grape.jpg" },
