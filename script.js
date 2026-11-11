@@ -136,7 +136,7 @@ const productsData = [
     // Nongbu Group
     { id: 114, name: "Nongbu Tteokbokki 1kg", cat: "SAUCE", spec: "10 Packs / Case", price: null, img: "images/nongbu-tteokbokki.jpg" },
   { id: 115, name: "Nongbu Tteokbokki 500g", cat: "SAUCE", spec: "20 Packs / Case", price: null, img: "images/nongbu-tteokbokki-500g.jpg" },
-    { id: 116, name: "Nongbu Ssamjang 200g", cat: "SAUCE", spec: "30 Tubs / Case", price: null },
+   { id: 116, name: "Nongbu Ssamjang 200g", cat: "SAUCE", spec: "30 Tubs / Case", price: null, img: "images/nongbu-ssamjang-200g.jpg" },
     { id: 117, name: "Nongbu Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, image: "images/Nongbu Ssamjang 14kg.jpg" },
     { id: 118, name: "Nongbu Gochujang 200g", cat: "SAUCE", spec: "30 Tubs / Case", price: null },
     { id: 119, name: "Nongbu Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, image: "images/Nongbu Gochujang 14kg.jpg" },
