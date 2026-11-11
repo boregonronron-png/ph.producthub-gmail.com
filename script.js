@@ -150,7 +150,7 @@ const productsData = [
   { id: 125, name: "Sing Song Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, img: "images/sing-song-ssamjang-14kg.jpg" },
 { id: 126, name: "Sing Song Gochujang 170g", cat: "SAUCE", spec: "30 Tubs / Case", price: null, img: "images/sing-song-gochujang-170g.webp" },
     { id: 127, name: "Sing Song Gochujang 500g", cat: "SAUCE", spec: "20 Tubs / Case", price: null, img: "images/singsong-gochujang-500g.jpg" },
-    { id: 128, name: "Sing Song Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
+  { id: 128, name: "Sing Song Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, img: "images/sing-song-gochujang-14kg.webp" },
 
     // Jinpum Group
     { id: 129, name: "JINPUM Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
