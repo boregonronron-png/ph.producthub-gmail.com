@@ -141,7 +141,7 @@ const productsData = [
   { id: 118, name: "Nongbu Gochujang 200g", cat: "SAUCE", spec: "30 Tubs / Case", price: null, img: "images/nongbu-gochujang-200g.jpg" },
     { id: 119, name: "Nongbu Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, image: "images/Nongbu Gochujang 14kg.jpg" },
     { id: 120, name: "Nongbu Chili Powder Green 1kg (Fine)", cat: "SAUCE", spec: "10 Packs / Case", price: null, img: "images/nongbu-chili-powder-green-1kg-fine.jpg" },
-    { id: 121, name: "NONGBU Fish Cake 200g", cat: "SAUCE", spec: "30 Packs / Case", price: null },
+  { id: 121, name: "NONGBU Fish Cake 200g", cat: "SAUCE", spec: "30 Packs / Case", price: null, img: "images/nongbu-fish-cake-200g.jpg" },
     { id: 122, name: "NONGBU Fish Cake 1kg", cat: "SAUCE", spec: "10 Packs / Case", price: null },
 
     // Sing Song Group
