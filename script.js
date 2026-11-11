@@ -145,7 +145,7 @@ const productsData = [
    { id: 122, name: "NONGBU Fish Cake 1kg", cat: "SAUCE", spec: "10 Packs / Case", price: null, img: "images/nongbu-fish-cake-1kg.jpeg" },
 
     // Sing Song Group
-    { id: 123, name: "Sing Song Ssamjang 170g", cat: "SAUCE", spec: "30 Tubs / Case", price: null },
+ { id: 123, name: "Sing Song Ssamjang 170g", cat: "SAUCE", spec: "30 Tubs / Case", price: null, img: "images/sing-song-ssamjang-170g.jpg" },
     { id: 124, name: "Sing Song Ssamjang 500g", cat: "SAUCE", spec: "20 Tubs / Case", price: null, img: "images/singsong-ssamjang-500g.jpg" },
     { id: 125, name: "Sing Song Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
     { id: 126, name: "Sing Song Gochujang 170g", cat: "SAUCE", spec: "30 Tubs / Case", price: null },
