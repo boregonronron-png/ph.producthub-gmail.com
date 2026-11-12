@@ -101,7 +101,7 @@ const productsData = [
     { id: 85, name: "Ice Talk A9 Watermelon / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/ice-talk-a9-watermelon-230ml.png.png" },
     { id: 86, name: "Ice Talk A10 Greengrape / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true },
     { id: 87, name: "Welchs Grape / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/Welchs Grape.jpg" },
-    { id: 88, name: "Welchs Grape Zero / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null },
+ { id: 88, name: "Welchs Grape Zero / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/welchs-grape-zero-355ml.webp" },
     { id: 89, name: "Welchs White Grape / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/welchs-white-grape-355ml.webp" },
     { id: 90, name: "Welchs Apple Mango / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/Welchs Apple Mango.jpg" },
     { id: 91, name: "Welchs Orange Zero / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null },
