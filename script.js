@@ -128,7 +128,7 @@ const productsData = [
   { id: 108, name: "JINRO Strawberry 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/jinro-strawberry-360ml.webp" },
   { id: 109, name: "JINRO Peach 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/jinro-peach-360ml.webp" },
     { id: 110, name: "Jinro Lemon Soju 360ml", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/JINRO Lemon.jpg" },
-    { id: 111, name: "ILPOOM JINRO Soju 25% 375ml*6", cat: "SOJU", spec: "6 Bottles / Case", price: null },
+  { id: 111, name: "ILPOOM JINRO Soju 25% 375ml*6", cat: "SOJU", spec: "6 Bottles / Case", price: null, img: "images/ilpoom-jinro-soju-25-375ml.webp" },
     { id: 112, name: "JR Jinro Soju 24 700ml*12", cat: "SOJU", spec: "12 Bottles / Case", price: null },
     { id: 113, name: "JINRO Plum 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
 
