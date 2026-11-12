@@ -161,7 +161,7 @@ const productsData = [
     { id: 134, name: "JINPUM Fish Cake 1kg", cat: "SAUCE", spec: "10 Packs / Case", price: null },
 
     // Chakhan Group
-    { id: 135, name: "Chakhan Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, image: "Chakhan Ssamjang 14kg.jpg" },
+ { id: 135, name: "Chakhan Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, img: "images/chakhan-ssamjang-14kg.webp" },
     { id: 136, name: "Chakhan Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
 
     // Other Pantry Items
