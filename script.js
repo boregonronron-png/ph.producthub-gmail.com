@@ -176,7 +176,7 @@ const productsData = [
     { id: 145, name: "Taeyangcho Chili Powder 1kg (Flakes)", cat: "SAUCE", spec: "10 Packs / Case", price: null },
     { id: 146, name: "Chili Powder (Fine) 1kg", cat: "SAUCE", spec: "10 Packs / Case", price: null },
     { id: 147, name: "Chili Powder (Coarse) 1kg", cat: "SAUCE", spec: "10 Packs / Case", price: null },
-    { id: 148, name: "Jin Kimchi 10kg", cat: "SAUCE", spec: "10kg Commercial Tub", price: null },
+   { id: 148, name: "Jin Kimchi 10kg", cat: "SAUCE", spec: "10kg Commercial Tub", price: null, img: "images/jin-kimchi-10kg.webp" },
 
     // --- NON-FOOD & EQUIPMENT ---
     { id: 149, name: "Safe Butane", cat: "NONFOOD", spec: "28 Cans / Case", price: null, img: "images/Safe Butane.jpg" },
