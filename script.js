@@ -97,7 +97,7 @@ const productsData = [
     { id: 81, name: "Ice Talk A3 Blueberry / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/Ice-Talk-A3-Blueberry.jpg" },
     { id: 82, name: "Ice Talk A4 Pomegranate / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/ice-talk-a4-pomegranate-230ml.png (2).png" },
 { id: 83, name: "Ice Talk A5 Kiwi / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, img: "images/ice-talk-a5-kiwi-230ml.webp" },
-    { id: 84, name: "Ice Talk A7 Passion Mango / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true },
+  { id: 84, name: "Ice Talk A7 Passion Mango / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, img: "images/ice-talk-a7-passion-mango-230ml.webp" },
     { id: 85, name: "Ice Talk A9 Watermelon / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/ice-talk-a9-watermelon-230ml.png.png" },
     { id: 86, name: "Ice Talk A10 Greengrape / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true },
     { id: 87, name: "Welchs Grape / 355 ML", cat: "DRINKS", spec: "24 Cans / Case", price: null, img: "images/Welchs Grape.jpg" },
