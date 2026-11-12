@@ -162,7 +162,7 @@ const productsData = [
 
     // Chakhan Group
  { id: 135, name: "Chakhan Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, img: "images/chakhan-ssamjang-14kg.webp" },
-    { id: 136, name: "Chakhan Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null },
+  { id: 136, name: "Chakhan Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, img: "images/chakhan-gochujang-14kg.webp" },
 
     // Other Pantry Items
     { id: 137, name: "Sliced Rice Cake 300g (Shelf-Stable)", cat: "SAUCE", spec: "30 Packs / Case", price: null, isReservation: true },
