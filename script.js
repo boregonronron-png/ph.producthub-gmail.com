@@ -155,7 +155,7 @@ const productsData = [
     // Jinpum Group
   { id: 129, name: "JINPUM Ssamjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, img: "images/jinpum-ssamjang-14kg.webp" },
   { id: 130, name: "JINPUM Gochujang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, img: "images/jinpum-gochujang-14kg.webp" },
-    { id: 131, name: "JINPUM Doenjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, isReservation: true },
+   { id: 131, name: "JINPUM Doenjang 14kg", cat: "SAUCE", spec: "14kg Bulk Bucket", price: null, isReservation: true, img: "images/jinpum-doenjang-14kg.webp" },
     { id: 132, name: "JINPUM Chili Powder 1kg (Fine)", cat: "SAUCE", spec: "10 Packs / Case", price: null },
     { id: 133, name: "JINPUM Chili Powder 1kg (Flakes)", cat: "SAUCE", spec: "10 Packs / Case", price: null },
     { id: 134, name: "JINPUM Fish Cake 1kg", cat: "SAUCE", spec: "10 Packs / Case", price: null },
