@@ -91,7 +91,7 @@ const productsData = [
     { id: 75, name: "Café Bene Vanilla Americano / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/caffe-bene-vanilla-americano.jpg" },
     { id: 76, name: "Café Bene Hazelnut / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/caffe-bene-hazelnut.jpg" },
     { id: 77, name: "Café Bene Caramel Macchiato / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/cafe-bene-caramel-macchiato.jpg" },
-    { id: 78, name: "Café Bene Americano / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null },
+  { id: 78, name: "Café Bene Americano / 190 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, img: "images/cafe-bene-americano-190ml.webp" },
    { id: 79, name: "Ice Talk A1 Peach / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, img: "images/ice-talk-a1-peach-230ml.webp" },
     { id: 80, name: "Ice Talk A2 Blue Lemon / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/Ice-Talk-A2-Blue-Lemon.jpg" },
     { id: 81, name: "Ice Talk A3 Blueberry / 230 ML", cat: "DRINKS", spec: "30 Pouches / Case", price: null, isReservation: true, image: "images/Ice-Talk-A3-Blueberry.jpg" },
