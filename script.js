@@ -170,7 +170,7 @@ const productsData = [
   { id: 139, name: "Baby Shark Topokki (Sweet & Mild Spicy)", cat: "SAUCE", spec: "24 Cups / Case", price: null, isReservation: true, img: "images/baby-shark-topokki-sweet-mild-spicy.jpg" },
     { id: 140, name: "Sweet Corn 410g", cat: "SAUCE", spec: "24 Cans / Case", price: null },
     { id: 141, name: "Fruits Cocktail 850g", cat: "SAUCE", spec: "12 Cans / Case", price: null },
-    { id: 142, name: "Black Olive Slice 405g", cat: "SAUCE", spec: "24 Cans / Case", price: null },
+  { id: 142, name: "Black Olive Slice 405g", cat: "SAUCE", spec: "24 Cans / Case", price: null, img: "images/black-olive-slice-405g.webp" },
     { id: 143, name: "Vinegar 1.8L", cat: "SAUCE", spec: "6 Bottles / Case", price: null },
     { id: 144, name: "Roasted Sesame Oil (100%) 1.8L", cat: "SAUCE", spec: "6 Containers / Case", price: null },
     { id: 145, name: "Taeyangcho Chili Powder 1kg (Flakes)", cat: "SAUCE", spec: "10 Packs / Case", price: null },
