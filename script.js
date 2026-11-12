@@ -123,7 +123,7 @@ const productsData = [
    { id: 103, name: "JINRO Soju 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/jinro-soju-360ml.webp" },
   { id: 104, name: "JINRO Chamisul Fresh 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/jinro-chamisul-fresh-360ml-20.jpg" },
   { id: 105, name: "JINRO Chamisul Original 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/jinro-chamisul-original-360ml.webp" },
-    { id: 106, name: "JINRO Grapefruit 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
+  { id: 106, name: "JINRO Grapefruit 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/jinro-grapefruit-360ml.webp" },
     { id: 107, name: "Jinro Green Grape 360ml", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/JINRO Green Grape.jpg" },
     { id: 108, name: "JINRO Strawberry 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
     { id: 109, name: "JINRO Peach 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
