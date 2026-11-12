@@ -120,7 +120,7 @@ const productsData = [
     { id: 102, name: "Maxim Arabica 100T", cat: "COFFEE", spec: "8 Boxes / Case", price: null },
 
     // --- SOJU & ALCOHOL ---
-    { id: 103, name: "JINRO Soju 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
+   { id: 103, name: "JINRO Soju 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/jinro-soju-360ml.webp" },
   { id: 104, name: "JINRO Chamisul Fresh 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/jinro-chamisul-fresh-360ml-20.jpg" },
     { id: 105, name: "JINRO Chamisul Original 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
     { id: 106, name: "JINRO Grapefruit 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null },
