@@ -53,7 +53,7 @@ const productsData = [
     { id: 39, name: "NamKwang Kimbob Kim 10s", cat: "SEAWEED", spec: "100 Packs / Case", price: null, isReservation: true, image: "images/NamKwang-Kimbob-Kim-10s.jpg" },
   { id: 40, name: "NamKwang Kimbob Kim 100s", cat: "SEAWEED", spec: "10 Packs / Case", price: null, img: "images/namkwang-kimbob-kim-100s.jpg" },
    { id: 41, name: "Nongbu Kimbob Kim 10s", cat: "SEAWEED", spec: "100 Packs / Case", price: null, img: "images/nongbu-kimbob-kim-10s.webp" },
-    { id: 42, name: "Nongbu Kimbob Kim 100s", cat: "SEAWEED", spec: "10 Packs / Case", price: null },
+  { id: 42, name: "Nongbu Kimbob Kim 100s", cat: "SEAWEED", spec: "10 Packs / Case", price: null, img: "images/nongbu-kimbob-kim-100s.webp" },
    { id: 43, name: "Sura Laver Seaweeds 3*24", cat: "SEAWEED", spec: "24 Bundles / Case", price: null, img: "images/sura-laver-seaweeds-3-24.jpg" },
     { id: 44, name: "Sura Laver Seaweeds 16*8", cat: "SEAWEED", spec: "8 Packs / Case", price: null },
     { id: 45, name: "Kimjaban Seaweeds (Vegetable)", cat: "SEAWEED", spec: "30 Packs / Case", price: null },
