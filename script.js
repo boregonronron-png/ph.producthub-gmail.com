@@ -117,7 +117,7 @@ const productsData = [
    { id: 99, name: "Maxim White Gold 100T", cat: "COFFEE", spec: "8 Boxes / Case", price: null, img: "images/maxim-white-gold-100t.jpg" },
   { id: 100, name: "Maxim Supreme Gold Coffee Mix 20T", cat: "COFFEE", spec: "20 Boxes / Case", price: null, img: "images/maxim-supreme-gold-coffee-mix-20t.webp" },
   { id: 101, name: "Maxim Decaf Coffee 100T", cat: "COFFEE", spec: "8 Boxes / Case", price: null, img: "images/maxim-decaf-coffee-100t.webp" },
-    { id: 102, name: "Maxim Arabica 100T", cat: "COFFEE", spec: "8 Boxes / Case", price: null },
+   { id: 102, name: "Maxim Arabica 100T", cat: "COFFEE", spec: "8 Boxes / Case", price: null, img: "images/maxim-arabica-100t.webp" },
 
     // --- SOJU & ALCOHOL ---
    { id: 103, name: "JINRO Soju 360ml*20", cat: "SOJU", spec: "20 Bottles / Case", price: null, img: "images/jinro-soju-360ml.webp" },
