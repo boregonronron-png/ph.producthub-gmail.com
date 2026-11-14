@@ -173,7 +173,7 @@ const productsData = [
   { id: 142, name: "Black Olive Slice 405g", cat: "SAUCE", spec: "24 Cans / Case", price: null, img: "images/black-olive-slice-405g.webp" },
     { id: 143, name: "Vinegar 1.8L", cat: "SAUCE", spec: "6 Bottles / Case", price: null },
     { id: 144, name: "Roasted Sesame Oil (100%) 1.8L", cat: "SAUCE", spec: "6 Containers / Case", price: null },
-    { id: 145, name: "Taeyangcho Chili Powder 1kg (Flakes)", cat: "SAUCE", spec: "10 Packs / Case", price: null },
+  { id: 145, name: "Taeyangcho Chili Powder 1kg (Flakes)", cat: "SAUCE", spec: "10 Packs / Case", price: null, img: "images/taeyangcho-chili-powder-1kg-flakes.webp" },
     { id: 146, name: "Chili Powder (Fine) 1kg", cat: "SAUCE", spec: "10 Packs / Case", price: null },
     { id: 147, name: "Chili Powder (Coarse) 1kg", cat: "SAUCE", spec: "10 Packs / Case", price: null },
    { id: 148, name: "Jin Kimchi 10kg", cat: "SAUCE", spec: "10kg Commercial Tub", price: null, img: "images/jin-kimchi-10kg.png" },
