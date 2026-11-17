@@ -416,6 +416,7 @@ function processOrder(e) {
     const address = document.getElementById('custAddress').value;
     const type = document.getElementById('custOrderType').value;
 
+    let totalCases = 0;
     let receipt = `🛒 PRODUCT HUB WHOLESALE ORDER\n\n`;
     receipt += `📋 CUSTOMER DETAILS:\n`;
     receipt += `- Store: ${company}\n`;
@@ -430,17 +431,47 @@ function processOrder(e) {
         const p = productsData.find(item => item.id == id);
         if (p) {
             const qty = cart[id];
-            const unitText = qty === 1 ? 'Box' : 'Boxes';
-            receipt += `- ${p.name} = ${qty} ${unitText}\n`;
+            totalCases += qty;
+            receipt += `• ${qty}x ${p.name}\n`;
         }
     });
 
-    receipt += `\n📌 Sent via Product Hub B2B Portal`;
+    receipt += `\nTotal: ${totalCases} ${totalCases === 1 ? 'Case' : 'Cases'}\n`;
+    receipt += `📌 Sent via Product Hub B2B Portal`;
+
     document.getElementById('receiptText').value = receipt;
     closeCheckoutModal();
     document.getElementById('receiptModal').classList.remove('hidden');
 }
 
+// Quick Copy Order List directly from Cart Drawer
+function quickCopyCartToMessenger(openMessenger = false) {
+    const itemIds = Object.keys(cart);
+    if (itemIds.length === 0) return;
+
+    let totalCases = 0;
+    let msg = `Hi Product Hub! Magpapa-quote po ako para sa mga sumusunod:\n\n`;
+
+    itemIds.forEach(id => {
+        const p = productsData.find(item => item.id == id);
+        if (p) {
+            const qty = cart[id];
+            totalCases += qty;
+            msg += `• ${qty}x ${p.name}\n`;
+        }
+    });
+
+    msg += `\nTotal: ${totalCases} ${totalCases === 1 ? 'Case' : 'Cases'}`;
+
+    navigator.clipboard.writeText(msg);
+
+    if (openMessenger) {
+        alert("Order List copied! Bubukas na ang Messenger ng Product Hub—i-paste (Ctrl+V o Paste) na lang po sa chat.");
+        window.open("https://m.me/ProductHub88", "_blank", "noopener,noreferrer");
+    } else {
+        alert("Order List copied to clipboard! Pwede niyo na itong i-paste sa Messenger o Viber.");
+    }
+}
 function copyReceipt() {
     const copyText = document.getElementById("receiptText");
     if (copyText) {
