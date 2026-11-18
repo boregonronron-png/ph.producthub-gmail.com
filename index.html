@@ -505,33 +505,72 @@
         gap: 2px;
         filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.45));
     }
-    /* CENTERED & BIG SIDE DECORATIONS SA MAGKABILANG GILID */
-    .xmas-side-left {
-        position: fixed;
-        left: calc((100vw - 1280px) / 4);
-        top: 52%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
+
+    /* CHRISTMAS LIGHTS GARLAND SA ILALIM NG HEADER (NASA LIKOD NG CATEGORY BAR) */
+    .xmas-lights-bar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        height: 24px;
+        overflow: hidden;
         pointer-events: none;
-        user-select: none;
-        text-align: center;
-        filter: drop-shadow(0 6px 14px rgba(0,0,0,0.35));
+        z-index: 15;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 0 6px;
     }
-    .xmas-side-right {
-        position: fixed;
-        right: calc((100vw - 1280px) / 4);
-        top: 52%;
-        transform: translate(50%, -50%);
-        z-index: 10;
+    .xmas-wire-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 14px;
         pointer-events: none;
-        user-select: none;
-        text-align: center;
-        filter: drop-shadow(0 6px 14px rgba(0,0,0,0.35));
     }
-    @media (max-width: 1460px) {
-        .xmas-side-left, .xmas-side-right {
-            display: none; /* Hide sa maliit na screen para hindi makaharang sa product cards */
-        }
+    .xmas-bulb-wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3px;
+    }
+    .xmas-bulb-cap {
+        width: 6px;
+        height: 4px;
+        background: #222;
+        border-radius: 1px;
+    }
+    .xmas-bulb {
+        width: 8px;
+        height: 13px;
+        border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%;
+        animation: xmasTwinkle 1.8s infinite alternate ease-in-out;
+    }
+    .xmas-bulb.gold {
+        background: #ffd700;
+        box-shadow: 0 2px 9px 2px rgba(255, 215, 0, 0.85);
+        animation-delay: 0s;
+    }
+    .xmas-bulb.red {
+        background: #ff3b3b;
+        box-shadow: 0 2px 9px 2px rgba(255, 59, 59, 0.85);
+        animation-delay: 0.45s;
+    }
+    .xmas-bulb.green {
+        background: #2ecc71;
+        box-shadow: 0 2px 9px 2px rgba(46, 204, 113, 0.8);
+        animation-delay: 0.9s;
+    }
+    .xmas-bulb.white {
+        background: #fff9db;
+        box-shadow: 0 2px 9px 2px rgba(255, 249, 219, 0.9);
+        animation-delay: 1.35s;
+    }
+    @keyframes xmasTwinkle {
+        0% { opacity: 0.45; transform: scale(0.92); }
+        100% { opacity: 1; transform: scale(1.06); }
     }
 </style>
 
@@ -582,22 +621,31 @@
             headerLogo.parentElement.appendChild(hat);
         }
 
-        // 5. BIG & CENTERED SIDE DECORATIONS (CHRISTMAS TREE SA KALIWA, SANTA SA KANAN)
-        const leftSide = document.createElement('div');
-        leftSide.className = 'xmas-side-left';
-        leftSide.innerHTML = `
-            <div style="font-size: 135px; line-height: 1;">🎄</div>
-            <div style="font-size: 38px; margin-top: -12px;">🎁📦🎁</div>
-        `;
-        document.body.appendChild(leftSide);
+        // 5. Glowing Christmas Lights Garland sa ilalim ng Header
+        const headerEl = document.querySelector('header');
+        if (headerEl) {
+            const lightsBar = document.createElement('div');
+            lightsBar.className = 'xmas-lights-bar';
 
-        const rightSide = document.createElement('div');
-        rightSide.className = 'xmas-side-right';
-        rightSide.innerHTML = `
-            <div style="font-size: 135px; line-height: 1; transform: scaleX(-1);">🎅</div>
-            <div style="font-size: 22px; color: #d4af37; font-weight: 800; letter-spacing: 1px; margin-top: 6px; text-shadow: 0 2px 6px rgba(0,0,0,0.85);">HO HO HO!</div>
-        `;
-        document.body.appendChild(rightSide);
+            const wireSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+            wireSvg.setAttribute('class', 'xmas-wire-svg');
+            wireSvg.setAttribute('viewBox', '0 0 1200 14');
+            wireSvg.setAttribute('preserveAspectRatio', 'none');
+            wireSvg.innerHTML = '<path d="M0,2 Q30,12 60,2 T120,2 T180,2 T240,2 T300,2 T360,2 T420,2 T480,2 T540,2 T600,2 T660,2 T720,2 T780,2 T840,2 T900,2 T960,2 T1020,2 T1080,2 T1140,2 T1200,2" fill="none" stroke="#1f2937" stroke-width="2"/>';
+            lightsBar.appendChild(wireSvg);
+
+            const bulbColors = ['gold', 'red', 'green', 'white'];
+            const bulbCount = window.innerWidth < 640 ? 16 : 36;
+            for (let i = 0; i < bulbCount; i++) {
+                const wrap = document.createElement('div');
+                wrap.className = 'xmas-bulb-wrap';
+                wrap.style.marginTop = (i % 2 === 0 ? '3px' : '6px');
+                wrap.innerHTML = `<div class="xmas-bulb-cap"></div><div class="xmas-bulb ${bulbColors[i % bulbColors.length]}"></div>`;
+                lightsBar.appendChild(wrap);
+            }
+
+            headerEl.appendChild(lightsBar);
+        }
     })();
 </script>
 <!-- CHRISTMAS 2026 DECORATIONS END -->
