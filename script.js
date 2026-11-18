@@ -253,6 +253,9 @@ function renderProducts() {
                 <p class="text-xs text-brand-gold font-medium mt-1">
                     Packaging: ${p.spec}
                 </p>
+                <button type="button" onclick="openDescModal(${p.id})" class="mt-2 inline-flex items-center gap-1.5 text-[11px] font-bold text-gray-300 hover:text-brand-gold underline underline-offset-4 transition-colors">
+                    <i class="fa-solid fa-circle-info text-brand-gold"></i> View Description
+                </button>
             </div>
 
             <div class="mt-4 pt-3 border-t border-gray-800 flex items-center justify-between">
