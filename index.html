@@ -462,7 +462,7 @@
     </a>
 
     <script src="script.js"></script>
-   <!-- CHRISTMAS 2026 DECORATIONS START -->
+<!-- CHRISTMAS 2026 DECORATIONS START -->
 <style>
     .xmas-snowflake {
         position: fixed;
@@ -504,6 +504,34 @@
         align-items: flex-end;
         gap: 2px;
         filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.45));
+    }
+    /* BIG SIDE DECORATIONS (Mawawala sa mobile para hindi makaharang) */
+    .xmas-side-left {
+        position: fixed;
+        left: 2%;
+        top: 40%;
+        transform: translateY(-50%);
+        z-index: 10;
+        pointer-events: none;
+        user-select: none;
+        text-align: center;
+        filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+    }
+    .xmas-side-right {
+        position: fixed;
+        right: 2%;
+        top: 40%;
+        transform: translateY(-50%);
+        z-index: 10;
+        pointer-events: none;
+        user-select: none;
+        text-align: center;
+        filter: drop-shadow(0 4px 12px rgba(0,0,0,0.5));
+    }
+    @media (max-width: 1400px) {
+        .xmas-side-left, .xmas-side-right {
+            display: none; /* Hide sa mas maliit na screen para hindi mapatungan ang mga products */
+        }
     }
 </style>
 
@@ -553,6 +581,23 @@
             hat.style.cssText = 'position:absolute; top:-14px; left:-10px; font-size:22px; transform:rotate(-20deg); pointer-events:none; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.6));';
             headerLogo.parentElement.appendChild(hat);
         }
+
+        // 5. BIG SIDE DECORATIONS (CHRISTMAS TREE SA KALIWA, SANTA SA KANAN)
+        const leftSide = document.createElement('div');
+        leftSide.className = 'xmas-side-left';
+        leftSide.innerHTML = `
+            <div style="font-size: 80px; line-height: 1;">🎄</div>
+            <div style="font-size: 24px; margin-top: -10px;">🎁📦</div>
+        `;
+        document.body.appendChild(leftSide);
+
+        const rightSide = document.createElement('div');
+        rightSide.className = 'xmas-side-right';
+        rightSide.innerHTML = `
+            <div style="font-size: 80px; line-height: 1; transform: scaleX(-1);">🎅</div>
+            <div style="font-size: 18px; color: #d4af37; font-weight: bold; margin-top: 5px; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">HO HO HO!</div>
+        `;
+        document.body.appendChild(rightSide);
     })();
 </script>
 <!-- CHRISTMAS 2026 DECORATIONS END -->
