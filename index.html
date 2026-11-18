@@ -462,53 +462,99 @@
     </a>
 
     <script src="script.js"></script>
-    <script src="script.js"></script>
+   <!-- CHRISTMAS 2026 DECORATIONS START -->
+<style>
+    .xmas-snowflake {
+        position: fixed;
+        top: -20px;
+        pointer-events: none;
+        z-index: 60;
+        user-select: none;
+        animation-name: xmasFall;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    @keyframes xmasFall {
+        0% { transform: translateY(-20px) rotate(0deg); }
+        100% { transform: translateY(105vh) rotate(360deg); }
+    }
+    @keyframes santaWave {
+        0%, 100% { transform: rotate(-6deg) translateY(0); }
+        50% { transform: rotate(6deg) translateY(-3px); }
+    }
+    .xmas-santa-chat {
+        position: fixed;
+        bottom: 62px;
+        right: 92px;
+        font-size: 30px;
+        z-index: 51;
+        pointer-events: none;
+        user-select: none;
+        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.6));
+        animation: santaWave 2.8s ease-in-out infinite;
+    }
+    .xmas-trees-corner {
+        position: fixed;
+        bottom: 10px;
+        left: 14px;
+        z-index: 45;
+        pointer-events: none;
+        user-select: none;
+        display: flex;
+        align-items: flex-end;
+        gap: 2px;
+        filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.45));
+    }
+</style>
 
-    <!-- CHRISTMAS 2026 SNOWFLAKES START -->
-    <style>
-        .xmas-snowflake {
-            position: fixed;
-            top: -20px;
-            pointer-events: none;
-            z-index: 60;
-            user-select: none;
-            animation-name: xmasFall;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
+<script>
+    (function () {
+        // Auto-remove lahat ng Christmas decorations pagdating ng January 1, 2027
+        if (new Date() >= new Date('2027-01-01T00:00:00')) {
+            const banner = document.getElementById('christmasBanner2026');
+            if (banner) banner.remove();
+            return;
         }
-        @keyframes xmasFall {
-            0% { transform: translateY(-20px) rotate(0deg); }
-            100% { transform: translateY(105vh) rotate(360deg); }
+
+        // 1. Falling Gold & White Snowflakes
+        const flakes = ['❄', '✦', '•'];
+        const colors = ['rgba(212, 175, 55, 0.55)', 'rgba(255, 255, 255, 0.45)', 'rgba(245, 215, 110, 0.5)'];
+        for (let i = 0; i < 28; i++) {
+            const flake = document.createElement('div');
+            flake.className = 'xmas-snowflake';
+            flake.textContent = flakes[i % flakes.length];
+            flake.style.left = Math.random() * 100 + 'vw';
+            flake.style.fontSize = (Math.random() * 8 + 8) + 'px';
+            flake.style.color = colors[i % colors.length];
+            flake.style.animationDuration = (Math.random() * 8 + 9) + 's';
+            flake.style.animationDelay = (Math.random() * 10) + 's';
+            document.body.appendChild(flake);
         }
-    </style>
 
-    <script>
-        (function () {
-            if (new Date() >= new Date('2027-01-01T00:00:00')) {
-                const banner = document.getElementById('christmasBanner2026');
-                if (banner) banner.remove();
-                return;
-            }
+        // 2. Christmas Trees & Gifts sa ibabang kaliwa
+        const treesDiv = document.createElement('div');
+        treesDiv.className = 'xmas-trees-corner';
+        treesDiv.innerHTML = '<span style="font-size:34px;">🎄</span><span style="font-size:20px;">🎁</span><span style="font-size:26px;">🎄</span>';
+        document.body.appendChild(treesDiv);
 
-            const flakes = ['❄', '✦', '•'];
-            const colors = ['rgba(212, 175, 55, 0.55)', 'rgba(255, 255, 255, 0.45)', 'rgba(245, 215, 110, 0.5)'];
-            const totalFlakes = 28;
+        // 3. Santa Claus sa itaas ng Chat Sales button
+        const santaDiv = document.createElement('div');
+        santaDiv.className = 'xmas-santa-chat';
+        santaDiv.textContent = '🎅';
+        document.body.appendChild(santaDiv);
 
-            for (let i = 0; i < totalFlakes; i++) {
-                const flake = document.createElement('div');
-                flake.className = 'xmas-snowflake';
-                flake.textContent = flakes[i % flakes.length];
-                flake.style.left = Math.random() * 100 + 'vw';
-                flake.style.fontSize = (Math.random() * 8 + 8) + 'px';
-                flake.style.color = colors[i % colors.length];
-                flake.style.animationDuration = (Math.random() * 8 + 9) + 's';
-                flake.style.animationDelay = (Math.random() * 10) + 's';
-                document.body.appendChild(flake);
-            }
-        })();
-    </script>
-    <!-- CHRISTMAS 2026 SNOWFLAKES END -->
-</body>
-</html>
+        // 4. Mini Santa Hat sa Header Logo
+        const headerLogo = document.getElementById('headerLogoImg');
+        if (headerLogo && headerLogo.parentElement) {
+            headerLogo.parentElement.style.position = 'relative';
+            headerLogo.parentElement.style.overflow = 'visible';
+            const hat = document.createElement('span');
+            hat.textContent = '🎅';
+            hat.style.cssText = 'position:absolute; top:-14px; left:-10px; font-size:22px; transform:rotate(-20deg); pointer-events:none; filter:drop-shadow(0 2px 4px rgba(0,0,0,0.6));';
+            headerLogo.parentElement.appendChild(hat);
+        }
+    })();
+</script>
+<!-- CHRISTMAS 2026 DECORATIONS END -->
 </body>
 </html>
